@@ -1,0 +1,1638 @@
+{
+    "Kala Island": {
+        "Description": "<p>Kala Island is the base of operations for the Global Communication Setup Foundation. This island is home to the port city of Ethovalon! Ethovalon is a steampunk-ish type of city that keeps it way ahead of its time. Steam and little electricity powers the city, making it a popular tourist destination as well. Ethovalon holds many shops, a port full of ships, and a huge housing district for both residents and teams alike! The outskirts of the city is nothing more than a lush, green, field full of flowers and streams galore. A lot of the dungeons you'll come across, you won't even realize are dungeons since they're so small! Nonetheless, Kala Island is warm year round, and has nothing but positive, happy vibes!</p>",
+        "Dungeons": {
+            "Babbling Creek": {
+                "Description": "<p>Just outside of Ethovalon lays a dungeon so small, you'll probably miss it. The creek is home to plenty of feral Pokemon that may become hostile if you enter their territory. The lush grass that borders the small stream is boggy, and the current of the water is as gentle as ever. However, there's said to be a hidden hole towards the delta where the creek ends. Is there something hidden there?</p><p>Only one way to find out!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Poliwag",
+                    "Goldeen",
+                    "Azurill",
+                    "Surskit",
+                    "Wooper (Johto)",
+                    "Barboach",
+                    "Tympole"
+                ]
+            },
+            "Tiny Meadow": {
+                "Description": "<p>A meadow that extends until it meets a forest. The lush, tall grass harbors many feral Pokemon that make their homes there. Flowers sway in the gentle breeze and pollen dances in the air.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Sunkern",
+                    "Budew",
+                    "Pidgey",
+                    "Nidoran",
+                    "Oddish",
+                    "Seedot",
+                    "Bulbasaur",
+                    "Bellsprout",
+                    "Rattata (Kanto)",
+                    "Skwovet",
+                    "Stunfisk (Galar)"
+                ]
+            },
+            "Buggy Woods": {
+                "Description": "<p>At the edge of the meadow lies a wood full of creepy-crawly creatures awaiting you inside. The trees have a thick canopy which the sun sneaks through occasionally. The grass is also quite dense which allows these bugs to hide safely away from predators. Despite their efforts, some bird Pokemon lurk in the branches, waiting to swoop down.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Caterpie",
+                    "Weedle",
+                    "Pineco",
+                    "Yanma",
+                    "Wurmple",
+                    "Ledyba",
+                    "Kricketot",
+                    "Starly",
+                    "Sewaddle",
+                    "Scatterbug",
+                    "Blipbug"
+                ]
+            }
+        }
+    },
+    "Pele Island": {
+        "Description": "<p>A rocky, craggy island to the south of Kala Island. In the center of this black hunk of earth is a giant active volcano. Luckily for what little residents reside on this island, the lava flow stays away from them. Speaking of residents, there is a massive marketplace in the city of Dutarus, at which merchants and sailors come from near and far to sell their wares.The people of Dutarus worship the volcanic deities that once lived in the volcano in ancient times. The traveling merchants Agni and Edan are said to be descendants of these deities.</p>",
+        "Dungeons": {
+            "Meteor Crater": {
+                "Description": "<p>Long ago, it is said that a meteor crashed into this spot on Pele Island. While you may be expecting some cool Pokemon from space, the only extraterrestrials you'll find here are Cleffa and Elgyem. The rest of the crater is inhabited with plenty of rock and fire type Pokemon! The crater is lined with space rock, obsidian, and shining gems. Lava flows freely through some parts of the crater.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Geodude (Kanto)",
+                    "Cleffa",
+                    "Mawile",
+                    "Elgyem",
+                    "Darumaka (Unova)",
+                    "Drilbur",
+                    "Pansear",
+                    "Sandygast",
+                    "Salandit"
+                ]
+            },
+            "Volcano Shrine": {
+                "Description": "<p>It is said that a volcanic deity rests here to this very day. The actual shrine is a long way down, but you need to get through a dungeon to get there. The people of the island offer up prized possessions to the deity that watches over them. A winding path leads down, splitting off into different sections. A crater full of lava is in the center of the volcano, so be careful where you step! Lavafalls are everywhere here, so be careful of those too! Rumor has it that the travelling shop keepers Agni and Edan are descendants of the deity resting in here.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Slugma",
+                    "Shieldon",
+                    "Cranidos",
+                    "Solrock",
+                    "Heatmor",
+                    "Oricorio (Baile Style)",
+                    "Sizzlipede",
+                    "Growlithe (Hisui)"
+                ]
+            },
+            "Rocky Bluff": {
+                "Description": "<p>The steep slopes of the volcano give way to this dungeon and its difficult to navigate terrain. If you can fly, or easily maneuver around rocks, you'll have a better time with this dungeon. With the sun beating down on you and all of the climbing you'll be doing, you may need to find one of the many hot springs scattered around the area and relax. Rock types and Fire types make this bluff their home.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Dunsparce",
+                    "Shuckle",
+                    "Cyndaquil",
+                    "Dwebble",
+                    "Sandile",
+                    "Rhyhorn",
+                    "Diglett (Kanto)"
+                ]
+            }
+        }
+    },
+    "Kumu Island": {
+        "Description": "<p>This island is covered in thick jungles and hanging vines everywhere you look. Once you're off of the port, you're already at the mercy of the dense jungles and what awaits you inside. Because of the inhospitable island, there are no settlements, towns, or even tribes living on this island. Its treasure is yours for the taking if you can find it!</p>",
+        "Dungeons": {
+            "Overgrown Tomb": {
+                "Description": "<p>A tomb that has since been covered in thick vines and buried beneath the ground. Whoever the tomb was built for, they must have been important, because the inside is massive! The only way into the dungeon is by taking the vines down to the base and from there you can explore. Small streaks of light shine down from the top of the tomb where cracks are beginning to form. Glowing mushrooms have begun forming in the crevices on the wall too. The longer you linger here, the more dread you begin to feel … but rumor has it there's good loot to be found here! Don't worry, it's not grave robbing it if the tomb is abandoned … right?</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Sableye",
+                    "Spiritomb",
+                    "Yamask (Unova)",
+                    "Yamask (Galar)",
+                    "Honedge",
+                    "Morelull",
+                    "Nincada"
+                ]
+            },
+            "Canopy Treetops": {
+                "Description": "<p>Barely any light shines through the thick canopies in this dungeon. The jungle floor is but a barren wasteland compared to the branches high up. Bird Pokemon fly about and several Grass types make their homes high up in the jungle trees. If you're not good at climbing, good luck.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Mankey",
+                    "Pinsir",
+                    "Tangela",
+                    "Exeggcute",
+                    "Heracross",
+                    "Aipom",
+                    "Natu",
+                    "Tropius",
+                    "Comfey",
+                    "Pikipek"
+                ]
+            },
+            "Boggy Wastes": {
+                "Description": "<p>Deep in the jungle lies the biggest swamp you've ever seen! The water is foul, bubbling, and you're pretty sure if you fall in, there's no coming back. Everywhere you step, the land feels static to the touch-- is the murky water paralyzing …? You're not sure what's at the end of this disgusting swamp, but it better be worth it for your sake!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Venonat",
+                    "Grimer (Kanto)",
+                    "Gligar",
+                    "Croagunk",
+                    "Stunky",
+                    "Trubbish",
+                    "Skrelp",
+                    "Dewpider",
+                    "Mareanie"
+                ]
+            }
+        }
+    },
+    "Slumbering Mountains": {
+        "Description": "<p>Located in the Sea of Beginning to the east of Pele Island, these Mountains formed after much erosion and eruptions alike. The mountains are placed above an active volcanic spring, a cold ocean current, and parts of the island are ravaged by the thunderstorms. It's no understatement to call these mountains a strange place indeed.</p><p>It's said that four mirage Pokemon make this massive island their home.</p>",
+        "Dungeons": {
+            "Static Field": {
+                "Description": "<p>On the southern side of the Slumbering Mountains, you'll find a grassy field ravaged by thunderstorms constantly. The entire area is teeming with static electricity. With thunderclouds that could shoot lightning at you at any given moment, this place is definitely treacherous. It's rumored that a Mirage Pokemon that howls with the thunderclaps roams this field.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Pichu",
+                    "Magnemite",
+                    "Voltorb",
+                    "Electrike",
+                    "Shinx",
+                    "Joltik",
+                    "Tynamo"
+                ]
+            },
+            "Purity Field": {
+                "Description": "<p>To the north of the Slumbering Mountains, you'll find a chilly, frosted field. A beautiful, frigid grassland with plenty of rivers and lakes spread about. Frost perpetually covers the land. It is said that a Mirage Pokemon lives here and dances across the waterways with grace. It's so fast that all you see left behind are ripples on the water's surface.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Vulpix (Alola)",
+                    "Smoochum",
+                    "Delibird",
+                    "Illumise",
+                    "Volbeat",
+                    "Absol"
+                ]
+            },
+            "Inferno Field": {
+                "Description": "<p>Ash Islands is, you guessed it, full of ash! The ash and volcanic dust from Pele Island carries over to these islands where ash falls nonstop on the islands. Soot Forest is no exception, and is perpetually rained on by ash. The trees appear to be grey from the soot that has fallen on them-- some could even mistake it for snow. Many Pokemon make this dusty forest their home.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Vulpix (Kanto)",
+                    "Machop",
+                    "Ponyta (Kanto)",
+                    "Magby",
+                    "Numel",
+                    "Sizzlipede",
+                    "Ditto"
+                ]
+            }
+        }
+    },
+    "Ash Islands": {
+        "Description": "<p>Located in the Sea of Beginning, these islands are perpetually covered in ash raining down from the sky. The ash crosses the sea from Pele Island and lands directly on the islands, covering the trees and ground in white soot and ash. Despite the problematic ash, the townsfolk have learned to live with it. There is a port town here called Sanlow.</p>",
+        "Dungeons": {
+            "Soot Forest": {
+                "Description": "<p>Ash Islands is, you guessed it, full of ash! The ash and volcanic dust from Pele Island carries over to these islands where ash falls nonstop on the islands. Soot Forest is no exception, and is perpetually rained on by ash. The trees appear to be grey from the soot that has fallen on them-- some could even mistake it for snow. Many Pokemon make this dusty forest their home.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Sandshrew (Kanto)",
+                    "Ekans",
+                    "Koffing",
+                    "Zigzagoon (Hoenn)",
+                    "Spinda",
+                    "Wurmple"
+                ]
+            },
+            "Sunny Slope": {
+                "Description": "<p>Ash Islands may not get a lot of sun, but Sunny Slope is the one spot of the island that isn't perpetually shrouded with soot! A long slope with harder and gentler degrees of slope-age - it's always sunny and warm! Flowers and bushes everywhere but very few trees. Strong winds pass through here and there; a good place for a picnic if you can take the slopes. It's popular among young Pokémon who live in Sanlow!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Sunkern",
+                    "Hoppip",
+                    "Tropius",
+                    "Fletchling",
+                    "Helioptile",
+                    "Flabebe",
+                    "Skiddo"
+                ]
+            },
+            "Beaver Hills": {
+                "Description": "<p>A small section of Ash Islands that, like Sunny Slope, barely gets any ash dropped on it. Beaver Hills has Bidoof and Bibarel, among other Pokemon wandering around the hills or swimming in the shallow waters. Winding rivers and creeks dance around the hills with dams littered everywhere. The Pokemon here are pretty friendly, but if you arrive at their dams unannounced they may be cross with you!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Bidoof",
+                    "Stunfisk",
+                    "Foongus",
+                    "Deerling",
+                    "Basculin (Unova)",
+                    "Bunnelby",
+                    "Wimpod",
+                    "Yungoos"
+                ]
+            }
+        }
+    },
+    "Fairy Ring Isle": {
+        "Description": "<p>Fairy Ring Isle is the farthest island to the East, and the last island in the Sea of Beginning. This island has a peculiar shape, forming a lake in the center of the island. Mystical forests surround this lake with smaller lakes in said forests. There's no towns or cities here which makes this island's mystical quality even greater!</p>",
+        "Dungeons": {
+            "Fairy Spring": {
+                "Description": "<p>Deep in the mystifying woods of Fairy Ring Isle is a large spring full of fairy type Pokemon. It's waters are healing to the touch, and the whole place seems to have purifying qualities. The fairies usually aren't hostile, but they may be a little skittish if you enter unannounced. The water glows with a light green hue, and the pink flowers seemingly give the air a pink glow as well.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Igglybuff",
+                    "Mime Jr.",
+                    "Swablu",
+                    "Cottonee",
+                    "Audino",
+                    "Cutiefly",
+                    "Klefki"
+                ]
+            },
+            "Calm Lake": {
+                "Description": "<p>The lake in the center of the island, much like the Fairy Spring, has healing properties and the water will do wonders for your body if you soak in it. Many water type Pokemon make this giant, still lake their home. You may have to dive down to check it out! That being said, there's also plenty of Pokemon on the grassy shores to find as well! It's said the lake's guardian appears from time to time, disappearing in the blink of an eye if threatened.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Magikarp",
+                    "Corsola (Johto)",
+                    "Lotad",
+                    "Feebas",
+                    "Ducklett",
+                    "Wishiwashi",
+                    "Sobble",
+                    "Chewtle",
+                    "Cramorant"
+                ]
+            },
+            "Illusion Brush": {
+                "Description": "<p>A dense, shrouded forest that is far too foggy to even reach under normal conditions. If you don't have a means of navigating through the fog, you run the risk of wandering around, lost forever. The name of the dungeon is no joke, because even with the fog reduced, the entire forest is so densely packed with leaves and bushes that it's almost as if it's nighttime all the time in this dungeon. It doesn't help that there's a sinking feeling that you're being watched. Luckily, purple flowers glow on the floor occasionally. The Pokemon here like to play tricks on unsuspecting travelers.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Gastly",
+                    "Zubat",
+                    "Duskull",
+                    "Phantump",
+                    "Pumpkaboo",
+                    "Gothita",
+                    "Zorua (Unova)"
+                ]
+            }
+        }
+    },
+    "Isle of Steam": {
+        "Description": "<p>A technologically advanced island to the east of Ash Islands. This place is powered by steam and is way more advanced than plenty of islands in the vast sea. Trams, trains, and trolleys get you from place to place on the island, and even the dungeons here are quite technological, just like the island itself! Allurian is the capital city of the island. Not only does most of the steam power come from Allurian, but the buildings are made out of brass as well!</p><p>The folk here are very friendly, and will gladly give tours of their grand home!</p>",
+        "Dungeons": {
+            "Cursed Clockwork": {
+                "Description": "<p>An abandoned tower located to the east of Allurian. The place seems to be abandoned and covered in vines and moss from the top all the way to the bottom. Broken bricks and smashed in glass are the only ways into the building. While walking through the abandoned clock tower, it's said that you can even hear the clock ticking, even if it has been inactive for years. Light shines in through the top of the tower, but still, the ghosts await you in the shadows.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Rattata (Alola)",
+                    "Machop",
+                    "Gastly",
+                    "Bronzor",
+                    "Chingling",
+                    "Aron",
+                    "Pawniard",
+                    "Litwick",
+                    "Oricorio (Pa'u Style)"
+                ]
+            },
+            "Abandoned Ironworks": {
+                "Description": "<p>Another abandoned building just outside of Allurian. This decrepit building is located inside a dense forest and is now home to Pokemon who have an inkling for technology. This building was a place of innovation for the people of Allurian, however after a fire, the Ironworks closed down and was left to be abandoned over time. Sometimes, noises can be heard coming from inside the building, like the furnaces are still kicking up and trying to work again.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Porygon",
+                    "Scyther",
+                    "Magnemite",
+                    "Beldum",
+                    "Durant",
+                    "Klink",
+                    "Heatmor",
+                    "Burmy (Trash Cloak)",
+                    "Rolycoly"
+                ]
+            }
+        }
+    },
+    "Draconian Peaks": {
+        "Description": "<p>While there are no cities to this grand mountainous island, there are plenty of dungeons to explore here! There are ruined colosseums and crags just waiting to be explored! The snow-covered tops create a harsh environment, and the steep slopes make getting up there even more treacherous. If you can pinpoint the dungeons, you're in for a world of treasure and amazement!</p>",
+        "Dungeons": {
+            "Ruined Colosseum": {
+                "Description": "<p>This giant colosseum is visible from where the ships come to port. It's giant, looming silhouette in the distance not only instills fear into those who see it, but also invokes a sense of adventure in those brave enough to climb inside. It's a difficult climb up the outer wall to get inside, but once inside, all seems calm. Little do the teams that enter know the terrifying presence of dragons lurking around every corner. If you come face to face with one, you better be prepared for a fight!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Dratini",
+                    "Trapinch",
+                    "Gible",
+                    "Bagon",
+                    "Deino",
+                    "Druddigon",
+                    "Axew",
+                    "Jangmo-o",
+                    "Dreepy",
+                    "Duraludon"
+                ]
+            },
+            "Millennia Chambers": {
+                "Description": "<p>A giant craggy cave that requires some digging to even get into. Once you break through the rocks, you realize how immensely big the cave is. You fall through into a humid chamber full of fully grown plants, palms, and extinct foliage. How could they be growing in a place like this? It's only when you hear a roar in the distance when you realize where you are. You're small and everything wants to eat you!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Omanyte",
+                    "Kabuto",
+                    "Aerodactyl",
+                    "Lileep",
+                    "Anorith",
+                    "Archen",
+                    "Tirtouga",
+                    "Amaura",
+                    "Tyrunt",
+                    "Dracovish"
+                ]
+            },
+            "Snowy Ridge": {
+                "Description": "<p>Snowy Ridge is a dungeon rarely explored by even the most experienced Pokémon due to the dungeon being located deep in the mountains, entirely unable to be reached without the proper preparations. The ridge itself is covered in snow year-round and fresh snow is constantly falling, causing some to question whether the snow ever stops. The ground is rocky, snow-covered, and even icy in some places, making the mere dungeon itself potentially more dangerous than its inhabitants. The Pokémon in the dungeon are not accustomed to having visitors and view them as trespassers, having a reputation to attack anyone who enters.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Sneasel (Johto)",
+                    "Azurill",
+                    "Snorunt",
+                    "Cubchoo",
+                    "Bergmite",
+                    "Sandshrew (Alola)",
+                    "Vulpix (Alola)",
+                    "Darumaka (Galar)"
+                ]
+            }
+        }
+    },
+    "Serene Island": {
+        "Description": "<p>An island far to the east in the Sea of Beginning. While there are no towns or barely any dungeons that make this tiny island home, the sunny skies and the white beaches make it a lovely place to relax for a little while. Perhaps instead of exploring the island, you could take a load off and relax for a bit?</p><p>No? Well, exploring it is …</p>",
+        "Dungeons": {
+            "Olde Pasture": {
+                "Description": "<p>Idyllic and bright, the Pokemon that make their home here live in a land of abundance. All is quiet, the hills are gentle and the food is plentiful from the fields to the lush orchards that seem to go on forever into the horizon. Sun shines gold on the fields of wild rye and wheat, all overgrown and reaching for the sky. Herds of feral Pokemon roam and lounge about in this dungeon far from any large town. It's peaceful here. The locals like it and hope you will too. Just don't go causing any trouble and take only what you need. Do not mistake these Pokèmons' hospitality for weakness.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Tauros (Kanto)",
+                    "Ponyta (Kanto)",
+                    "Torchic",
+                    "Miltank",
+                    "Mareep",
+                    "Spoink",
+                    "Lillipup",
+                    "Mudbray",
+                    "Purrloin",
+                    "Yamper"
+                ]
+            },
+            "Tallest of Grass Plains": {
+                "Description": "<p>The entire area is filled with tall grass, it can be difficult to navigate, kind of like a maze. However, through all the grass, once pokemon find there way, there is a large freshwater lake in the middle of it all with one singular tree growing oran berries. Pokemon love to gather here in the plains. There are also a couple of open patches in the tall grass that are surrounded in berry bushes of all kinds.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Chikorita",
+                    "Togepi",
+                    "Buizel",
+                    "Kecleon",
+                    "Minccino",
+                    "Snivy",
+                    "Fomantis",
+                    "Applin",
+                    "Blipbug"
+                ]
+            }
+        }
+    },
+    "The Decayed Isles": {
+        "Description": "",
+        "Dungeons": {
+            "Decayed Mansion": {
+                "Description": "<p>From the outside, this mansion looks horrible-- decaying walls and fallen bricks make it look as if it had been abandoned for a very long time. Eerie cries can be heard from within, as if pleas for help. Once inside, mold covers the walls, and broken glass covers the floor. Something terrible must've happened here… And as you walk through the crumbling building, you feel as if you're being watched around every corner … Best not to stay here longer than needed!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Hatenna",
+                    "Drowzee",
+                    "Poochyena",
+                    "Misdreavus",
+                    "Rotom",
+                    "Shuppet",
+                    "Espurr",
+                    "Mimikyu",
+                    "Sinistea"
+                ]
+            },
+            "Enchanted Woods": {
+                "Description": "<p>Woods that have been enchanted with magic, wonder what kind? Sometimes the climate is hard to predict but some say the rain that falls there is pink in coloration and the lakes are blue and pink. There is definitely magic activity afoot here. The overgrown trees come in hues of pink and purple.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Minior",
+                    "Oricorio (Sensu Style)",
+                    "Munna",
+                    "Fennekin",
+                    "Goomy",
+                    "Swirlix",
+                    "Spritzee",
+                    "Ponyta (Galar)"
+                ]
+            }
+        }
+    },
+    "Frozen Isle": {
+        "Description": "<p>Freezing? Well you will be once you step foot on this island! Close to the Snow Continent, this island is perpetually covered in a thick layer of snow. It's always snowing, hailing, or sleeting, so bring something to bundle up in! There are several dungeons scattered throughout this icy landscape just waiting to be explored! Just make sure you're warm enough!</p>",
+        "Dungeons": {
+            "Crystal Castle": {
+                "Description": "<p>A freezing cold castle nestled deep in the island. It's said that a Legendary Pokemon takes refuge deep within the inner sanctums of this castle, but no one has ever seen it before. It's best not to go looking for trouble, otherwise you may meet an icy demise. Crystalized ice hangs from chandeliers and from the walls, making the entire place a beautiful sight to behold. As pretty as it is though, walking on solid ice freezes you to your very core, and along with a frigid wind blowing through the halls, it's best not to stay here too long.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Snover",
+                    "Piplup",
+                    "Spheal",
+                    "Cryogonal",
+                    "Golett",
+                    "Cubchoo",
+                    "Carbink",
+                    "Vanillite"
+                ]
+            }
+        }
+    },
+    "Sea of Beginning": {
+        "Description": "<p>While out at sea, there's bound to be some dungeons you see while sailing about! Take a good look around in the sky, the ocean, all around! You never know what might be waiting just out of reach! Be sure you bring along plenty of HMs with you!</p>",
+        "Dungeons": {
+            "Air Fortress": {
+                "Description": "<p>A giant fortress that sits among the cloud tops. The only way to reach it is to ascend to the cold skies. Once you're there, keep flying until you find the entrance. Inside awaits you many hard trials and fights, so be sure you're well stocked up. Deep inside the Fortress, it is said that the Legendary Rayquaza awaits you, but none have ever seen it before. Is it just a myth?</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Noibat",
+                    "Chatot",
+                    "Nosepass",
+                    "Skarmory",
+                    "Rufflet",
+                    "Vullaby",
+                    "Shelmet",
+                    "Karrablast",
+                    "Minior"
+                ]
+            },
+            "Deep Sea Crevice": {
+                "Description": "<p>If you're not careful, your ship could be thrown into a whirlpool around this area of the sea. Close to the Frozen Isle, if you were to dive straight into the whirlpool, you'd find yourself in the underwater crevice. It's freezing, but at least dungeon physics allow you to breathe, no? There are lots of nooks and crannies down here, so be sure not to get lost. The cold sea glows with a dark blue chill.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Lapras",
+                    "Horsea",
+                    "Seel",
+                    "Slowpoke (Kanto)",
+                    "Remoraid",
+                    "Chinchou",
+                    "Mantyke",
+                    "Clobbopus",
+                    "Pincurchin",
+                    "Arrokuda"
+                ]
+            },
+            "Ghost Ship": {
+                "Description": "<p>Haunting the Sea of Beginning is a ship that had sunk long ago-- only it isn't sunken-- it's afloat! And the Pokemon aboard are coming for your souls! This ship is beyond tattered and destroyed and carries a fog with it everywhere it goes. The minute you set foot on it, you can feel your soul leaving your body, but there's bound to be plenty of treasure aboard! Don't let the creaky floorboards and ghostly moans sway you from taking the treasure!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Carnivine",
+                    "Dhelmise",
+                    "Skrelp",
+                    "Tynamo",
+                    "Drampa",
+                    "Drifloon",
+                    "Frillish"
+                ]
+            },
+            "Warm Seabed": {
+                "Description": "<p>Again, you'll have to dive to the depths of the oceans for this dungeon. Located north in between the Isle of Steam and Serene Isle lies a warm sea floor where tons of water Pokemon relax in the sun's rays. The sands are white as can be and the water flowing from the southern islands brings untold peace to these waters.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Finneon",
+                    "Clamperl",
+                    "Bruxish",
+                    "Wailmer",
+                    "Carvanha",
+                    "Relicanth"
+                ]
+            }
+        }
+    },
+    "Spiral Archipelago": {
+        "Description": "<p>An archipelago that comprises several islands in a spiral pattern if looked at from an aerial view. Many fishermen and sailors come from this area of the sea looking for adventure or the sea's bounty. Many fishing towns and quaint cities line the shores of the islands. Other islands are forbidden to the residents of the occupied islands as dangerous mystery dungeons make up the other islands. Between nasty waterspouts often appearing towards the center of the archipelago and tsunamis wracking the northern islands, it's quite a different setting from the southern and eastern region. Inhabitants from Skull Island often send brigands to the western shores to plunder the villages there.</p>",
+        "Dungeons": {
+            "Waterspout Waters": {
+                "Description": "<p>The northern shores of the archipelago are often wracked with nasty waterspouts that will hit the shores without warning. It is highly recommended that those with the ability to swim take on this deadly area and if they are not afraid to throw away their life. Even if you take refuge on the nearby shores, there's no telling if a waterspout will whisk you away. It is said that these waterspouts are caused by an angry deity from ancient times, cursing the people of Spiral Archipelago.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Arrokuda",
+                    "Dewpider",
+                    "Wimpod",
+                    "Clobbopus",
+                    "Drampa"
+                ]
+            },
+            "Crystal Crags": {
+                "Description": "<p>Deep in the crevices of the western side of the archipelago is a craggy, crystalized cave that meets the sea. Sun that sets in the west glistens on the lapping foam and water to create a dazzling spectacle. The Pokemon that reside here have learned to harness the power of the crystals for their own psychic powers. While several water types can be found in the waters, if you look deep in the crystal caves, you'll find said psychics.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Finneon",
+                    "Wynaut",
+                    "Lileep",
+                    "Ralts",
+                    "Chingling"
+                ]
+            },
+            "Crow's Nest": {
+                "Description": "<p>Up very high on a seaside cliff is a long since abandoned pirate ship. It's beyond repair and the birds of the cliffs have made it their home. The pirate's flag blows in the wind and the wood creaks and tilts as if it could fall over at any given moment. Those who dare trespass the crow's nest will be met with vicious pecks and unforgiving bombardment of those who call these high peaks their home.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Pidgey",
+                    "Spearow",
+                    "Murkrow",
+                    "Starly",
+                    "Pidove",
+                    "Wingull"
+                ]
+            }
+        }
+    },
+    "Skull Island": {
+        "Description": "<p>An Island that resembles the skull of an unknown creature. The place absolutely reeks of rotting flesh and dirt. They say that those who wash ashore are sailors that lost their way during harsh storms. This island seems inhabitable. Yet glowing eyes can be seen sparkling in the rotting woods. Dare you venture forward, or turn back while you can?</p>",
+        "Dungeons": {
+            "Carnivorous Crypt": {
+                "Description": "<p>A mass of bones and carcasses are scattered about this dungeon. Walls of various Pokemon skulls line the area. Pools of strange red liquid decorate the halls of this ancient crypt. The smell of decay is strong within.  Inside the dungeon you can hear the clacking of bones and the dragging of limbs. Something is in here. Moving through the dungeon, skeletons reach out as if to grab you and stop you from continuing .Unfortunately their attempts are for naught. Will you survive the threat that lurks?</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Houndour",
+                    "Cubone",
+                    "Duskull",
+                    "Vullaby",
+                    "Yamask (Galar)",
+                    "Tynamo",
+                    "Carvanha",
+                    "Corsola (Galar)",
+                    "Arrokuda"
+                ]
+            },
+            "Steel Wasteland": {
+                "Description": "<p>Further into the Island the smell of rust and Iron hits you hard. Looks like this mysterious island held mysterious technology. The civilization that lived here prior is no more. All that is left of their existence is the rusted materials left behind. Feral pokemon plague this area, thriving off the metals that exist within. Careful, they're not friendly!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Meowth (Galar)",
+                    "Klink",
+                    "Aron",
+                    "Beldum",
+                    "Ferroseed",
+                    "Honedge",
+                    "Nosepass"
+                ]
+            },
+            "Profane Forum": {
+                "Description": "<p>Hidden in plain sight at the very center of the island are the ancient, decaying remnants of what may have once been an impressive house of knowledge. After some searching, you happen upon a half-buried trapdoor with stairs beyond that descends into darkness. Whatever awaits is ominous and forboding... and yet you press on as if it has called to you with the offer of something you cannot refuse.</p><p>There are many rooms and corridors that have been left to rot as the years have gone on. Some of them appear to be places of respite, worship, and even study. Perhaps this was once some sort of institution? You are acutely aware that you are being watched -- stalked even -- by Pokemon and otherworldly presences who have made these labyrinthine-like halls their home. Despite darkness that surrounds you, you can see the occasional speckle of light against the walls and the ceiling, reminisecent of stars. Occasionally, a sinister chuckle echoes throughout the halls. Is someone there? Or is your mind beginning to play tricks on you?</p><p>Eventually, you find something in-tact; a library! Though there are shelves and racks lined with books and scrolls, every one of them seems liable to crumble to dust the moment you so much as breathe on them. But, there is one thing that remains: a heavy grimoire chained shut to a podium. It doesn't seem like it's going to be budging any time soon. And even if you wanted to try and pry it from its binds, it doesn't seem like the residents of this place are going to let you take it without a fight...</p>",
+                "Difficulty": "Legendary (90+)",
+                "Recruits": [
+                    "Fiendish Potion",
+                    "Horror Potion",
+                    "Astral Potion"
+                ]
+            }
+        }
+    },
+    "Desert Region": {
+        "Description": "<p>On the western side of the region, a dry savannah where plenty of Pokemon thrive and to the east, a harsh desert where only the strongest survive. Wherever you decide to explore, best keep on your toes, and always remember to bring some water with you. It's very hot and very dry in the Desert Region.</p>",
+        "Dungeons": {
+            "Shattered Savannah": {
+                "Description": "<p>This dry savannah sits at the edge of giant plateaus and crevices that look as if the gods of this land were beyond angry with the inhabitants. The valleys are low with several streams running through, and the acacia trees provide much needed shade from the harsh sunlight. Throughout the stay, maybe take a safari? You may come across some incredible Pokemon you've never seen before! It's best to avoid the Pyroar prides however … they can be quite hostile!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Phanpy",
+                    "Girafarig",
+                    "Hippopotas",
+                    "Litleo",
+                    "Aipom",
+                    "Mankey",
+                    "Doduo",
+                    "Kangaskhan",
+                    "Chimchar"
+                ]
+            },
+            "Ancient Ruins": {
+                "Description": "<p>These ruins are located just outside of Sepsuthus, over some dunes and down the way. The ruins are scattered throughout the desert and lay dormant beneath the sand for hundreds, maybe even thousands of years! Once you enter the grounds that surround these ruins, you'll come to find that it's actually a dungeon. Hieroglyphics plaster the destroyed walls of the ruins, and sand pours from the cracks in the ceiling. Lots of rock and ghost type Pokemon make their home in the dark ruins beneath the sand, shielding them from the intense heat of the world above them.Whether you're here to study the ruins and the glyphs on the wall or tomb raiding, you best believe adventure and treasure is in store!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Cubone",
+                    "Onix",
+                    "Baltoy",
+                    "Yamask (Unova)",
+                    "Yamask (Galar)",
+                    "Torkoal",
+                    "Sigilyph",
+                    "Voltorb (Hisui)"
+                ]
+            }
+        }
+    },
+    "Lanier Islands": {
+        "Description": "<p>A once thriving, proud and wealthy area ripped down within the past couple decades by drought, disease, and financial ruin. It includes the small, closely grouped islands including Rockdale, Bartow, and Pierce. Towns are small and run down with bars across their windows and locked doors. Dust storms regularly ravage the land's already ruined soil, sometimes uncovering remnants of crops and cattle long gone. A mysterious force has been slowly spreading over the island for years now, turning areas once normal into dungeons, leaving behind remnants of what once was built.People hoard what little they have and are not keen on giving it away to strangers. These islands have become a rotting nest of thieves, pirates, outlaws, and cutthroats. The law is far and few between and even then it exists to serve itself. Attempting to make an honest living here is near impossible and well-meaning folk do not last long on the islands' worn down streets these days.</p><p>Guard your wallet and your trust closely.</p><p>Or better yet, don't visit.</p>",
+        "Dungeons": {
+            "Lost Township": {
+                "Description": "<p>At first glance, it seems just like a normal, dusty plain but travel inward and you'll see remnants of life. A town was built here, long ago, now lays half-buried in the sands and dirt. The roofs of buildings, carriages overturned and left abandoned, all manner of abandoned society stick out from the ground. Once a home to many, it seems like it was cleared out near overnight, like its residents just disappeared. It's almost entirely devoid of life - you shouldn't hear anything in theory but voices seem to echo in the wind, a soft breath calling you deeper into the dungeon. Maybe it's all in your head. But then again, maybe it's not.</p><p>Not everyone had time to get out.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Spearow",
+                    "Roggenrola",
+                    "Hippopotas",
+                    "Rowlet",
+                    "Hoothoot",
+                    "Rockruff",
+                    "Morpeko"
+                ]
+            },
+            "Viper's Den": {
+                "Description": "<p>Formerly the crown jewel of Lanier, the mines which once brought wealth and fortune have been long since stripped clean of any precious gems. Now they only serve as a safe-haven for bandits, thieves, cons, and other criminals. The former mines are unstable, deep, twisting tunnels hiding treasures, and dangers, untold. Near the surface of the mines, there are (overwhelmingly crooked) merchant stalls and other less than savory establishments. Old wanted Posters litter the ground and walls. The deeper you go, the more sparse light becomes and the more apparent it is that these mine shafts are unstable and abandoned, bits of rail and old equipment laying around rusting or even crushed under debris and cobwebs covering what little traces remain of workers that were here long ago.</p><p>This is a place criminals come to conduct business.</p><p>Be warned; you may hear things that you regret.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Woobat",
+                    "Morpeko",
+                    "Inkay",
+                    "Wooloo",
+                    "Nickit",
+                    "Onix",
+                    "Salandit",
+                    "Ekans"
+                ]
+            },
+            "Ancestral Battleground": {
+                "Description": "<p>A ravaged landscape that once was lush and beautiful is now as scarred and unforgiving as the Pokemon that reside there. Hastily made fortifications, rashly dug trenches, hidden campsites, and secret bases galore dot this active battlefield of a dungeon. Turned to desperation, its inhabitants have divided up into roving groups who only seek to rip each other apart to claim more resources, more territory. Dusty and dry, water is limited and dust storms are common with damage to the earth itself and signs of struggles everywhere. The Pokemon here fight to the end only to desperately scrap for survival another day. This torn-up Dungeon is hazardous to traverse, there are few places to hide and all the wild Pokemon are very much on edge and will often move in groups and set ambushes.</p><p>Take heed all who may enter, the blood feuds that fuel this place are older than you and run deeper than any wound.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Zangoose",
+                    "Seviper",
+                    "Falinks",
+                    "Tyrogue",
+                    "Scraggy",
+                    "Pancham",
+                    "Larvitar"
+                ]
+            }
+        }
+    },
+    "Disadattato Island": {
+        "Description": "<p>This Island has three compartments. It is a bit odd but it fits the name at least! You may find that this island in particular has several completely different pokemon and towns-- like a misfit. Some areas are friendlier to be in rather than some-- The island also has rapid weather changes and auras. Some rumors that even legendary pokemon roam about here, changing the terrain. It seems upon first arriving you're greeted by a Sableye with tropical attire. He gives you a pamphlet and says this is the perfect place for retiring! (Especially since one part of the island dead people supposedly come back to life!)</p>",
+        "Dungeons": {
+            "Dark Forest of Rejuvenation": {
+                "Description": "<p>This is the top left section of the island, and possibly one of the most dangerous parts of the island. Here several pokemon are resurrected from their past lives with a mysterious stone that reflects the moon in the only clearing in the forest. Many of these pokemon are lost, confused, or violent. Some did not want to come back, some are desperately searching for their past life. There are only a few pokemon who come to their senses and relive their life and make it off the island. Many other pokemon also take advantage of these pokemons feelings-- beware of those!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Dracovish",
+                    "Murkrow",
+                    "Shuppet",
+                    "Spiritomb",
+                    "Litwick",
+                    "Duskull",
+                    "Dreepy"
+                ]
+            },
+            "Coconutty Triptrop Peak": {
+                "Description": "<p>Welcome to retirement! (Well it feels like it at least) On the middle section of the island is the friendliest of welcomes from some very odd misfits! They will offer you sweet tropical drinks and fun activities! It is located on the beach of the island and has many palm trees and jolly faces. Though… they seem to keep the attention away from the mass of palm forest behind the tropics.</p><p>What are they hiding? Or is it nothing?</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Dracozolt",
+                    "Sobble",
+                    "Pyukumuku",
+                    "Comfey",
+                    "Sandygast",
+                    "Maractus",
+                    "Tropius"
+                ]
+            },
+            "''We didn't want you to see this!''": {
+                "Description": "<p>After checking behind the Triptrop, you find even more land on the island. There's a cryptic sign on the leafy path that says ‘We didn't want you to see this!'. What? In front of you lays an odd landscape of jungle, ice peaks, and savannah all mixed into one land. You could take one step and feel snow under your feet and a couple more feet you find yourself sweating in the savannah. Why is this so strange, and why are the Pokemon strange too? Should you really be here for retirement?</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Arctovish",
+                    "Arctozolt",
+                    "Applin",
+                    "Blitzle",
+                    "Elgyem",
+                    "Trapinch",
+                    "Sandile",
+                    "Burmy (Sandy Cloak)"
+                ]
+            }
+        }
+    },
+    "Islands of the Colossus": {
+        "Description": "<p>Sailing northeast of Kumu Island, you noticed almost three islands, mostly burdened with vegetation and didn't really look quite inhabitable. These islands resemble more of a cavern-like system, as if the inhabitants must have lived underground. It almost seems like nobody wanted to be there... An ominous feeling emanates from this place.</p>",
+        "Dungeons": {
+            "Jungle Japes": {
+                "Description": "<p>At first you thought the island was abandoned with no life, but as you go further onto the island you see lush overgrowth has made a vast jungle appear. Dangerous pokemon lurking in the bushes swing on the vines. You notice that the overgrowth has covered almost all ancient structures. This place has been reported to have suffered from natural disasters. You might want to bring something with you to cut through the vines!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Chespin",
+                    "Grookey",
+                    "Passimian",
+                    "Oranguru",
+                    "Absol",
+                    "Mankey",
+                    "Aipom",
+                    "Fomantis",
+                    "Bounsweet",
+                    "Cherubi"
+                ]
+            },
+            "Glittering Chamber": {
+                "Description": "<p>Approaching this deep cavern, along the walls you can see shiny minerals, glittering at the dim light that was peeking up from holes in the ceiling.  Echoing you could hear the rippling of water, hitting across the cobblestones, small rivers connecting through this cave, a closer look to the waters, you notice the glitter of something that seems to remind you of metals. Small carvings could be seen on the walls, what could it mean?</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Chewtle",
+                    "Drilbur",
+                    "Mawile",
+                    "Diglett (Alola)",
+                    "Binacle",
+                    "Tirtouga",
+                    "Clamperl",
+                    "Meowth (Galar)",
+                    "Mudkip",
+                    "Sableye"
+                ]
+            },
+            "Crumbling Chamber": {
+                "Description": "<p>Overgrown grass and vines mask the entrance into this chamber. The structure of the rock is old, crumbling down naturally almost looking untouched apart from the hand of nature. You might need to smash through some rocks to get through. The deeper you go into the dungeon the warmer it becomes, as well as large tunnel systems, it's easy to get lost - do you risk stepping here?</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Houndour",
+                    "Charmander",
+                    "Roggenrola",
+                    "Larvitar",
+                    "Geodude (Alola)",
+                    "Bunnelby",
+                    "Rolycoly",
+                    "Dwebble",
+                    "Stonjourner"
+                ]
+            },
+            "Glacial Chamber": {
+                "Description": "<p>The outside of this chamber has a chill to it, however you don't realise that the rocky flooring had suddenly started to feel cold as ice until you enter. Somehow, the walls are covered completely in ice, the air is enough to chill your bones and there's small rivers of water whose touch is enough to freeze your paws. Might want to bring something to help keep you warm!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Piplup",
+                    "Eiscue",
+                    "Sandshrew (Alola)",
+                    "Swinub",
+                    "Crabrawler",
+                    "Bergmite",
+                    "Seel",
+                    "Shellder"
+                ]
+            },
+            "Everlasting Gardens": {
+                "Description": "<p>Deep within the jungle, you come across a magnificent sight. Before you in a massive clearing stands hanging gardens; ascending, tiered landings made of white stone that are rich with greenery and cultivating diverse flora. It's almost as if every species of plant you could name from the varied corners of the world can be found here. And though the sun beats down upon the land, there is plenty of shade to be found by the many trees within. Canals cut through the terrain within and even form a moat outside, with water cascading freely from springs higher up and supplying the ecosystem with all it needs to sustain itself.</p><p>As you enter through the enormous arched entrance, you are greeted by the friendly faces of the myriad types of Pokemon who reside here. The gardens serve as a sanctuary and a place of respite for any and all. It is a place of beauty and appreciation for both the natural world and for those who inhabit it. The sights, scents, and sounds you are bombarded with as you are thrust into the environment are overwhelming and yet familiar and comforting all the same.</p><p>The farther you traverse however, as you venture into the darker parts of the gardens, not all of the Pokemon you come across are as welcoming as others. Despite peace being widely maintained throughout the gardens, the natural order does not always allow it to last...</p>",
+                "Difficulty": "Legendary (90+)",
+                "Recruits": [
+                    "Animal Potion",
+                    "Monster Juice",
+                    "Playful Potion"
+                ]
+            }
+        }
+    },
+    "Parella Island": {
+        "Description": "<p>Parella Island was once a tropical getaway and a lovely place to be at peace with the whole family. Beautiful shores, beautiful landscapes, and plenty of flowers growing everywhere. After a terrible storm ravaged the island, it was deemed unsafe to continue its business. As such, nature was able to retake the island for itself.</p>",
+        "Dungeons": {
+            "Paradise Wastelands": {
+                "Description": "<p>What used to be a tropical getaway for vacationers and honeymooners has since been abandoned after a storm swept through the island and left everything in its wake destroyed. Overgrown flora has reclaimed the resort but signs of what used to be still remain. Do you dare enter this abandoned tropical maze?</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Litleo",
+                    "Indeedee",
+                    "Nidoran",
+                    "Espurr",
+                    "Hippopotas",
+                    "Frillish"
+                ]
+            },
+            "Noiseless Nursery": {
+                "Description": "<p>Hidden in the underbrush of the thick jungle lay a nursery of sorts, full of baby pokemon. A small lush oasis sits nestled between two rivers fed by a waterfall. The grass here is soft and the small beds made of leaves everywhere are a perfect place to nap. Be careful not to disturb the baby pokemon though, the guardians of the nursery don't take kindly to intruders disturbing their naptime!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Wynaut",
+                    "Tyrogue",
+                    "Igglybuff",
+                    "Elekid",
+                    "Magby",
+                    "Munchlax",
+                    "Toxel",
+                    "Kangaskhan"
+                ]
+            },
+            "Pink Pools": {
+                "Description": "<p>A fascinating anomaly of Parella Island are its pink tidepools. The water here is almost completely pink and the pokemon that swim and live in the areas around it use their colors as a natural camouflage. Don't let their pastel colors fool you, the pokemon here are no joke!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Luvdisc",
+                    "Alomomola",
+                    "Clamperl",
+                    "Bruxish",
+                    "Cherubi",
+                    "Fomantis"
+                ]
+            }
+        }
+    },
+    "The Hissing Isle": {
+        "Description": "<p>This jagged island is a mysterious one with goblins, imps, fairies alike! Maybe a unicorn or two! This island is home to a mythical pokemon of legend which emerges from the colorful pond. The pond has magical qualities, seeming to disappear and reappear in different locations and is hard to keep track of on the jungle-like island. It will always have a cave with moonstones surrounding it.</p><p>However, the locals know this is all total baloney, and their pond is just broken.</p>",
+        "Dungeons": {
+            "Ye Olde Town": {
+                "Description": "<p>By the shore is a village made of quartz stone with castle-like buildings and tents in a market place, each new pokemon is different and magical in their own way! However, every resident seems to have a bad attitude, there are only few who are actually kind. Though one thing is for sure, each of these residents will try and take you on a quest of large difficulty! It might just be to do laundry but…</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Impidimp",
+                    "Sableye",
+                    "Skitty",
+                    "Cleffa",
+                    "Flabebe",
+                    "Druddigon",
+                    "Carbink",
+                    "Random Recruit Token"
+                ]
+            }
+        }
+    },
+    "Autumnal Heights": {
+        "Description": "<p>Far to the northeast of the Desolate Sea is a giant island full of maple trees of orange, red, and yellow hues. The mountains that line the area are covered in trees changing color. Although the sea the island is home to is relatively warm, there seems to be a chill in the air. The air smells of decaying leaves, the wind blows with a slight chill, and yet the sun remains warm. It would seem this island is perpetually stuck in the autumn season.There doesn't seem to be any towns in the surrounding areas, but there is a big sign at the established docks that point to nature trails surrounding the dungeons!</p>",
+        "Dungeons": {
+            "Harvest Patch": {
+                "Description": "<p>Near the docks seems to be a rather huge pumpkin patch! Pumpkins, squash, gourds, and other fall crops litter the fields. Tall wheat fields keep the area secure as well. Honestly, if you didn't change into a feral upon entering the field, you would have never assumed it was a dungeon! Pokemon who tend to the gardens make their home here! If you come around at night, it seems some mischievous Pokemon come together and play under the harvest moon.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Pumpkaboo",
+                    "Rattata (Alola)",
+                    "Murkrow",
+                    "Combee",
+                    "Kricketot",
+                    "Patrat",
+                    "Skwovet",
+                    "Rookidee"
+                ]
+            },
+            "Autumnal Woods": {
+                "Description": "<p>As you make your way through one of the many nature trails on the island, you'll begin to notice it winds right through a dungeon! This nature trail takes you on a hike through the mountains, all while the changing colors of leaves dance around you and your team! The smell of maple and the leaves on the wind is enough to brighten your day! In some areas the forest is quite thick with maple trees and pine trees, but there are some places that give way to quite the beautiful sight over the valleys beneath you.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Paras",
+                    "Combee",
+                    "Klefki",
+                    "Morelull",
+                    "Turtwig",
+                    "Nickit",
+                    "Gossifleur",
+                    "Teddiursa",
+                    "Shroomish"
+                ]
+            },
+            "Decrepit Graveyard": {
+                "Description": "<p>Deep in the shadows of the island is an old, broken down graveyard. Iron fences surround it, and much like the other dungeons on the island, it surprises you that it's even a dungeon at all! Even during the day, the place is creepy-- at night it's even creepier! There is a bell near the entrance, and it's said if you ring it, the spirits will arise and come out to mess with you!</p><p>Best say your prayers to the dead and leave while you can!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Gastly",
+                    "Spiritomb",
+                    "Drifloon",
+                    "Shuppet",
+                    "Rotom",
+                    "Oricorio (Sensu Style)"
+                ]
+            }
+        }
+    },
+    "The Ancient Tundra": {
+        "Description": "<p>An island known for its dislike of outsiders and icy winters. This Island is famous for the various Vikings and Warriors it seems to produce. Entering this Island, you're immediately greeted with cold temperatures and beautiful ice sculptures. Despite the beautiful scenery, something tells you that if you stay too long, you're sure to find yourself in battle.</p>",
+        "Dungeons": {
+            "Frozen Trail": {
+                "Description": "<p>A trail from the entrance of the island's port that seems to lead you into a woodland area. The snow is so bright against the sun's rays it's almost blinding. Even the tree's give shadows and a break from the harsh light, something else seems to be lurking behind them...Be careful, these warriors are dangerous!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Sawk",
+                    "Mienfoo",
+                    "Makuhita",
+                    "Throh",
+                    "Meditite",
+                    "Riolu"
+                ]
+            },
+            "Völsung Temple": {
+                "Description": "<p>An old temple that the pokemon here seem to use for worship and good luck ceremonies. There's a statue in the center of this temple of Völsung himself, who appears to be a massive Chesnaught who had discovered this island, spreading his way of battle to his residency before passing centuries ago. Because of his heroic feats, the people of this tundra regard him as a god.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Unown",
+                    "Solosis",
+                    "Abra",
+                    "Smoochum",
+                    "Stantler",
+                    "Furfrou",
+                    "Komala"
+                ]
+            },
+            "Glacier Waves": {
+                "Description": "<p>A lake that resides within the island helps encourage strangers of the island to stay away, and it's easy to see why. Across the lake, you can see a glimpse of buildings and unique structures- but in order to get there you must cross the lake. The lake itself is so cold, unless your an Ice-type or water type, you feel numb. Crossing this lake won't be easy by any means...Especially since warriors threaten to block your path.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Tentacool",
+                    "Shellos",
+                    "Oshawott",
+                    "Staryu",
+                    "Krabby",
+                    "Spheal"
+                ]
+            },
+            "Snowfall Village": {
+                "Description": "<p>Arriving at this village you're treated immediately with hostility by those who reside within. This village seems to be decorated with wooden statues, totems, and lots of warm huts. The pokemon here aren't happy to see new comers, and will gladly show you just why this place is known for the fighters they produce!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Farfetch’d (Galar)",
+                    "Pancham",
+                    "Hawlucha",
+                    "Timburr",
+                    "Cufant",
+                    "Bouffalant",
+                    "Castform"
+                ]
+            }
+        }
+    },
+    "Sweetful Isle": {
+        "Description": "<p>Sailing towards unseen land, you start to feel hungry. Something in the air compelled you to sail to the port where you are greeted with a small market town named Hershey. It is a small town, however, the market is booming with travelers who have come to try the delectable goodness of the food found on this island.</p>",
+        "Dungeons": {
+            "Berry Grove": {
+                "Description": "<p>From the West of Hershey lays the Berry Grove dungeon, the grove is lined by a small collection of trees and mass amounts of bushes, a few field areas and some plotted lands for the residents of Hershey to grow their fruits and vegetables. The bushes are blooming with fruits, as well as the trees.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Cherubi",
+                    "Bounsweet",
+                    "Applin",
+                    "Plusle",
+                    "Minun",
+                    "Snivy",
+                    "Taillow"
+                ]
+            },
+            "Rocky Road Forest": {
+                "Description": "<p>You notice an interesting rocky path that leads into the depths of a dense forest. The Pathway seemed to be made out of all sorts of different rocks, some grey some white some brown making an interesting pattern. The sweet aroma that enwraps the island is however weaker here, however it still has a sweet scent to it.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Bonsly",
+                    "Dwebble",
+                    "Caterpie",
+                    "Stantler",
+                    "Treecko",
+                    "Pansage",
+                    "Pachirisu",
+                    "Emolga"
+                ]
+            },
+            "Cadbury Treat Fields": {
+                "Description": "<p>A sweet aroma wraps around leaving a delectable smell that drives Pokemon out of their hiding, you feel like you could just eat the area, as your mouth waters. The bushes on the field have a white sprinkling to them that reminds you of sugar, the Pokemon here seem hungry but also very calm, Maybe the source of the aroma that hangs around the island comes from here.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Milcery",
+                    "Swirlix",
+                    "Sinistea",
+                    "Sentret",
+                    "Lickitung",
+                    "Miltank",
+                    "Buneary"
+                ]
+            },
+            "Gourmet Buffet": {
+                "Description": "<p>Past the trees and over the sugary hills, a peculiar mountain towers over the island and its inhabitants. The trail that winds up and around it is paved with colorful bricks and lined with all manner of delightful foliage and formations that you've grown used to at this point in your journey. Yet still, the land continues to surprise you with new sights and aromas!</p><p>As you trek up the path, you find the scent of baked goods assaulting your senses for a time. Nearby, a small community of Pokemon have gathered around an enormous oven -- the only feature seemingly not made of some sort of edible material -- and are hard at work tending the fire and sharing their goods!</p><p>Further still, the terrain around you almost seems to change as though where you just were was from a whole other realm! As a sugary canopy forms overhead, you happen upon a clearing where it seems a number of Pokemon are holding a tea party in the shadow of the mountain. How quaint!</p><p>The diverse cuisine entices you, inviting you to carry on up and up and up... it's almost dream-like and comforting.</p><p>What delectable wonders could be awaiting your arrival at the summit?</p>",
+                "Difficulty": "Legendary (90+)",
+                "Recruits": [
+                    "Delight Potion",
+                    "Playful Potion",
+                    "Happy Potion"
+                ]
+            }
+        }
+    },
+    "Snow Continent": {
+        "Description": "<p>One of the large continents to the east and the first of which the foundation had managed to unveil. Before you even reach the mainland of this continent, thick snow falls everywhere surrounding the land. There are two port cities that can be found here, each a wonderful and inviting place for travelers to rest their weary heads. While blizzards do oftentimes plague this area of the world, it doesn't bother the locals all that much. It's said sometimes that the snow that falls in this area resembles crystals. and glitter.</p>",
+        "Dungeons": {
+            "Sorbet Forest": {
+                "Description": "<p>One of the forests right outside of Aria. This place is the definition of beauty. The sun reflects against the frozen trees and the icicles that dangle from the branches look like grand chandeliers in the right light. When snow falls, it sparkles in a way that looks like glimmering crystals are falling on you. Frozen lakes and sparkling snow banks also litter the forest. The Pokemon here aren't hostile at all and will even play with you given the chance. Hope you like ice skating and snowball fights, because you'll most likely be dragged into fun once you enter!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Eevee",
+                    "Meowth (Kanto)",
+                    "Smeargle",
+                    "Snom",
+                    "Squirtle",
+                    "Psyduck",
+                    "Growlithe (Kanto)"
+                ]
+            },
+            "Snowbound Mountains": {
+                "Description": "<p>These mountains rise over all of the snow continent. Their peaks reach soaring heights and breathing can be quite difficult at the peaks as the altitude is so high. Many Pokemon make these cliffs their home and may be quite hostile as visitors are quite a rarity. Blizzards wrack the mountains constantly and if you're not careful, you may become just what the name implies-- snowbound. Best bring something to keep warm or equipment to dig your way out if you get trapped!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Togedemaru",
+                    "Geodude (Alola)",
+                    "Amaura",
+                    "Snubbull",
+                    "Mienfoo",
+                    "Cryogonal",
+                    "Sneasel (Hisui)"
+                ]
+            },
+            "Verglas Labyrinth": {
+                "Description": "<p>Outside of this dense and dark labyrinth you can see statues that seem to represent some kind of deity. Was this once a place of worship? You can't be sure because the entire labyrinth is caved in and destroyed, but something tells you treasure could be lurking in it's depths! Because of the frigid temperatures outside, the floors of this dungeon have become black ice-- be careful not to slide down the dark corridors! … You don't know what could be awaiting you in the darkness ... Luckily there are some torches that light up the walls!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Darumaka (Galar)",
+                    "Rattata (Kanto)",
+                    "Hatenna",
+                    "Drilbur",
+                    "Noibat",
+                    "Misdreavus",
+                    "Sneasel (Hisui)",
+                    "Bronzor"
+                ]
+            },
+            "Volcanic Springs": {
+                "Description": "<p>The hot springs that well up in Aria actually have a dungeon beneath them! Who knew? There is an entrance into the tunnels beneath the spring and instead of a frozen world, you'll be entering a world of steam, heat, and magma. The lava that warms the springs at the surface flow through here magnificently and the steam from the water and lava mixing almost makes it insufferable to breath. The only upside is sometimes there are pools in here to de-stress for a moment. Careful though! They're scalding hot! The Pokemon that live here seem to have no idea of the cold that creeps above them, likewise, the people of Aria seem to not care about the magma caverns beneath them.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Turtonator",
+                    "Scorbunny",
+                    "Slugma",
+                    "Panpour",
+                    "Totodile",
+                    "Rolycoly",
+                    "Grimer (Alola)"
+                ]
+            }
+        }
+    },
+    "Frozen Wasteland": {
+        "Description": "<p>The Frozen Wastelands are four islands, Fuzzy Tundra makes the largest while the smaller three are much smaller and contain pokemon of different typings that have adapted to the cold temperatures on the islands. It is pretty hard to adapt to the extreme cold temperatures here, so not a lot of things are built down here due to the harsh weather. However, there is one little town on the Fuzzy Tundra called Igloo. It's a small settlement with an everlasting campfire powered by thousands of fire stones.</p>",
+        "Dungeons": {
+            "Fuzzy Tundra": {
+                "Description": "<p>The largest piece of the island is known as the Fuzzy Tundra. While it is not literally fuzzy, many pokemon with large amounts of fur or hair live here. Many of these pokemon are maternal and usually treat those with kindness as if you were one of their own, or there are some that are mighty protective already of their own. Just be careful!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Swinub",
+                    "Spheal",
+                    "Bouffalant",
+                    "Oshawott",
+                    "Zorua (Hisui)"
+                ]
+            },
+            "Freezy Freezy Lake": {
+                "Description": "<p>The whole island itself is like a frozen solid lake. However, there are holes on the surface that lead into life under the ice. Many pokemon have adapted to the freezing cold waters below, most of them being ice types. It's almost as if a warm ocean is filled with life except this one is frozen and you are certainly also freezing!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Corphish",
+                    "Remoraid",
+                    "Wishiwashi",
+                    "Luvdisc",
+                    "Chinchou"
+                ]
+            },
+            "Den of Darkness": {
+                "Description": "<p>You find many dark type pokemon hiding within dens of ice and naturally made rock. It seems many dark pokemon have started a life here, you wonder why briefly. They seem to care about each other, but don't seem to particularly care about you. The ice is so cold, it feels like it is burning you.</p><p>However, you get a bad feeling about this place, dark red clouds swirl the middle of the island and trace back to a tall mountain, inside of it stands a tall looking mass of hair... Gigantimax Grimmsnarl.</p><p><i>''This is your only warning trespasser, these dark types have found solace after years of hate. I won't let you take it away.''</i></p><p>They don't seem to like trespassers, but maybe they'll get used to you if you come often?</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Poochyena",
+                    "Sneasel (Johto)",
+                    "Zorua (Unova)",
+                    "Inkay",
+                    "Impidimp"
+                ]
+            },
+            "Igloo Outskirts": {
+                "Description": "<p>The town on the smallest island. It seems this is the only civilization on these islands. The pokemon here seem distant, or some seem dying to just talk to somebody. A couple of small cozy cabins. However the outskirts of the town are dangerous. Masses of snow constantly stack and never melt, it is easy to get lost in this mass of snow, and to bump into unfriendly Pokemon.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Shellder",
+                    "Delibird",
+                    "Eiscue",
+                    "Meowth (Alola)",
+                    "Cufant"
+                ]
+            }
+        }
+    },
+    "Othrys": {
+        "Description": "<p>Far to the south at the edge of the world, through snow, hail and ice, is an oasis of warmth.</p><p>Hot steam rises from the ground, clogging the air surrounding this island with a deep fog. It is a wild place, untamed with no standing towns and shifting sheets of ice, forming and melting away as quickly as they come. That is not to say there is not life on Orthys but rarely is it life there with much other choice of residence. For the exiled, the deserters, traitors, and hermits, the island's currents pull in the lost and its deep fog and gentle promises of anonymity beckon them to stay.</p><p>If you are lost, if you are looking for something, or even someone - you may have come to the right place.</p>",
+        "Dungeons": {
+            "Endless Moor": {
+                "Description": "<p>A seemingly endless moorland with great, mossy rocks dotting its surface. The ground is hot but the air is cold,tread lightly and be wary of pitfalls and sheets of black ice. It is near impossible to see without clearing it away and, even when it has been cleared, it is incredibly difficult to get lost. The entire place feels empty, quiet, devoid of life yet something about it draws you closer, deeper into the moor. You can't help but feel a sense of emptiness deep inside your heart here that must be filled before you can feel satisfied leaving.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Farfetch'd (Kanto)",
+                    "Farfetch'd (Galar)",
+                    "Aerodactyl",
+                    "Rookidee",
+                    "Stonjourner",
+                    "Onix",
+                    "Baltoy"
+                ]
+            },
+            "Primordial Ooze": {
+                "Description": "<p>A dank, drippy pit buried deep under a misty bog. It's hard to reach, to see, harder yet to escape.</p><p>The brackish gunk that fills the floor is deep enough you have to swim through in many places and hope to find rest soon. The ooze is warm at least, not like the cold air above it. It is constantly shifting and hiding secrets untold, too bad it's impossible to see under it all - if you really want to know what's at the bottom of it all, you'll have to feel around if you're brave enough. The Pokemon that live here have been forced to adapt to living in such an unforgiving environment. You may have to do the same if you fail to find a way out.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Clauncher",
+                    "Gulpin",
+                    "Slowpoke (Galar)",
+                    "Shellos",
+                    "Skorupi",
+                    "Toxel",
+                    "Venipede",
+                    "Qwilfish (Hisui)"
+                ]
+            },
+            "The Atrium": {
+                "Description": "<p>A cavernous expanse of grandiose rooms and halls under the ice. Its floor is smooth and dark, its walls carved deep with sharp, inorganic ornamentation - depictions of scenes, of Pokemon. Some are familiar, some seem entirely mythical. Some scenes depicted are mundane, friends sitting down for a meal, doing labor; other carvings depict battlefields and betrayals. No matter what, once you look away, it seems the carvings have changed and you can't find the same one twice.</p><p>It is warm in here. Almost uncomfortably so.</p><p>It is silent. Absolutely uncomfortably so.</p><p>The farther you go, the warmer it is and the less silent it becomes. A steady, rhythmic pulsing begins to sound in your ears, faster, louder the deeper into the dungeon you go. Rumor has it, the very island is alive and judges your thoughts as you descend into its depths.</p><p>Do not be found wanting.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                    "Snorunt",
+                    "Kecleon",
+                    "Stufful",
+                    "Whismur",
+                    "Litten",
+                    "Grubbin",
+                    "Larvesta"
+                ]
+            }
+        }
+    },
+    "Grass Continent": {
+        "Description": "<p>The second continent to the northeast that the GCSF reconnected with!</p><p>As one can guess, the Grass Continent is absolutely massive, and despite the name it was given, there are all kinds of vast terrain that cover the continent. From plains to forests and caves, and even scorching hot deserts.</p><p>There's definitely a lot to see and do here!</p>",
+        "Dungeons": {
+            "Quicksand Cave" : {
+                "Description": "<p>Deep in the depths of the Northern Desert, you'll come across swirling quicksand pits. If one is to jump inside, you'll find yourself in a large cave full of warm, swirling sand. The Pokemon in this dungeon aren't very accustomed to strangers and will do all they can to keep you from proceeding … but why? Well, if you make it to the very end of this cave, you'll find an underground lake. In the middle of said lake is where you'll find a Time Gear. Best not to touch it!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Dedenne",
+                  "Rhyhorn",
+                  "Silicobra",
+                  "Cacnea",
+                  "Sandshrew (Kanto)",
+                  "Nincada",
+                  "Durant"
+                ]
+            },
+            "Treeshroud Forest" : {
+                "Description": "<p>Upon entering this forest, you can already feel a mysterious quality radiating from inside. The trees are huge and the roots going into the ground are even bigger! The canopies of the trees shield out the sun and rays of sunlight flicker to the ground. There's flowers and plenty of shrubbery growing around and the whole place is such a beautiful sight. If you make it to the depths there seems to be some kind of altar … housing a mysterious Time Gear. Unlike at the Quicksand Cave lake, you can feel some kind of energy pulsating from this gear. Best not to touch it!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Zigzagoon (Galar)",
+                  "Oricorio (Pom-Pom Style)",
+                  "Ralts",
+                  "Froakie",
+                  "Petilil",
+                  "Gossifleur",
+                  "Vulpix (Kanto)",
+                  "Abra"
+                ]
+            },
+            "Steam Cave" : {
+                "Description": "<p>After making your way through the dense Foggy Forest, you'll come to a crevice on the side of a cliff. Once you enter, it's blistering hot inside! Steam pours out of cracks inside and outside of the dungeon and the water on the floor of the dungeon has come to a boil. The craggy ground in this dungeon is a variety of different colors, but the most prominent is red and a deep brown. Many water types and fire types make this place their home and don't take too kindly to visitors. Careful you don't fall into the boiling water, and be careful you don't get blasted with steam! If you can find your way out of this hot dungeon, you'll find Fogbound Lake, and it's amazing geysers-- along with the fabled Time Gear. Best not to touch it!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Volbeat",
+                  "Illumise",
+                  "Tepig",
+                  "Numel",
+                  "Yanma",
+                  "Wooper (Johto)",
+                  "Panpour"
+                ]
+            },
+            "Sky Peak" : {
+                "Description": "<p>It's a long trek to the top, but it's so, so worth it! Sky Peak has many layers to it! Forests, prairies, caves, and at the very top it's a trudge through steep cliffs and snow and sleet, but once you come to the top it's a view like you've never seen before. At the top of the peak, Gracidea Flowers cover the grassy field and the peak is so high up you're above the clouds! Be sure to take in the absolutely gorgeous view while you're here! If you ask nicely, maybe a Shaymin guide from the village will take you up the mountain path!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Random Recruit Token",
+                  "Popplio",
+                  "Scyther",
+                  "Teddiursa",
+                  "Tauros (Kanto)",
+                  "Carnivine",
+                  "Rockruff"
+                ]
+            },
+            "The Hidden Land" : {
+                "Description": "<p>The only way to gain access to the Hidden Land is by being 'chosen' or by good word. Thankfully, since the Wigglytuff Guild trusts you, your team is able to embark to the Hidden Land via Lapras! Once you cross the Sea of Time, you're in a bizarre place. The Hidden Land floats in midair and all around you are overgrown trees and plants with ruins scattered everywhere. There are holes you could fall into which seemingly lead to nowhere if you're not careful! In the depths of the Hidden Land you can find the Rainbow Stoneship which will take you directly to Temporal Tower. It is said in this very location, a hero of old made a worthy sacrifice to stop the Planet's Paralysis.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Random Recruit Token",
+                  "Glameow",
+                  "Dratini",
+                  "Gible",
+                  "Tropius",
+                  "Shieldon",
+                  "Cranidos"
+                ]
+            },
+            "Temporal Tower" : {
+                "Description": "<p>Once you're off the Rainbow Stoneship, Temporal Tower lies right before you. Even after centuries of standing, and nearly having collapsed, it still stands tall and proud! As you climb the spiraling tower, you'll even notice wounds from the past. Cracks and fissures from Primal Dialga's rampage all those years ago still show as you climb it. The Pokemon here definitely don't see visitors, so they will go all out as a last resort to keep you away from the pinnacle. Although the Time Gears don't rest here anymore, the pinnacle is a very sacred place where an ancestor of Tempo used to reign. For some reason, being here makes you a bit melancholic.</p>",
+                "Difficulty": "Heroic (80+)",
+                "Recruits": [
+                  "Random Recruit Token",
+                  "Solrock",
+                  "Lunatone",
+                  "Bronzor",
+                  "Porygon",
+                  "Beldum",
+                  "Bagon"
+                ]
+            }
+        }
+    },
+    "Air Continent": {
+        "Description": "<p>The Air Continent is a vast landscape of many different dungeons and terrain to behold! Just like the Grass Continent, there are several well-known landmarks and settlements here!</p>",
+        "Dungeons": {
+            "Great Canyon" : {
+                "Description": "<p>The Great Canyon is located far to the south of Pokemon Square and it's a massive canyon at that! If you explore this area, you'll start at the bottom of the canyon and work your way to the top. It's a hot trek though the cliffs and dusty ravines, but once you make it to the top, you'll be rewarded with the beautiful sunset and sight of the Hill of the Ancients. In times of old, this used to be a place where people could access Sky Tower, but now with the use of HMs, it's been made easier. Make sure you pack plenty of water for this dungeon! There's rarely any inside!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Heracross",
+                  "Cacnea",
+                  "Maractus",
+                  "Hoppip",
+                  "Spinarak",
+                  "Tauros",
+                  "Phanpy",
+                  "Dunsparce"
+                ]
+            },
+            "Mt. Freeze" : {
+                "Description": "<p>The climate is very harsh here, and tough for non-Ice types to survive. Blizzards and ice storms perpetually fall in this mountain range. It's said that a pack of Ninetales live at the top of Mt. Freeze but no one has seen a Ninetales there in hundreds of years. While climbing, best to bring lots of warm drinks or a fire type! Don't want to get caught in a nasty storm with no way off the mountain! Frozen lakes and rivers are also scattered around the mountain range, as well as frozen trees. The snow that falls around this region is said to sparkle and gleam in the sky.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Slakoth",
+                  "Pineco",
+                  "Zangoose",
+                  "Chingling",
+                  "Seel",
+                  "Vulpix (Alola)",
+                  "Seviper"
+                ]
+            },
+            "Magma Cavern" : {
+                "Description": "<p>Beneath the ground, far, far away from any settlements is the harsh dungeon known as Magma Cavern. Magma and lava spout out from the ground and flow all throughout the dungeon. The deeper you go, the darker it gets and your only light source will be the lava perpetually flowing around you. Lots of sturdy Pokemon call this place home and will have no trouble fending off their home from intruders such as yourselves. It's said that deep in this crater, there's a Pokemon that created the continents and islands in the Great Sea. It's been quarreling with Rayquaza and Kyogre as of late.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Nidoran",
+                  "Ekans",
+                  "Mawile",
+                  "Slugma",
+                  "Magby",
+                  "Grimer (Kanto)"
+                ]
+            },
+            "Sky Tower" : {
+                "Description": "<p>High above the continent is a world of clouds-- and this is where Sky Tower is. To get to this dungeon, one either needs a Teleport Gem or in most cases nowadays, a way to fly to it. The tower is made of wispy clouds and goes up extremely high! You'll be in for quite the trek if you don't have someone who can fly on your team! The Pokemon here aren't very accustomed to visitors or strangers and will go all out on you should you decide to trespass. There's holes within the clouds, and it's a very, very long way down if you fall, so be careful! The legend goes that two heroes of old gained the help from Rayquaza and stopped a meteor from destroying the world in this very dungeon. A descendant of that same Rayquaza lives at the spire and has been quarreling with Groudon and Kyogre as of late.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Swablu",
+                  "Lunatone",
+                  "Solrock",
+                  "Bagon",
+                  "Ledyba",
+                  "Venonat",
+                  "Archen"
+                ]
+            },
+            "Stormy Sea" : {
+                "Description": "<p>In order to get into this dungeon, one will have to know HM Dive or be carrying it on them. The area outside of the dungeon is perpetually stormy and whirlpools swirl almost constantly. Inside the dungeon, miraculously, you're able to breathe! Must be the power of mystery dungeons! Tons of very strong water types will be swimming about, and much like Magma Cavern, the deeper down you go, the darker it gets. Once you reach the sea bed, you'll find a Pokemon that created the seas dwelling at the bottom. They've been quarelling with Rayquaza and Groudon as of late and due to their temperament, they won't hesitate in attacking you!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Qwilfish (Johto)",
+                  "Pyukumuku",
+                  "Anorith",
+                  "Binacle",
+                  "Horsea",
+                  "Mantyke",
+                  "Magikarp",
+                  "Feebas",
+                  "Corsola (Johto)"
+                ]
+            },
+            "Buried Relic" : {
+                "Description": "<p>Even hundreds of years after it's discovery, this dungeon is still a mystery among explorers! Treasures are hidden everywhere in the walls, floors, and even in the ceiling! Having someone that can dig into the ground will  help you find rare treasures as well! Long ago, there used to be plenty of Legendary Pokemon in this dungeon; those of the Regi Trio and the mythical Mew used to reside here, but it seems they have all vanished in the past hundreds of years. Although those legends may be gone, there may be legendary treasure still remaining inside!</p>",
+                "Difficulty": "Legendary (90+)",
+                "Recruits": [
+                  "Artsy Potion",
+                  "Animal Potion",
+                  "Crystalline Juice"
+                ]
+            }
+        }
+    },
+    "Mist Continent": {
+        "Description": "<p>The Mist Continent is a large stretch of land that forms high into the north where large amounts of mist and snow encase the area!</p>",
+        "Dungeons": {
+            "Stompstump Peak" : {
+                "Description": "<p>Stompstump Peak is a really nice, beginner-friendly dungeon! It has a few puzzles to solve, involving stumps, but they're relatively amatuer! To progress through the dungeon, you have to, as the name implies, stomp the stumps! Simply jump onto a stump and press down with all your might! They'll make a path forward for you! Waterfalls careen down the edges of this peak, and form a small pond at the base. Water, grass, and ground pokemon flock to this area due to its rich nutrients in the water and the earth!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Axew",
+                  "Tympole",
+                  "Emolga",
+                  "Petilil",
+                  "Sewaddle",
+                  "Geodude (Kanto)"
+                ]
+            },
+            "Crags of Lament" : {
+                "Description": "<p>Sheer cliffs will keep you on your toes at all times-- be sure not to look over the edge! The Crags of Lament get their name from the wailing sound of the wind that breezes through the dungeon. It's honestly a bit sad, if not a bit eerie. Beneath the towering crags, a dense fog surrounds the base and creeps its way up to the surface. Lots of narrow passages make it hard to bring big teams-- so unless you're good with heights and aren't claustrophobic, it may be best to bring someone who can fly!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Woobat",
+                  "Swinub",
+                  "Venipede",
+                  "Stunfisk (Unova)",
+                  "Stunfisk (Galar)"
+                ]
+            },
+            "Holehills" : {
+                "Description": "<p>The Holehills are a strange dungeon, that's for sure. It's very easy to get lost in this dungeon as well! Numerous caves and ‘holes' litter the rocky walls of this area, and if you climb into one and stray from the path, there's no telling where you might end up! There's a massive series of caves that spread all through the dungeon and then some. Even though they all connect, it's very easy to get lost so be sure to keep your bearings!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Roggenrola",
+                  "Pansear",
+                  "Pansage",
+                  "Panpour",
+                  "Silicobra",
+                  "Timburr",
+                  "Falinks"
+                ]
+            },
+            "Glacier Palace" : { 
+                "Description": "<p>Unfortunately, the Great Glacier can't be explored without the use of Entercards and creating a Magnagate ...</p><p>However! You're in luck! The two Pokemon that run Pokemon Paradise have some for you to borrow! How lucky!</p><p>For years, the Great Glacier used to be a treacherous place to embark to. Not only did the mere presence of the remains of the Bittercold make it difficult for travellers to breath deeper into the crevice, but it was hard not to fall deep into the chasms without slipping. It's become a lot safer though! And the interior of the dungeon is an architectural marvel! Ice pillars and snowflake designs line the walls, and the entire place is absolutely mesmerizing!</p><p>Just don't travel too deep!</p><p>… Seriously. Remember the Bittercold remains? Yeah-- not a good idea to get close to them.</p><p>But so long as you stay away from the inner sanctums where Kyurem and the supposed remains of the Bittercold live, you should be fine! … Hopefully.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Zorua (Hisui)",
+                  "Deino",
+                  "Pawniard",
+                  "Mienfoo",
+                  "Gothita",
+                  "Munna",
+                  "Larvesta",
+                  "Darumaka (Galar)"
+                ]
+            }
+        }
+    },
+    "Water Continent": {
+        "Description": "<p>The Water Continent is home to sprawling fields full of rivers, lakes, ponds, and magnificent beaches!</p>",
+        "Dungeons": {
+            "School Forest" : {
+                "Description": "<p>This small dungeon is located just to the north of the schoolyard! It's a simple dungeon with trees, small rivers, and an almost constant pleasant breeze. The teachers of the school often take the students on field trips and excursions out into the School Forest to teach them how dungeons work. The Pokemon in the dungeon are less feral and more so volunteers for the school. They work together with the teachers to offer a safe and fun learning environment for people to get a handle on how dungeons work! If you have some low leveled recruits on your team, it may not be a bad idea to bring them here!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Tyrunt",
+                  "Blitzle",
+                  "Tirtouga",
+                  "Growlithe (Kanto)",
+                  "Helioptile",
+                  "Voltorb",
+                  "Happiny",
+                  "Wurmple"
+                ]
+            },
+            "Poliwrath River" : {
+                "Description": "<p>Poliwrath River could be classified more as a delta than anything. This river winds and curves for miles, housing plenty of Water-Type Pokemon! Of course, the river is home to members of the Poliwrath family as well-- you'll be seeing a lot of them if you're checking the dungeon out! Reeds and lilypads decorate the many winding waterways and honestly? It's a nice place to cool off on hot summer days!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Lapras",
+                  "Burmy (Plant Cloak)",
+                  "Poliwag",
+                  "Barboach",
+                  "Krabby",
+                  "Lotad"
+                ]
+            },
+            "Ancient Barrow" : {
+                "Description": "<p>The residents of Serene Village were told to stay far away from the inside of the Ancient Barrow. Brave schoolchildren will sometimes dare each other to enter the Barrow, unaware of the dangers that (used to) lurk inside. It's said that several centuries ago, some school children entered the Barrow and found a Giritina living inside! Scary!!</p><p>The Barrow is nothing more than a long deserted tomb. Other than the fear of it crumbling on top of itself, you'll only find several darkness dwelling Pokemon in here, angry that you disturbed their sleep!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Phantump",
+                  "Zubat",
+                  "Koffing",
+                  "Spinarak",
+                  "Baltoy",
+                  "Golett",
+                  "Honedge"
+                ]
+            },
+            "Revelation Mountain" : {
+                "Description": "<p>This mountain is a sacred place-- and only the chosen may enter the sacred grounds. The Expedition Society has put their trust in the GCSF and allowed its members to access the area. Atop the mountain is a spring housing Luminous Water. This water can restore any Pokemon that has turned to stone … or so the legend goes. It also acts as a sort of portal to the Voidlands. Perhaps that is why it's so sacred? Best not get too close to the pool …</p><p>The mountain resembles any ordinary mountain. Rocky terrain, lots of pine trees, rivers and waterfalls galore, but there's something about the air. It feels cleaner than other areas. It also … gives you a sense of foreboding.</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Scraggy",
+                  "Axew",
+                  "Pawniard",
+                  "Deino",
+                  "Noibat",
+                  "Chimchar",
+                  "Darumaka (Unova)",
+                  "Fennekin"
+                ]
+            },
+            "Abyssal Badlands" : {
+                "Description": "<p>It is said that any Pokemon that turns to stone or otherwise dies will be taken to the Voidlands. The longer you stay here, the more you can feel your soul leaving your body. That pool atop Revelation Mountain also leaks into the Voidlands. That's your only way back home. Stay here too long, and you yourself may very well be trapped in the void forever ...</p><p>The Abyssal Badlands are a terrifying place. Smoke bellows up from the purple ground into the red glowing sky. Creatures known as Void Shadows take control of the souls of the Pokemon lost to the Voidlands and pose as your enemy (or they can pose as loved ones). Either way, they are the embodiment of Dark Matter, and will do all they can to mess with you. The Expedition Society has taken it upon themselves to use the portal at Revelation Mountain to come here and free the souls from the Void Shadows. It's a difficult and taxing task, but it must be done to prevent Dark Matter from reawakening.</p><p>But, it's best not to dwell on that. You already feel weak. Explore the Abyssal Badlands and escape before you're also lost to the void!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Random Recruit Token",
+                  "Random Fire-Type Recruit Token",
+                  "Random Dark-Type Recruit Token",
+                  "Random Ghost-Type Recruit Token"
+                ]
+            },
+            "Purity Forest" : {
+                "Description": "<p>One of the ultimate tests for exploration teams!!</p><p>You go in at level one, you can bring in no items, and it's up to the whimsy of the forest and your wits.</p><p>Welcome to Purity Forest!!</p><p>The forest's guardian, Celebi, watches over everything happening in their wood. To them, it is a sacred place, and only the chosen may visit them in the depths. Perhaps this difficult dungeon is a challenge they've issued to you? Nonetheless, the forest seemingly changes the deeper you go into it. From a pleasant forest, to a craggy cliff, to a pond, you'll find lots of different terrain inside! On top of that, all of the feral Pokemon here will make getting to the end of the dungeon a living nightmare.</p><p>If you manage to get to the end, Celebi will graciously reward you with something special! … Or not!!</p><p>Looks like you'll have to see for yourself!</p><p>May luck go with you!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Playful Potion",
+                  "Delight Potion",
+                  "Happy Potion"
+                ]
+            }
+        }
+    },
+    "Sand Continent": {
+        "Description": "<p>Aside from Sahra Town, there's nothing but wilderness in the Sand Continent. Speaking of which …</p><p>All dungeons on the Sand Continent are high tier dungeons. Only those truly seeking the thrill should test their strength here! Don't overdo yourself, but don't let your worries hold you back. Go forth and explore the dungeons buried in time!!</p>",
+        "Dungeons": {
+            "Sand Dune of Spirits" : {
+                "Description": "<p>A sprawling desert found within a valley, the very air is humid and desolate, but within this valley can be found so much treasure laying about the sand! There's little to no water here, so be sure to stock up or bring a water-type friend to help out. Though it seems like any ordinary desert, it's said if you make it to the top, you'll find someone who stares into the sun day in and day out. They can see the past and the future. Perhaps they can give you some insight on where to go next?</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Growlithe (Kanto)",
+                  "Houndour",
+                  "Aron",
+                  "Larvesta",
+                  "Darumaka (Unova)",
+                  "Larvitar",
+                  "Lunatone"
+                ]
+            },
+            "Valley of Strong Winds" : {
+                "Description": "<p>The dungeon seems simple enough. A craggy orangish/yellow valley full of cacti and sand. The only thing you need to worry about is the tough Pokemon lurking inside, right? Wrong!! Every couple of minutes, a strong wind comes bursting through the corridors of the dungeon, and if you're not careful, it might just blow you right back to the beginning! Not only that, but the mysterious force that prevents you from staying on a floor too long seems to appear quicker here! If you spend too long dawdling, not only do you have the strong wind to deal with, but also the mysterious force could kick you out!</p><p>It may not be wise to check every inch of the dungeon, but who knows what treasure could be lying in wait?</p>",
+                "Difficulty": "Heroic (80+)",
+                "Recruits": [
+                  "Magnemite",
+                  "Porygon",
+                  "Elekid",
+                  "Klink",
+                  "Swirlix",
+                  "Hoppip"
+                ]
+            },
+            "Hall of Magic" : { 
+                "Description": "<p>Left? Right? Up? Down? Too many corridors to even begin to wonder! Mirrors everywhere you look! Not only that, but if you walk one way, you could end up another way! This dungeon is very decrepit, giving off a look of an ancient tomb of sorts. The Pokemon that live here are tricksters and masters at the art of magic, and if you enter their home, there's no doubt they'll try to confuse you and keep you from reaching the end. Best their mind games and make it to the end of the dungeon!</p>",
+                "Difficulty": "Heroic (80+)",
+                "Recruits": [
+                  "Spoink",
+                  "Chingling",
+                  "Gothita",
+                  "Abra",
+                  "Rotom",
+                  "Litwick",
+                  "Golett",
+                  "Klefki"
+                ]
+            },
+            "Mysterious Geoglyph" : {
+                "Description": "<p>A deep ravine in the desert has been recently delved into. Any explorer that has returned from their excursion was on the verge of giving up on exploring-- but what could be the reasoning? The Geoglyph doesn't look too extraordinary. However, upon entering, you can finally see what all the fuss is about. Monster houses everywhere! Giant rooms with gleaming treasure! But the real kicker?</p><p>The mysterious monster that chases you down reaches mach speed, and has a giant weapon (?) on its back! It seems different versions of it also appear! It's the only Pokemon to appear in the dungeon, but it's unlike anything you've ever seen before! Maybe if you reach the end, there's a wonderful treasure waiting for you?</p>",
+                "Difficulty": "Legendary (90+)",
+                "Recruits": [
+                  "Horror Potion",
+                  "Paradox Potion",
+                  "Artsy Potion"
+                ]
+            }
+        }
+    },
+    "Sea of Wonders": {
+        "Description": "<p>The edges of the map are filling in quickly and the Sea of Wonders is one of the last great hurdles!</p><p>Who knows what kind of adventures await you and your teams in this section of the ocean? Much like the Sand Continent, this area is the true test of strength for exploration teams! There are some dungeons that seem like tropical getaways, all the way to the most difficult of dungeons laid before you! All your training and exploration has led to this moment!</p><p>Go forth with courage!!</p>",
+        "Dungeons": {
+            "Marine Resort" : {
+                "Description": "<p>Marine Resort is on the outside of the Sea of Wonders and borders the Grass Continent. It's a beautiful seaside paradise full of palm trees and sandy beaches! Pokemon come here to relax and sunbathe along the shores and have a day of relaxation! One thing this dungeon is bountiful in is the Grass Continent's favorite cuisine, gummies! Buried in the sand, above your head in the palm trees, they're everywhere!!</p><p>It's said that Manaphy and Phione sometimes migrate to this island to spend some time on it's shores!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Corsola (Johto)",
+                  "Spinda",
+                  "Wynaut",
+                  "Lickitung",
+                  "Dratini",
+                  "Eevee",
+                  "Wingull",
+                  "Pikipek"
+                ]
+            },
+            "Blizzard Island" : {
+                "Description": "<p>Blizzard Island is a dungeon that could be considered a part of the Grass Continent, but also a part of the Sea of Wonders-- same goes for Marine Resort! Blizzards and snow storms sweep through the icy island, crevices of ice open up to reveal huge labyrinths, and the whole place seems like a giant winter wonderland! The natives rarely see outsiders, so expect for them to put up a fight!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Delibird",
+                  "Smoochum",
+                  "Swablu",
+                  "Cryogonal",
+                  "Piplup",
+                  "Castform"
+                ]
+            },
+            "Devil's Bayou" : {
+                "Description": "<p>A bayou near one of the many islands in the Sea of Wonders. It's lack of tourism made it decrepit, with mangroves all over and a dense fog that enshrouds it constantly. Ghosts are among the creatures that live here, as well as several water and grass types. Rumor has it that some kind of sea monster lives in the fog and pulls unsuspecting travelers to the bottom of the bayou. Nothing more than a children's tale though!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Pumpkaboo",
+                  "Mudkip",
+                  "Poliwag",
+                  "Wooper (Johto)",
+                  "Wooper (Paldea)",
+                  "Yanma",
+                  "Carnivine",
+                  "Seviper",
+                  "Phantump"
+                ]
+            },
+            "Fire Island Volcano" : {
+                "Description": "<p>A moderately sized island north of the Tree of Life where the legendary Entei is said to have lived in a past life. Lots of fire types are in the area and the volcano can erupt from time to time, but it seems the mystery dungeon itself is never overwhelmed with lava from the eruption, so it should be relatively safe to navigate! Once you near the top, you'll find the place where the heroes of old dueled with the legendary Entei himself!</p>",
+                "Difficulty": "",
+                "Recruits": [
+                  "Vulpix (Kanto)",
+                  "Shuckle",
+                  "Torkoal",
+                  "Litleo",
+                  "Oricorio (Baile Style)",
+                  "Salandit",
+                  "Turtonator"
+                ]
+            },
+            "Tree of Life" : {
+                "Description": "<p>A giant tree in the southern area of the Sea of Wonders. It's said that the tree's destruction gave way to Dark Matter unleashing it's wrath upon the world. Scars from the destruction can still be seen within the roots and bark of the tree itself. Once a withering, upsetting sight, the Tree of Life now blossoms with rainbow leaves and vines from the outside. The inside of the tree and trunk are now home to plenty of Pokemon and a feeling of renewal can be felt throughout the dungeon.</p><p>Xerneas lives at the top of the dungeon but hasn't been seen for centuries. Maybe if you find them, something good will come out of your exchange?</p>",
+                "Difficulty": "Heroic (80+)",
+                "Recruits": [
+                  "Flabebe",
+                  "Solosis",
+                  "Ralts",
+                  "Cottonee",
+                  "Oddish",
+                  "Tangela",
+                  "Cacnea",
+                  "Scyther"
+                ]
+            },
+            "Ocean Tempest" : {
+                "Description": "<p>One of the ultimate tests for dungeon-goers! This dungeon extends all the way to the bottom of the ocean and it's one massive dungeon to say the least. Whirlpools, tsunamis, and storms wreak havoc on the area, making it near impossible for you to get to the bottom! According to researchers from the Spiral Archipelago, this dungeon just showed up one day out of the blue. This area of the sea was never tormented with storms or this angry before-- now it's like a completely different place … And it seems like all the Pokemon here are running rampant!</p><p>If you make it to it's depths, maybe you can figure out the mystery, or at the very least, get some good treasure for all your troubles!</p>",
+                "Difficulty": "Legendary (90+)",
+                "Recruits": [
+                  "Glowlight Juice",
+                  "Ethereal Potion",
+                  "Fiendish Potion"
+                ]
+            }
+        }
+    },
+    "Cloud Breach": {
+        "Description": "",
+        "Dungeons": {}
+    },
+    "Behemoth Isles": {
+        "Description": "",
+        "Dungeons": {}
+    },
+    "The Starry Cascada Islands": {
+        "Description": "",
+        "Dungeons": {}
+    },
+    "The Glimmering Isle": {
+        "Description": "",
+        "Dungeons": {}
+    },
+    "The Land of Mists": {
+        "Description": "",
+        "Dungeons": {}
+    },
+    "The Lost Kingdom": {
+        "Description": "",
+        "Dungeons": {}
+    },
+    "Holiday Hills": {
+        "Description": "",
+        "Dungeons": {
+            "Spring 2024" : {
+                "Dungeon Name" : "",
+                "Description": "",
+                "Recruits": [
+                    "Flowering Vullaby",
+                    "Vagabond Mimikyu",
+                    "Holi Furfrou"
+                ]
+            }
+        }
+    }
+}

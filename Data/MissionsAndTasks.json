@@ -1,0 +1,86 @@
+{
+    "Missions" : {
+        "Bounty Hunters" : {
+            "01" : {
+                "Client" : "--",
+                "Escort" : false,
+                "Objective" : "--",
+                "Dungeon" : "--",
+                "Reward" : []
+            },
+            "02" : {
+                "Client" : "--",
+                "Escort" : false,
+                "Objective" : "--",
+                "Dungeon" : "--",
+                "Reward" : []
+            },
+            "03" : {
+                "Client" : "--",
+                "Escort" : false,
+                "Objective" : "--",
+                "Dungeon" : "--",
+                "Reward" : []
+            }
+        },
+        "Rescuers" : {
+            "01" : {
+                "Client" : "--",
+                "Escort" : false,
+                "Objective" : "--",
+                "Dungeon" : "--",
+                "Reward" : []
+            },
+            "02" : {
+                "Client" : "--",
+                "Escort" : false,
+                "Objective" : "--",
+                "Dungeon" : "--",
+                "Reward" : []
+            },
+            "03" : {
+                "Client" : "--",
+                "Escort" : false,
+                "Objective" : "--",
+                "Dungeon" : "--",
+                "Reward" : []
+            }
+        },
+        "Wayfarers" : {
+            "01" : {
+                "Client" : "--",
+                "Escort" : false,
+                "Objective" : "--",
+                "Dungeon" : "--",
+                "Reward" : []
+            },
+            "02" : {
+                "Client" : "--",
+                "Escort" : false,
+                "Objective" : "--",
+                "Dungeon" : "--",
+                "Reward" : []
+            },
+            "03" : {
+                "Client" : "--",
+                "Escort" : false,
+                "Objective" : "--",
+                "Dungeon" : "--",
+                "Reward" : []
+            }
+        }
+    },
+    "Tasks" : {
+        "GCSF" : {
+            "Task 01" : "--",
+            "Task 02" : "--",
+            "Task 03" : "--"
+        },
+        "Holiday Hills" : {
+            "Task 01" : "HH01",
+            "Task 02" : "HH02",
+            "Task 03" : "HH03",
+            "Task 04" : "HH04"
+        }
+    }
+}
