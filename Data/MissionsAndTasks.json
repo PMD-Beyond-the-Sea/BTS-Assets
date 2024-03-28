@@ -77,10 +77,9 @@
             "Task 03" : "--"
         },
         "Holiday Hills" : {
-            "Task 01" : "HH01",
-            "Task 02" : "HH02",
-            "Task 03" : "HH03",
-            "Task 04" : "HH04"
+            "Task 01" : "Annual Ethovalon Egg Hunt",
+            "Task 02" : "Color Splash",
+            "Task 03" : "After the Cold, There is Life"
         }
     }
 }
