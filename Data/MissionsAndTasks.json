@@ -72,9 +72,9 @@
     },
     "Tasks" : {
         "GCSF" : {
-            "Task 01" : "--",
-            "Task 02" : "--",
-            "Task 03" : "--"
+            "Task 01" : "Celebrating the Guild",
+            "Task 02" : "Reflections",
+            "Task 03" : "Looking Ahead"
         },
         "Holiday Hills" : {
             "Task 01" : "Annual Ethovalon Egg Hunt",

@@ -2036,5 +2036,59 @@
                 "Poliwag"
             ]
         }
+    },
+    "Ultra Space Wilds": {
+        "Cliff World": {
+            "Description": "",
+            "Recruits": [
+                "Taillow",
+                "Swablu",
+                "Yanma",
+                "Sigilyph",
+                "Ducklett",
+                "Wattrel",
+                "Random Flying-Type Recruit Token",
+                "Random Recruit Token"
+            ]
+        },
+        "Water World": {
+            "Description": "",
+            "Recruits": [
+                "Wooper (Johto)",
+                "Lotad",
+                "Buizel",
+                "Stunfisk (Unova)",
+                "Binacle",
+                "Chewtle",
+                "Random Water-Type Recruit Token",
+                "Random Recruit Token"
+            ]
+        },
+        "Rocky World": {
+            "Description": "",
+            "Recruits": [
+                "Seedot",
+                "Spoink",
+                "Skorupi",
+                "Audino",
+                "Helioptile",
+                "Glimmet",
+                "Random Rock-Type Recruit Token",
+                "Random Recruit Token"
+            ]
+        },
+        "Cave World": {
+            "Description": "",
+            "Recruits": [
+                "Slugma",
+                "Meditite",
+                "Hippopotas",
+                "Snover",
+                "Dwebble",
+                "Duraludon",
+                "Random Dark-Type Recruit Token",
+                "Random Recruit Token"
+            ]
+        },
     }
 }
