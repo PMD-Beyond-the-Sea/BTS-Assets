@@ -1,5 +1,5 @@
 [Gen 9 Icon Sprites](https://www.smogon.com/forums/threads/icon-sprite-feedback.3718955/)
-- Wooper (Paldea), Tauros (Paldea), Sinistcha, Poltchageist from [here](https://reliccastle.com/resources/1101/)
+- Regional Variant and additional sprites from [here](https://www.pokecommunity.com/threads/generation-9-resource-pack-v21-1.527398/)
 
 [Official Items, Backgrounds, etc.](https://www.spriters-resource.com/nintendo_switch/pokemonmysterydungeonrescueteamdx/)
 
