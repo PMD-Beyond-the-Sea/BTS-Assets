@@ -2039,7 +2039,7 @@
     },
     "Ultra Space Wilds": {
         "Cliff World": {
-            "Description": "",
+            "Description": "<p>Towering peaks and jagged rock faces reign supreme in the Cliff World, climbing upwards into the infinite skies above them. You can see the distant shapes of figures flying in the distance and there are definite signs of life on these mountains. As you look over the edge to try and see the earth below, you find that it is nowhere to be seen; obscured by thick mists. Who knows how high up you are.</p><p>Well... the only way to go from here is up.</p>",
             "Recruits": [
                 "Taillow",
                 "Swablu",
@@ -2052,7 +2052,7 @@
             ]
         },
         "Water World": {
-            "Description": "",
+            "Description": "<p>When you appear out of the portal, you find yourself surrounded by water. You stand atop an old, weathered stone that seems to be part of what may be old ruins. Around you -- thankfully -- there are other similar places where one could take a break. Otherwise, there is just ocean as far as the eye can see. Who knows what other bodies of water may be out there amidst the tiny, scattered islands.</p><p>Who knows what may be lying in wait beneath the waves?</p>",
             "Recruits": [
                 "Wooper (Johto)",
                 "Lotad",
@@ -2065,7 +2065,7 @@
             ]
         },
         "Rocky World": {
-            "Description": "",
+            "Description": "<p>A world sculpted from the very earth and stones surrounds you on almost all sides. Massive boulders, towering spires, and intricate formations made of stone stretch across the land, weaving a labyrinth of rocky marvels for miles. As you wander the veritable bounty of stone before you, you find monuments and structures that appear to have been crafted but others simply defy explanation.</p><p>What power could have created such a place?</p>",
             "Recruits": [
                 "Seedot",
                 "Spoink",
@@ -2078,7 +2078,7 @@
             ]
         },
         "Cave World": {
-            "Description": "",
+            "Description": "<p>The Cave World is made up of a sprawling expanse of seemingly endless interconnected caverns. Though most of it is as dark as you would expect a cave to be, you come across tiny groves filled with bioluminescent plantlife and shimmering crystals that emit some small amount of light. The sounds are unsettling as they echo off of the cramped tunnels and into the unknown. Occasionally, you stop to try and remember which path you had taken, and you hear a voice calling out... and as suddenly as it had appeared, it vanishes once more.</p>",
             "Recruits": [
                 "Slugma",
                 "Meditite",
