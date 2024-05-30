@@ -1,1 +1,2491 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>PMD Beyond the Sea - Dungeon Grader</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/msikma/pokesprite-spritesheet@master/assets/pokesprite-pokemon-gen8.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/msikma/pokesprite-spritesheet@master/assets/pokesprite-inventory.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/msikma/pokesprite-spritesheet@master/assets/pokesprite-misc.css">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css");
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Rakkas&family=Mochiy+Pop+One&family=Silkscreen&display=swap");
+
+        html {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-image: radial-gradient(circle, rgba(11, 51, 79, 1) 2%, rgba(17, 67, 103, 0) 8%, rgba(17, 67, 103, 0) 92%, rgba(11, 51, 79, 1) 98%), linear-gradient(0deg, rgba(11, 51, 79, 1) 0%, rgba(17, 67, 103, 1) 3%, rgba(17, 67, 103, 1) 97%, rgba(11, 51, 79, 1) 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+        }
+
+        @media only screen and (min-width: 0px) {
+            .team-container-1 {
+                order: 1;
+            }
+
+            .party-member-1 {
+                order: 2;
+            }
+
+            .team-container-2 {
+                order: 3;
+            }
+
+            .party-member-2 {
+                order: 4;
+            }
+
+            .team-container-3 {
+                order: 5;
+            }
+
+            .party-member-3 {
+                order: 6;
+            }
+
+            .team-container-4 {
+                order: 7;
+            }
+
+            .party-member-4 {
+                order: 8;
+            }
+        }
+
+        @media only screen and (min-width: 576px) {}
+
+        @media only screen and (min-width: 768px) {
+            .team-container-1 {
+                order: 3;
+            }
+
+            .party-member-1 {
+                order: 1;
+            }
+
+            .team-container-2 {
+                order: 4;
+            }
+
+            .party-member-2 {
+                order: 2;
+            }
+
+            .team-container-3 {
+                order: 7;
+            }
+
+            .party-member-3 {
+                order: 5;
+            }
+
+            .team-container-4 {
+                order: 8;
+            }
+
+            .party-member-4 {
+                order: 6;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .team-container-1 {
+                order: 1;
+            }
+
+            .party-member-1 {
+                order: 2;
+            }
+
+            .team-container-2 {
+                order: 4;
+            }
+
+            .party-member-2 {
+                order: 3;
+            }
+
+            .team-container-3 {
+                order: 5;
+            }
+
+            .party-member-3 {
+                order: 6;
+            }
+
+            .team-container-4 {
+                order: 8;
+            }
+
+            .party-member-4 {
+                order: 7;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {}
+
+        @media only screen and (min-width: 1400px) {}
+
+
+        .fadeInAnim {
+            opacity: 1;
+            animation: fadeIn 1s;
+            animation-fill-mode: forwards;
+        }
+
+        .fadeOutAnim {
+            opacity: 0;
+            animation: fadeOut 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .tip-box {
+            text-align: center;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0.8) 90%, rgba(0, 0, 0, 0) 100%);
+            margin: auto;
+            color: white;
+            margin: 1.5em auto;
+            padding: 1em 10%;
+            font-size: 0.95em;
+            letter-spacing: 0.01em;
+            word-spacing: 0.05em;
+        }
+
+        .example-header {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 1.2em;
+            text-decoration: underline dashed 1px rgb(255, 255, 255, 0.8);
+            color: #d6d7ff;
+            text-shadow: 2px 2px 0 #454384, -2px -2px 0 #454384, 2px -2px 0 #454384, -2px 2px 0 #454384,
+                2px 0 0 #454384, -2px 0 0 #454384, 0 -2px 0 #454384, 0 2px 0 #454384,
+                1px 1px 0 #454384, -1px -1px 0 #454384, 1px -1px 0 #454384, -1px 1px 0 #454384,
+                1px 0 0 #454384, -1px 0 0 #454384, 0 -1px 0 #454384, 0 1px 0 #454384;
+            margin-bottom: 0.5em;
+        }
+
+        .tip-icon.exclaim {
+            margin-left: 0.2em;
+            rotate: 8deg;
+            font-size: 1.2em;
+            color: #c62b2b;
+            text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white,
+                2px 0 0 white, -2px 0 0 white, 0 -2px 0 white, 0 2px 0 white,
+                1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+                1px 0 0 white, -1px 0 0 white, 0 -1px 0 white, 0 1px 0 white;
+        }
+
+        .tip-box p b {
+            color: #f4bc73;
+        }
+
+        .tip-box p a {
+            color: #ea444f;
+            text-shadow: 0 0 0.3em rgb(255, 255, 255, 0.2);
+            font-weight: bold;
+            text-decoration: underline dotted 2px;
+        }
+
+        .tip-box p a:hover {
+            color: #ea444f;
+            text-shadow: 0 0 0.3em rgb(255, 255, 255, 0.2);
+            font-weight: bold;
+            text-decoration: underline dotted 2px;
+            letter-spacing: 0.05em;
+            animation: hoverLink 0.1s;
+        }
+
+        @keyframes hoverLink {
+            0% {
+                letter-spacing: 0em;
+            }
+
+            100% {
+                letter-spacing: 0.05em;
+            }
+        }
+
+        .start-screen.section-header {
+            z-index: 5;
+            font-size: 2.5em;
+            margin: 0.1em auto 1em auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-header {
+            letter-spacing: 0.15em;
+            color: white;
+            font-family: "Mochiy Pop One";
+            filter: drop-shadow(1px 1px 0 rgb(45, 43, 96)) drop-shadow(-1px -1px 0 rgb(45, 43, 96)) drop-shadow(-1px 1px 0 rgb(45, 43, 96)) drop-shadow(1px -1px 0 rgb(45, 43, 96)) drop-shadow(2px 2px 0 white) drop-shadow(-2px -2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white);
+            text-shadow: 0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                -0.07em -0.07em 0 rgb(45, 43, 96, 0.5),
+                0.07em -0.07em 0 rgb(45, 43, 96, 0.5), -0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                0.05em 0.05em 0 rgb(45, 43, 96, 0.5), -0.05em -0.05em 0 rgb(45, 43, 96, 0.5),
+                0.05em -0.05em 0 rgb(45, 43, 96, 0.5), -0.05em 0.05em 0 rgb(45, 43, 96, 0.5),
+                0.06em 0.06em 0 rgb(45, 43, 96, 0.5), -0.06em -0.06em 0 rgb(45, 43, 96, 0.5),
+                0.06em -0.06em 0 rgb(45, 43, 96, 0.5), -0.06em 0.06em 0 rgb(45, 43, 96, 0.5);
+        }
+
+        .loading-screen {
+            background-image: url("https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Backgrounds/Screens/request.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-attachment: fixed;
+            z-index: 20;
+            position: fixed;
+        }
+
+        .loading-screen .loading-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .loading {
+            margin: 1em;
+        }
+
+        .loading:before {
+            font-family: "FontAwesome";
+            content: "\f251";
+            font-size: 2.5em;
+            animation: loading-hourglass 3s;
+            animation-iteration-count: infinite;
+            color: white;
+            filter: drop-shadow(1px 1px 0 rgb(28, 21, 1, 0.3)) drop-shadow(-1px -1px 0 rgb(28, 21, 1, 0.3)) drop-shadow(1px -1px 0 rgb(28, 21, 1, 0.3)) drop-shadow(-1px 1px 0 rgb(28, 21, 1, 0.3)) drop-shadow(3px 3px 0 rgb(28, 21, 1, 0.7)) drop-shadow(-3px -3px 0 rgb(28, 21, 1, 0.7)) drop-shadow(3px -3px 0 rgb(28, 21, 1, 0.7)) drop-shadow(-3px 3px 0 rgb(28, 21, 1, 0.7));
+        }
+
+        .loading-text {
+            font-size: 3em;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            color: white;
+            margin: 1em auto auto auto;
+            filter: drop-shadow(1px 1px 0 rgb(28, 21, 1, 0.3)) drop-shadow(-1px -1px 0 rgb(28, 21, 1, 0.3)) drop-shadow(1px -1px 0 rgb(28, 21, 1, 0.3)) drop-shadow(-1px 1px 0 rgb(28, 21, 1, 0.3)) drop-shadow(3px 3px 0 rgb(28, 21, 1, 0.7)) drop-shadow(-3px -3px 0 rgb(28, 21, 1, 0.7)) drop-shadow(3px -3px 0 rgb(28, 21, 1, 0.7)) drop-shadow(-3px 3px 0 rgb(28, 21, 1, 0.7));
+            animation: bounce 0.5s ease infinite alternate;
+            letter-spacing: 0.15em;
+        }
+
+        @keyframes bounce {
+            100% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes loading-hourglass {
+            0% {
+                content: "\f251";
+            }
+
+            33% {
+                content: "\f252";
+            }
+
+            66% {
+                content: "\f253";
+            }
+        }
+
+        .loading-screen.hide {
+            opacity: 0;
+            animation: hide-loading 1s;
+        }
+
+        @keyframes hide-loading {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        select {
+            appearance: none;
+            font-size: 1em;
+            padding: 0.2em 0.5em;
+            background-color: #fff;
+            border: 1px solid #000;
+            box-shadow: 0.2em 0.2em 0 grey;
+            border-radius: 0.25rem;
+            color: #000;
+            cursor: pointer;
+            text-align: center;
+            font-family: "DM Sans", sans-serif;
+            margin: 0.25em 0 0 0;
+            color: #000;
+            font-weight: 600;
+            width: 100%;
+        }
+
+        #dungeon-select,
+        #dungeon-select-small,
+        #recruit-select {
+            background-color: #b2e2f8;
+            border: 1px solid #4999d1;
+            box-shadow: 0.2em 0.2em 0 #4999d1;
+            color: #073763;
+        }
+
+        /* ------------------------------------------------ */
+        .world-map {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 2.5em;
+            width: 100vw;
+            height: 100vh;
+            margin: auto;
+            z-index: 11;
+            position: absolute;
+            text-align: center;
+        }
+
+        .world-map.fadeIn {
+            animation: fadeIn 1s forward;
+        }
+
+        .world-map-image {
+            position: relative;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .flying-islands-map {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: multiply;
+            background-attachment: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            margin: auto;
+            z-index: 12;
+            position: absolute;
+        }
+
+        .flying-islands-map-blur {
+            backdrop-filter: blur(0.15em);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            margin: auto;
+            position: fixed;
+        }
+
+        .flying-islands-btns-container {
+            scrollbar-color: transparent transparent;
+            scrollbar-width: thin;
+            mask-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 0) 100%);
+            z-index: 1;
+        }
+
+        .back-to-sea-btn,
+        .to-flying-btn {
+            position: absolute;
+            width: fit-content;
+            z-index: 3;
+        }
+
+        #to-flying-btn {
+            top: 0;
+            right: 0;
+            background: url('https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Backgrounds/Weather/Sunny.png');
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            width: 256px;
+            height: 128px;
+        }
+
+        .to-flying-btn .label,
+        .back-to-sea-btn .label {
+            font-size: 0.8em;
+            text-align: center;
+            width: 150px;
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            font-family: "Mochiy Pop One";
+            filter: drop-shadow(1px 1px 0 rgb(45, 43, 96)) drop-shadow(-1px -1px 0 rgb(45, 43, 96)) drop-shadow(-1px 1px 0 rgb(45, 43, 96)) drop-shadow(1px -1px 0 rgb(45, 43, 96));
+            text-shadow: 0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                -0.07em -0.07em 0 rgb(45, 43, 96, 0.5),
+                0.07em -0.07em 0 rgb(45, 43, 96, 0.5), -0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                0.05em 0.05em 0 rgb(45, 43, 96, 0.5), -0.05em -0.05em 0 rgb(45, 43, 96, 0.5),
+                0.05em -0.05em 0 rgb(45, 43, 96, 0.5), -0.05em 0.05em 0 rgb(45, 43, 96, 0.5),
+                0.06em 0.06em 0 rgb(45, 43, 96, 0.5), -0.06em -0.06em 0 rgb(45, 43, 96, 0.5),
+                0.06em -0.06em 0 rgb(45, 43, 96, 0.5), -0.06em 0.06em 0 rgb(45, 43, 96, 0.5);
+        }
+
+        .to-flying-btn .label:hover,
+        .back-to-sea-btn .label:hover {
+            animation: hoverIslandBtn 0.3s;
+            animation-fill-mode: forwards;
+        }
+
+        .to-flying-btn .arrow,
+        .back-to-sea-btn .arrow {
+            font-family: 'FontAwesome';
+            rotate: 50deg;
+        }
+
+        #back-to-sea-btn {
+            top: 0;
+            right: 0;
+            background: url('https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Backgrounds/Weather/Turbulence.png');
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            width: 256px;
+            height: 128px;
+        }
+
+        .go-to-island {
+            background: transparent;
+            position: absolute;
+            border: none;
+            font-size: 1vw;
+            letter-spacing: 0.15em;
+            text-align: center;
+            color: white;
+            font-family: "Mochiy Pop One";
+            filter: drop-shadow(1px 1px 0 rgb(45, 43, 96)) drop-shadow(-1px -1px 0 rgb(45, 43, 96)) drop-shadow(-1px 1px 0 rgb(45, 43, 96)) drop-shadow(1px -1px 0 rgb(45, 43, 96));
+            text-shadow: 0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                -0.07em -0.07em 0 rgb(45, 43, 96, 0.5),
+                0.07em -0.07em 0 rgb(45, 43, 96, 0.5), -0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                0.05em 0.05em 0 rgb(45, 43, 96, 0.5), -0.05em -0.05em 0 rgb(45, 43, 96, 0.5),
+                0.05em -0.05em 0 rgb(45, 43, 96, 0.5), -0.05em 0.05em 0 rgb(45, 43, 96, 0.5),
+                0.06em 0.06em 0 rgb(45, 43, 96, 0.5), -0.06em -0.06em 0 rgb(45, 43, 96, 0.5),
+                0.06em -0.06em 0 rgb(45, 43, 96, 0.5), -0.06em 0.06em 0 rgb(45, 43, 96, 0.5);
+        }
+
+        .go-to-island:hover {
+            animation: hoverIslandBtn 0.3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes hoverIslandBtn {
+            100% {
+                filter: drop-shadow(1px 1px 0 rgb(135, 111, 242)) drop-shadow(-1px -1px 0 rgb(135, 111, 242)) drop-shadow(-1px 1px 0 rgb(135, 111, 242)) drop-shadow(1px -1px 0 rgb(135, 111, 242));
+                text-shadow: 0.07em 0.07em 0 rgb(135, 111, 242, 0.5),
+                    -0.07em -0.07em 0 rgb(135, 111, 242, 0.5),
+                    0.07em -0.07em 0 rgb(135, 111, 242, 0.5), -0.07em 0.07em 0 rgb(135, 111, 242, 0.5),
+                    0.05em 0.05em 0 rgb(135, 111, 242, 0.5), -0.05em -0.05em 0 rgb(135, 111, 242, 0.5),
+                    0.05em -0.05em 0 rgb(135, 111, 242, 0.5), -0.05em 0.05em 0 rgb(135, 111, 242, 0.5),
+                    0.06em 0.06em 0 rgb(135, 111, 242, 0.5), -0.06em -0.06em 0 rgb(135, 111, 242, 0.5),
+                    0.06em -0.06em 0 rgb(135, 111, 242, 0.5), -0.06em 0.06em 0 rgb(135, 111, 242, 0.5);
+                letter-spacing: 0.2em;
+            }
+        }
+
+        .go-to-island[data-island="Kala Island"] {
+            width: 9.5%;
+            height: 20%;
+            bottom: 15%;
+            left: 2.3%;
+            border-radius: 50% 50% 40% 45%;
+        }
+
+        .go-to-island[data-island="Pele Island"] {
+            width: 6%;
+            height: 11%;
+            bottom: 3%;
+            left: 3.5%;
+            border-radius: 30% 60% 30% 40%;
+        }
+
+        .go-to-island[data-island="Kumu Island"] {
+            width: 8%;
+            height: 20%;
+            bottom: 39%;
+            left: 3.2%;
+            border-radius: 40% 60% 40% 50%;
+        }
+
+        .go-to-island[data-island="Slumbering Mountains"] {
+            width: 11%;
+            height: 14%;
+            bottom: 2.5%;
+            left: 19.5%;
+            border-radius: 35% 60% 30% 20%;
+        }
+
+        .go-to-island[data-island="Ash Islands"] {
+            width: 8%;
+            height: 12%;
+            bottom: 29%;
+            left: 14%;
+            border-radius: 50% 20% 30% 15%;
+        }
+
+        .go-to-island[data-island="Fairy Ring Isle"] {
+            width: 8.5%;
+            height: 10%;
+            bottom: -1.5%;
+            left: 34.8%;
+            display: flex;
+            align-items: end;
+            font-size: 0.9vw;
+            border-radius: 50%;
+        }
+
+        .go-to-island[data-island="Isle of Steam"] {
+            width: 8%;
+            height: 15.5%;
+            bottom: 20.5%;
+            left: 29.5%;
+            border-radius: 30% 20% 40% 30%;
+        }
+
+        .go-to-island[data-island="Draconian Peaks"] {
+            width: 11%;
+            height: 21%;
+            bottom: 15%;
+            left: 42.2%;
+            border-radius: 20% 50% 20% 20%;
+        }
+
+        .go-to-island[data-island="Serene Island"] {
+            width: 11%;
+            height: 8%;
+            bottom: 38.7%;
+            left: 32.3%;
+            font-size: 0.9vw;
+            border-radius: 50%;
+        }
+
+        .go-to-island[data-island="The Decayed Isles"] {
+            padding: 0;
+            width: 8%;
+            height: 13.5%;
+            bottom: -2%;
+            left: 45%;
+            display: flex;
+            align-items: end;
+            font-size: 0.9vw;
+            border-radius: 40% 40% 30% 30%;
+        }
+
+        .go-to-island[data-island="Sea of Beginning"] {
+            width: 10%;
+            height: 12%;
+            bottom: 9%;
+            left: 10%;
+            font-size: 0.9vw;
+            border-radius: 50%;
+        }
+
+        .go-to-island[data-island="Spiral Archipelago"] {
+            width: 18%;
+            height: 23%;
+            top: 28%;
+            left: 23.5%;
+            border-radius: 50%;
+        }
+
+        .go-to-island[data-island="Skull Island"] {
+            width: 6%;
+            height: 11%;
+            top: 46%;
+            left: 18%;
+            padding: 0;
+            display: flex;
+            align-items: end;
+            font-size: 0.9vw;
+            border-radius: 50%;
+        }
+
+        .go-to-island[data-island="Desert Region"] {
+            width: 17%;
+            height: 6%;
+            top: 15.5%;
+            left: 8.5%;
+            border-radius: 60% 40%;
+        }
+
+        .go-to-island[data-island="Lanier Islands"] {
+            width: 5%;
+            height: 14.5%;
+            top: 22.5%;
+            left: 3%;
+            padding: 0;
+            display: flex;
+            align-items: end;
+            font-size: 0.9vw;
+            border-radius: 40%;
+        }
+
+        .go-to-island[data-island="Disadattato Island"] {
+            width: 7%;
+            height: 12%;
+            top: 4.5%;
+            left: 2.5%;
+            padding: 0;
+            display: flex;
+            align-items: end;
+            font-size: 0.9vw;
+            border-radius: 50%;
+        }
+
+        .go-to-island[data-island="Islands of the Colossus"] {
+            width: 6%;
+            height: 20%;
+            top: 25%;
+            left: 12.5%;
+            font-size: 0.9vw;
+            border-radius: 50%;
+        }
+
+        .go-to-island[data-island="Parella Island"] {
+            width: 4.5%;
+            height: 11%;
+            top: 12.5%;
+            left: 36%;
+            padding: 0;
+            display: flex;
+            align-items: end;
+            font-size: 0.9vw;
+            border-radius: 50% 60% 30% 30%;
+        }
+
+        .go-to-island[data-island="The Hissing Isle"] {
+            width: 5%;
+            height: 10.5%;
+            top: 2.5%;
+            left: 21%;
+            padding: 0;
+            display: flex;
+            align-items: end;
+            font-size: 0.9vw;
+            border-radius: 50% 50% 30% 30%;
+        }
+
+        .go-to-island[data-island="Autumnal Heights"] {
+            width: 13.5%;
+            height: 11%;
+            top: 2%;
+            left: 29.5%;
+            border-radius: 60% 30% 30% 30%;
+        }
+
+        .go-to-island[data-island="Sweetful Isle"] {
+            width: 7%;
+            height: 8%;
+            bottom: 34%;
+            right: 18%;
+            border-radius: 50% 40% 30% 30%;
+            padding: 0;
+            display: flex;
+            align-items: end;
+            font-size: 0.9vw;
+        }
+
+        .go-to-island[data-island="The Ancient Tundra"] {
+            width: 7.5%;
+            height: 12%;
+            bottom: 3%;
+            right: 14.5%;
+            border-radius: 50% 40% 30% 30%;
+        }
+
+        .go-to-island[data-island="Frozen Isle"] {
+            padding: 0;
+            width: 8%;
+            height: 14%;
+            bottom: 4%;
+            right: 36.5%;
+            display: flex;
+            align-items: end;
+            font-size: 0.8em;
+            border-radius: 40% 70% 50% 40%;
+        }
+
+        .go-to-island[data-island="Snow Continent"] {
+            width: 38%;
+            height: 13%;
+            bottom: 21%;
+            right: 5.5%;
+            rotate: 2deg;
+            border-radius: 15% 30% 50% 50%;
+        }
+
+        .go-to-island[data-island="Snow Continent"] .island-button {
+            rotate: -2deg;
+        }
+
+        .go-to-island[data-island="Frozen Wasteland"] {
+            padding: 0;
+            width: 7.5%;
+            height: 13%;
+            bottom: 5.5%;
+            right: 26%;
+            display: flex;
+            align-items: end;
+            font-size: 0.8em;
+            border-radius: 30% 40% 40% 50%;
+        }
+
+        .go-to-island[data-island="Othrys"] {
+            width: 6%;
+            height: 11%;
+            bottom: 8.5%;
+            right: 4%;
+            border-radius: 15% 35% 30% 30%;
+        }
+
+        .go-to-island[data-island="Grass Continent"] {
+            width: 20%;
+            height: 27%;
+            top: 35.5%;
+            right: 1.5%;
+            border-radius: 20% 20% 50% 50%;
+        }
+
+        .go-to-island[data-island="Air Continent"] {
+            width: 18%;
+            height: 29%;
+            top: 4%;
+            right: 2%;
+            border-radius: 30% 20% 40% 40%;
+        }
+
+        .go-to-island[data-island="Mist Continent"] {
+            width: 16%;
+            height: 34%;
+            top: 4%;
+            right: 36%;
+            border-radius: 30% 20% 20% 40%;
+        }
+
+        .go-to-island[data-island="Water Continent"] {
+            width: 16%;
+            height: 20%;
+            top: 15%;
+            right: 20%;
+            border-radius: 40% 60% 40% 50%;
+        }
+
+        .go-to-island[data-island="Sand Continent"] {
+            width: 9%;
+            height: 15%;
+            bottom: 39.5%;
+            left: 47.8%;
+            border-radius: 40% 50% 20% 20%;
+        }
+
+        .go-to-island[data-island="Sea of Wonders"] {
+            width: 8%;
+            height: 11%;
+            bottom: 36%;
+            left: 56.5%;
+            border-radius: 100%;
+            font-size: 0.9vw;
+        }
+
+        .map-overview-container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            animation-fill-mode: forwards;
+            z-index: 12;
+        }
+
+        .map-info-blur {
+            background: rgba(0, 0, 0, 0.4);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            backdrop-filter: blur(0.4em);
+        }
+
+        .map-zoomed-in {
+            background: url('https://i.postimg.cc/Kj8vQxs0/World-Map-No-Text.png'), #499AD2;
+            background-repeat: no-repeat;
+            background-size: 400%;
+            background-position: center;
+            aspect-ratio: 1/1;
+            margin: auto 2em;
+            border: 1em white solid;
+            position: relative;
+            border-radius: 30%;
+            max-width: 400px;
+            max-height: 400px;
+            min-width: 200px;
+            min-height: 200px;
+        }
+
+        .map-zoomed-in[data-island="Kala Island"],
+        .map-zoomed-in[data-island="Pele Island"],
+        .map-zoomed-in[data-island="Kumu Island"],
+        .map-zoomed-in[data-island="Slumbering Mountains"],
+        .map-zoomed-in[data-island="Ash Islands"],
+        .map-zoomed-in[data-island="Fairy Ring Isle"],
+        .map-zoomed-in[data-island="Isle of Steam"],
+        .map-zoomed-in[data-island="Draconian Peaks"],
+        .map-zoomed-in[data-island="Serene Island"],
+        .map-zoomed-in[data-island="The Decayed Isles"],
+        .map-zoomed-in[data-island="Frozen Isle"],
+        .map-zoomed-in[data-island="Sea of Beginning"],
+        .map-zoomed-in[data-island="Spiral Archipelago"],
+        .map-zoomed-in[data-island="Skull Island"],
+        .map-zoomed-in[data-island="Desert Region"],
+        .map-zoomed-in[data-island="Lanier Islands"],
+        .map-zoomed-in[data-island="Disadattato Island"],
+        .map-zoomed-in[data-island="Islands of the Colossus"],
+        .map-zoomed-in[data-island="Parella Island"],
+        .map-zoomed-in[data-island="The Hissing Isle"],
+        .map-zoomed-in[data-island="Autumnal Heights"],
+        .map-zoomed-in[data-island="The Ancient Tundra"],
+        .map-zoomed-in[data-island="Sweetful Isle"],
+        .map-zoomed-in[data-island="Snow Continent"],
+        .map-zoomed-in[data-island="Frozen Wasteland"],
+        .map-zoomed-in[data-island="Othrys"],
+        .map-zoomed-in[data-island="Grass Continent"],
+        .map-zoomed-in[data-island="Air Continent"],
+        .map-zoomed-in[data-island="Mist Continent"],
+        .map-zoomed-in[data-island="Water Continent"],
+        .map-zoomed-in[data-island="Sand Continent"],
+        .map-zoomed-in[data-island="Sea of Wonders"] {
+            animation: moveMap 1.5s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes moveMap {
+            100% {
+                background-position: var(--background-position);
+                background-size: var(--background-size);
+            }
+        }
+
+        .map-zoomed-in[data-island="Kala Island"] {
+            --background-size: 600%;
+            --background-position: -2% 84.5%;
+        }
+
+        .map-zoomed-in[data-island="Pele Island"] {
+            --background-size: 700%;
+            --background-position: -1% 104.5%;
+        }
+
+        .map-zoomed-in[data-island="Kumu Island"] {
+            --background-size: 600%;
+            --background-position: -1.5% 51.5%;
+        }
+
+        .map-zoomed-in[data-island="Slumbering Mountains"] {
+            --background-size: 650%;
+            --background-position: 19.5% 104%;
+        }
+
+        .map-zoomed-in[data-island="Ash Islands"] {
+            --background-size: 710%;
+            --background-position: 12.9% 70%;
+        }
+
+        .map-zoomed-in[data-island="Fairy Ring Isle"] {
+            --background-size: 800%;
+            --background-position: 37% 105.5%;
+        }
+
+        .map-zoomed-in[data-island="Isle of Steam"] {
+            --background-size: 620%;
+            --background-position: 30% 80%;
+        }
+
+        .map-zoomed-in[data-island="Draconian Peaks"] {
+            --background-size: 550%;
+            --background-position: 47% 85%;
+        }
+
+        .map-zoomed-in[data-island="Serene Island"] {
+            --background-size: 750%;
+            --background-position: 35.5% 59.5%;
+        }
+
+        .map-zoomed-in[data-island="The Decayed Isles"] {
+            --background-size: 800%;
+            --background-position: 48.5% 105%;
+        }
+
+        .map-zoomed-in[data-island="Frozen Isle"] {
+            --background-size: 750%;
+            --background-position: 60.5% 99%;
+        }
+
+        .map-zoomed-in[data-island="Sea of Beginning"] {
+            --background-size: 500%;
+            --background-position: 6% 102%;
+        }
+
+        .map-zoomed-in[data-island="Spiral Archipelago"] {
+            --background-size: 400%;
+            --background-position: 26.5% 32.5%;
+        }
+
+        .map-zoomed-in[data-island="Skull Island"] {
+            --background-size: 710%;
+            --background-position: 16% 50%;
+        }
+
+        .map-zoomed-in[data-island="Desert Region"] {
+            --background-size: 570%;
+            --background-position: 10% 6%;
+        }
+
+        .map-zoomed-in[data-island="Lanier Islands"] {
+            --background-size: 700%;
+            --background-position: -2% 21%;
+        }
+
+        .map-zoomed-in[data-island="Disadattato Island"] {
+            --background-size: 700%;
+            --background-position: -1% -4%;
+        }
+
+        .map-zoomed-in[data-island="Islands of the Colossus"] {
+            --background-size: 640%;
+            --background-position: 9% 29%;
+        }
+
+        .map-zoomed-in[data-island="Parella Island"] {
+            --background-size: 700%;
+            --background-position: 36.5% 6.5%;
+        }
+
+        .map-zoomed-in[data-island="The Hissing Isle"] {
+            --background-size: 800%;
+            --background-position: 20% -4%;
+        }
+
+        .map-zoomed-in[data-island="Autumnal Heights"] {
+            --background-size: 600%;
+            --background-position: 34% -3%;
+        }
+
+        .map-zoomed-in[data-island="The Ancient Tundra"] {
+            --background-size: 700%;
+            --background-position: 87% 105%;
+        }
+
+        .map-zoomed-in[data-island="Sweetful Isle"] {
+            --background-size: 750%;
+            --background-position: 82.5% 66%;
+        }
+
+        .map-zoomed-in[data-island="Snow Continent"] {
+            --background-size: 255%;
+            --background-position: 92% 110%;
+        }
+
+        .map-zoomed-in[data-island="Frozen Wasteland"] {
+            --background-size: 650%;
+            --background-position: 74% 100%;
+        }
+
+        .map-zoomed-in[data-island="Othrys"] {
+            --background-size: 650%;
+            --background-position: 100.5% 99.5%;
+        }
+
+        .map-zoomed-in[data-island="Grass Continent"] {
+            --background-size: 455%;
+            --background-position: 98.5% 48%;
+        }
+
+        .map-zoomed-in[data-island="Air Continent"] {
+            --background-size: 455%;
+            --background-position: 96.5% 0%;
+        }
+
+        .map-zoomed-in[data-island="Mist Continent"] {
+            --background-size: 405%;
+            --background-position: 58% 0%;
+        }
+
+        .map-zoomed-in[data-island="Water Continent"] {
+            --background-size: 580%;
+            --background-position: 77.5% 14.5%;
+        }
+
+        .map-zoomed-in[data-island="Sand Continent"] {
+            --background-size: 550%;
+            --background-position: 56% 51%;
+        }
+
+        .map-zoomed-in[data-island="Sea of Wonders"] {
+            --background-size: 520%;
+            --background-position: 63% 56%;
+        }
+
+        .map-information {
+            max-height: 90%;
+            /*background: linear-gradient(0deg, rgba(193,151,113,1) 0%, rgba(249,218,187,1) 58%);*/
+            background: url('https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Containers/wood.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            clip-path: polygon(0 1%, 70% 1.5%, 100% 0, 99% 65%, 100% 100%, 39% 99%, 36% 98%, 34% 100%, 0 100%, 1% 34%, 2% 33.5%, 0.5% 31.5%);
+            border: 7px #2b1003 solid;
+            color: #422108;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .map-information:before {
+            content: '';
+            background: #a0876b;
+            border-radius: 100%;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            filter: drop-shadow(2px 2px 1px #6d553b);
+        }
+
+        .map-information:after {
+            content: '';
+            background: #a0876b;
+            border-radius: 100%;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            right: 14px;
+            top: 11px;
+            filter: drop-shadow(2px 2px 1px #6d553b);
+        }
+
+        .flying-island-btn {
+            position: relative;
+            background: transparent;
+            border: none;
+            object-fit: contain;
+            margin: 1em auto;
+            filter: drop-shadow(0 0 0.2em black) drop-shadow(0 0 0.3em black) drop-shadow(0 0 0.5em rgba(0, 0, 0, 0.5));
+        }
+
+        .flying-island-btn:hover {
+            animation: animateButton 0.4s forwards;
+        }
+
+        .flying-island-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            color: white;
+            font-size: 1.15em;
+            filter: drop-shadow(1px 1px 0 rgb(45, 43, 96)) drop-shadow(-1px -1px 0 rgb(45, 43, 96)) drop-shadow(-1px 1px 0 rgb(45, 43, 96)) drop-shadow(1px -1px 0 rgb(45, 43, 96));
+            text-shadow: 0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                -0.07em -0.07em 0 rgb(45, 43, 96, 0.5),
+                0.07em -0.07em 0 rgb(45, 43, 96, 0.5), -0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                0.05em 0.05em 0 rgb(45, 43, 96, 0.5), -0.05em -0.05em 0 rgb(45, 43, 96, 0.5),
+                0.05em -0.05em 0 rgb(45, 43, 96, 0.5), -0.05em 0.05em 0 rgb(45, 43, 96, 0.5),
+                0.06em 0.06em 0 rgb(45, 43, 96, 0.5), -0.06em -0.06em 0 rgb(45, 43, 96, 0.5),
+                0.06em -0.06em 0 rgb(45, 43, 96, 0.5), -0.06em 0.06em 0 rgb(45, 43, 96, 0.5);
+        }
+
+
+        #dungeon-banner-btns {
+            margin-bottom: 3em;
+        }
+
+        .dungeon-banner {
+            position: relative;
+            width: fit-content;
+            filter: drop-shadow(0 0 0 white);
+            margin: 1em 2em;
+        }
+
+        .dungeon-label-banner {
+            height: fit-content;
+            width: fit-content;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            font-size: 1.15em;
+            z-index: 5;
+            color: #491a07;
+        }
+
+        .dungeon-select-banner {
+            width: fit-content;
+            padding: 0 0.5em;
+            height: 36px;
+            position: relative;
+            background: #ffedd3;
+            filter: drop-shadow(0 0 0.25em #491a07);
+            z-index: 4;
+            border: none;
+        }
+
+        .dungeon-banner:hover {
+            animation: animateDungeonBtn 0.4s;
+            cursor: pointer;
+            filter: drop-shadow(0 0 0.5em #491a07);
+        }
+
+        @keyframes animateDungeonBtn {
+            0% {
+                transform: translate(0);
+                filter: drop-shadow(0 0 0 #491a07);
+            }
+
+            33% {
+                transform: translate(0, -0.2em);
+            }
+
+            66% {
+                transform: translate(0, 0.2em);
+            }
+
+            100% {
+                transform: translate(0);
+                filter: drop-shadow(0 0 0.5em #491a07);
+            }
+        }
+
+        .dungeon-select-banner:after {
+            content: "";
+            position: absolute;
+            right: -10px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 10px solid #ffedd3;
+            border-top: 18px solid transparent;
+            border-bottom: 18px solid transparent;
+        }
+
+        .dungeon-select-banner:before {
+            content: "";
+            position: absolute;
+            left: -10px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-right: 10px solid #ffedd3;
+            border-top: 18px solid transparent;
+            border-bottom: 18px solid transparent;
+        }
+
+        .dungeon-banner-tail-left {
+            position: absolute;
+            left: -14px;
+            top: 0px;
+            rotate: 6deg;
+            background-color: #ffedd3;
+            color: white;
+            text-align: center;
+            height: 32px;
+            width: 30px;
+            clip-path: polygon(100% 0%, 50px 50%, 100% 100%, 0% 100%, 10px 50%, 0% 0%);
+            z-index: 3;
+        }
+
+        .dungeon-banner-tail-right {
+            position: absolute;
+            right: -14px;
+            top: 0px;
+            rotate: -186deg;
+            background-color: #ffedd3;
+            color: white;
+            text-align: center;
+            height: 32px;
+            width: 30px;
+            clip-path: polygon(100% 0%, 50px 50%, 100% 100%, 0% 100%, 10px 50%, 0% 0%);
+            z-index: 3;
+        }
+
+        .dungeon-banner .heroic {
+            font-size: 2.1em;
+            position: absolute;
+            top: -28px;
+            right: -22px;
+            z-index: 2;
+            color: #d68726;
+        }
+
+        .dungeon-banner .legendary {
+            font-size: 2.1em;
+            position: absolute;
+            top: -28px;
+            right: -22px;
+            z-index: 2;
+            color: #209958;
+        }
+
+        .dungeon-banner .heroic:before,
+        .dungeon-banner .legendary:before {
+            font-family: "FontAwesome";
+            color: white;
+            font-size: 0.36em;
+            letter-spacing: 0.1em;
+            left: 6px;
+            top: 17px;
+            position: absolute;
+        }
+
+        .dungeon-banner .heroic:after,
+        .dungeon-banner .legendary:after {
+            font-family: "FontAwesome";
+            content: "\2b";
+            color: white;
+            font-size: 0.25em;
+            right: 3px;
+            top: 21px;
+            position: absolute;
+        }
+
+        .dungeon-banner .heroic:before {
+            content: "\38 \30";
+        }
+
+        .dungeon-banner .legendary:before {
+            content: "\39 \30";
+        }
+
+        .dungeon-recruit-container {
+            margin: 0.25em;
+        }
+
+        .dungeon-recruit-container img {
+            max-width: 68px;
+            max-height: 56px;
+        }
+
+        .dungeon-recruit-container .recruit-label {
+            margin: 0.5em auto;
+            font-size: 1em;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+        }
+
+        .dungeon-select {
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            z-index: 15;
+        }
+
+        .to-dungeon {
+            color: #23bc82;
+            font-size: 1.5em;
+            background: none;
+            border: none;
+            text-shadow: 2px 2px 0 #dbfff4, -2px -2px 0 #dbfff4, 0px 2px 0 #dbfff4, 2px 0px 0 #dbfff4, -2px 2px 0 #dbfff4, 2px -2px 0 #dbfff4, 0px -2px 0 #dbfff4, -2px 0px 0 #dbfff4;
+            transition: all 0.3s;
+            margin-left: 0.5em;
+        }
+
+        .to-dungeon:hover {
+            color: #159657;
+            scale: 1.2;
+        }
+
+        .to-dungeon:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .to-search {
+            color: #7f77ef;
+            font-size: 1.5em;
+            background: none;
+            border: none;
+            text-shadow: 2px 2px 0 #dcdbff, -2px -2px 0 #dcdbff, 0px 2px 0 #dcdbff, 2px 0px 0 #dcdbff, -2px 2px 0 #dcdbff, 2px -2px 0 #dcdbff, 0px -2px 0 #dcdbff, -2px 0px 0 #dcdbff;
+            transition: all 0.3s;
+            margin-left: 0.2em;
+        }
+
+        .to-search:hover {
+            color: #5a52c9;
+            scale: 1.2;
+        }
+
+        .to-search:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /*********************************/
+
+        .clouds-transition {
+            z-index: 50;
+            width: 210vw;
+            height: 180vh;
+            left: -200%;
+            top: -25%;
+            position: fixed;
+            background: url('https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Backgrounds/Clouds/clouds.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .clouds-transition.to-sky {
+            animation: cloudsToSky 4s forwards;
+        }
+
+        @keyframes cloudsToSky {
+            0% {
+                left: -200%;
+            }
+
+            100% {
+                left: 200%;
+            }
+        }
+
+        .water-transition {
+            --mask:
+                radial-gradient(60px at 50% 82px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+                radial-gradient(60px at 50% -52px, #0000 99%, #000 101%) 50% 30px/120px 100% repeat-x;
+            -webkit-mask: var(--mask);
+            mask: var(--mask);
+            z-index: 50;
+            width: 100vw;
+            height: 0vh;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(0deg, rgba(11, 51, 79, 1) 19%, rgba(17, 67, 103, 1) 48%, rgba(26, 103, 159, 1) 100%);
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        .water-transition.to-map {
+            animation: waterToMap 1s ease-in-out forwards;
+        }
+
+        .water-transition.fade-out {
+            height: 110vh;
+            animation: fadeOut 1s forwards;
+        }
+
+        @keyframes waterToMap {
+            100% {
+                height: 110vh;
+            }
+        }
+
+        .water-transition .waves {
+            --mask:
+                radial-gradient(112.68px at 50% calc(100% + 93px), #0000 calc(99% - 4px), #000 calc(101% - 4px) 99%, #0000 101%) calc(50% - 120px) calc(50% - 32px + .5px)/240px 64px,
+                radial-gradient(112.68px at 50% -93px, #0000 calc(99% - 4px), #000 calc(101% - 4px) 99%, #0000 101%) 50% calc(50% + 32px)/240px 64px;
+            -webkit-mask: var(--mask);
+            mask: var(--mask);
+            background: rgb(255, 255, 255, 0.3);
+            left: 0;
+            top: 0;
+            right: 0;
+            width: 100vw;
+            height: 100%;
+        }
+
+        /* ---------------------------------------------------- */
+
+        .modal-content {
+            background: #848080 url('https://www.photos-public-domain.com/wp-content/uploads/2012/05/ivory-off-white-paper-texture.jpg');
+            background-blend-mode: overlay;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #2d2b60;
+            box-shadow: 0.4em 0.4em 0.4em rgb(0, 0, 0, 0.15), -0.4em -0.4em 0.4em rgb(0, 0, 0, 0.15), -0.4em 0.4em 0.4em rgb(0, 0, 0, 0.15), 0.4em -0.4em 0.4em rgb(0, 0, 0, 0.15), 0.4em 0 0.4em rgb(0, 0, 0, 0.15), 0 -0.4em 0.4em rgb(0, 0, 0, 0.15), -0.4em 0 0.4em rgb(0, 0, 0, 0.15);
+            position: relative;
+            padding: 3em 1.5em;
+        }
+
+        .modal-inner-border {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 3px #9e9a9a solid;
+            border-radius: 0.5em;
+            mix-blend-mode: multiply;
+            width: 98%;
+            height: 98.8%;
+            pointer-events: none;
+        }
+
+        .modal-title {
+            text-align: center;
+            letter-spacing: 0.15em;
+            color: white;
+            font-family: "Mochiy Pop One";
+            filter: drop-shadow(1px 1px 0 rgb(77, 74, 189)) drop-shadow(-1px -1px 0 rgb(77, 74, 189)) drop-shadow(-1px 1px 0 rgb(77, 74, 189)) drop-shadow(1px -1px 0 rgb(77, 74, 189));
+            text-shadow: 0.07em 0.07em 0 rgb(77, 74, 189, 0.5),
+                -0.07em -0.07em 0 rgb(77, 74, 189, 0.5),
+                0.07em -0.07em 0 rgb(77, 74, 189, 0.5), -0.07em 0.07em 0 rgb(77, 74, 189, 0.5),
+                0.05em 0.05em 0 rgb(77, 74, 189, 0.5), -0.05em -0.05em 0 rgb(77, 74, 189, 0.5),
+                0.05em -0.05em 0 rgb(77, 74, 189, 0.5), -0.05em 0.05em 0 rgb(77, 74, 189, 0.5),
+                0.06em 0.06em 0 rgb(77, 74, 189, 0.5), -0.06em -0.06em 0 rgb(77, 74, 189, 0.5),
+                0.06em -0.06em 0 rgb(77, 74, 189, 0.5), -0.06em 0.06em 0 rgb(77, 74, 189, 0.5);
+        }
+
+        .big-button {
+            border: none;
+            filter: drop-shadow(0 0 0.6em black) drop-shadow(0.2em 0.2em 0 rgb(45, 43, 96, 0.4));
+            text-shadow: 0.1em 0.1em 0 rgb(45, 43, 96), -0.1em -0.1em 0 rgb(45, 43, 96),
+                -0.1em 0.1em 0 rgb(45, 43, 96), 0.1em -0.1em 0 rgb(45, 43, 96),
+                0 0.1em 0 rgb(45, 43, 96), 0em -0.1em 0 rgb(45, 43, 96),
+                -0.1em 0em 0 rgb(45, 43, 96), 0 -0.1em 0 rgb(45, 43, 96);
+            width: 6.5em;
+            height: 5.5em;
+            font-size: 1.3em;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            color: white;
+            margin: 0 0.5em;
+        }
+
+        .big-button:hover {
+            animation: animateButton 0.4s;
+            cursor: pointer;
+            scale: 1.1;
+        }
+
+        .big-button.map-link {
+            background: url("https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Items/Official/pelipper-sign.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top;
+            width: fit-content;
+        }
+
+        @keyframes animateButton {
+            0% {
+                rotate: 0deg;
+                scale: 1;
+            }
+
+            25% {
+                rotate: 8deg;
+            }
+
+            50% {
+                rotate: -8deg;
+            }
+
+            75% {
+                rotate: 4deg;
+            }
+
+            100% {
+                rotate: 0deg;
+                scale: 1.1;
+            }
+        }
+
+        .credits-link {
+            background: none;
+            border: none;
+            color: white;
+            font-weight: 600;
+            position: fixed;
+            right: 5px;
+            bottom: 2px;
+            z-index: 50;
+            font-family: "DM Sans", sans-serif;
+            opacity: 0.6;
+            transition: all 0.3s;
+            font-size: 0.9em;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+        }
+
+        .credits-link:hover {
+            opacity: 1;
+        }
+
+        .purple-button {
+            background: #7f77ef;
+            border: 0.2em #5a52c9 outset;
+            border-radius: 0.3em;
+            color: #f4edff;
+            text-align: center;
+            font-size: 1.05em;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            height: fit-content;
+            position: fixed;
+            left: 5px;
+            bottom: 5px;
+            z-index: 50;
+        }
+
+        .purple-button:hover {
+            background: #5a52c9;
+            border: 0.2em #7f77ef inset;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script type="module">
+        import pokemon from 'https://cdn.jsdelivr.net/npm/pokemon@3.0.0/+esm';
+        import pokespriteImages from "https://esm.sh/pokesprite-images";
+        import publicGoogleSheetsParser from "https://esm.sh/public-google-sheets-parser";
+
+        // Initialize tooltips
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+        var pokeSpriteDex = {};
+        fetch('https://cdn.jsdelivr.net/gh/msikma/pokesprite@master/data/pokemon.json')
+            .then(res => res.json()) // the .json() method parses the JSON response into a JS object literal
+            .then(data => {
+                var pokeKeys = Object.keys(data);
+                for (var i = 0; i < pokeKeys.length; i++) {
+                    pokeSpriteDex[pokeKeys[i]] = data[pokeKeys[i]];
+                }
+            });
+        var recruitsByDungeon = {};
+
+        // Island Objects
+        // -> Description (island blurb)
+        // -> Dungeons (key is dungeon name)
+        //  -> Description, Difficulty, Recruits (as array)
+        var allIslandsAndDungeons = {};
+        var allDungeons = []; // array of all dungeon names for dropdown
+        var currentRecruits = {};
+        var tokenBox = [
+            "Random Recruit Token",
+            "Random Gen. Recruit Token",
+            "Random Type Recruit Token",
+            "Category of Choice Recruit Token",
+            "Pokémon of Choice Token"
+        ];
+
+        $.getJSON("https://pmd-beyond-the-sea.github.io/PMD-BTS-Assets/Data/IslandsAndDungeons.json", function (data) {
+            allIslandsAndDungeons = data;
+
+            var allIslands = Object.keys(data);
+
+            allIslands.forEach(function (island) {
+                if (allIslandsAndDungeons[island]["Dungeons"] != undefined) {
+                    var dungeonsOnIsland = Object.keys(allIslandsAndDungeons[island]["Dungeons"]);
+                    dungeonsOnIsland.forEach(function (dungeon) {
+                        allDungeons.push(dungeon);
+                    });
+                }
+            });
+
+            allDungeons.sort((a, b) => a.toLowerCase() < b.toLowerCase() ? -1 : 1);
+            setDungeonsToDropdown();
+
+            //console.log('fetched all dungeons (' + allDungeons.length + ')')
+        }).then((getRecruits) => {
+            document.querySelector("#loading-text").innerHTML = "Setting Up . . .";
+            const recruitParser = new publicGoogleSheetsParser('1wOhDIqFQVGZjSD_Ln3mhchD5Zcpkg3wnUYocodWFPl0');
+            recruitParser.setOption({ sheetId: '1157064801' });
+
+            recruitParser.parse().then((data) => {
+                data.forEach(species => {
+                    recruitsByDungeon[species["Species"]] = [];
+                    var dungeons = species["Dungeons"].replace('"', "''").split(", ");
+                    recruitsByDungeon[species["Species"]] = dungeons;
+                });
+            }).then((setSelection) => {
+                var dropdown = document.querySelector("#recruit-select");
+                var recruits = Object.keys(recruitsByDungeon);
+                recruits.forEach((recruit) => {
+                    var newOption = document.createElement('option');
+                    newOption.setAttribute('value', recruit);
+                    newOption.setAttribute('data-recruit', recruit);
+                    newOption.innerHTML = recruit;
+                    dropdown.appendChild(newOption);
+                });
+
+                dropdown.addEventListener('change', function () {
+                    getRecruitDungeons(document.querySelector("#recruit-select").value);
+                });
+            });
+        })
+            .then((completed) => {
+                hideLoadingScreen();
+            });
+
+        var paradoxPokemon = [];
+        getAllParadoxPokemon();
+
+        function specificPokemonParse(newPokemon) {
+            var matchedPokemon = newPokemon.replace("!", " ").replace("*", " (Shiny) ");
+            var splitPokemon = [];
+
+            if (newPokemon.includes("Nidoran")) {
+                var symbol = Math.floor(Math.random() * 2);
+                if (symbol > 0) {
+                    matchedPokemon += "♂";
+                } else {
+                    matchedPokemon += "♀";
+                }
+            } else if (newPokemon.includes("Flabebe")) {
+                matchedPokemon = "Flabébé";
+            }
+
+            if (newPokemon.includes("Mime") || newPokemon.includes("Rime") || paradoxPokemon.includes(newPokemon)) {
+                splitPokemon.push(newPokemon);
+            } else {
+                splitPokemon = matchedPokemon.split(" ");
+            }
+
+            return splitPokemon;
+        }
+
+        function getAllParadoxPokemon() {
+            for (var i = 984; i < 996; i++) {
+                paradoxPokemon.push(pokemon.getName(i));
+            }
+            paradoxPokemon.push(pokemon.getName(1005));
+            paradoxPokemon.push(pokemon.getName(1006));
+        }
+
+        function getDungeonIcon(newPokemon) {
+            if (newPokemon.includes("Token")) {
+                return "https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Items/Potions%20%26%20Juices/Random.png";
+            }
+
+            if (newPokemon.includes("Potion") || newPokemon.includes("Juice")) {
+                return "https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Items/Potions%20%26%20Juices/" + newPokemon.replaceAll(" ", "-") + ".png";
+            }
+
+            var matchedPokemon = specificPokemonParse(newPokemon);
+
+            var form = "$";
+            var formSlug = "";
+            var variantString = "";
+
+            if (newPokemon.toLowerCase().includes("g!") || newPokemon.toLowerCase().includes("galar") || newPokemon.toLowerCase().includes("g.")) {
+                formSlug = "-galar";
+                variantString = "-galarian";
+            } else if (newPokemon.toLowerCase().includes("a!") || newPokemon.toLowerCase().includes("alola") || newPokemon.toLowerCase().includes("a.")) {
+                formSlug = "-alola";
+                variantString = "-alolan";
+            } else if (newPokemon.toLowerCase().includes("h!") || newPokemon.toLowerCase().includes("hisui") || newPokemon.toLowerCase().includes("h.")) {
+                formSlug = "-hisui";
+                variantString = "-hisuian";
+            } else if (newPokemon.toLowerCase().includes("p!") || newPokemon.toLowerCase().includes("paldea") || newPokemon.toLowerCase().includes("p.")) {
+                formSlug = "-paldea";
+                variantString = "-paldean";
+            } else if (newPokemon.toLowerCase().includes("m!") || newPokemon.toLowerCase().includes("mega") || newPokemon.toLowerCase().includes("m.")) {
+                formSlug = "-mega";
+                variantString = "-mega";
+            }
+
+            if (formSlug != "") {
+                form = formSlug.replace("-", "");
+            }
+
+            var parsedSpecies = "";
+            for (var i = 0; i < matchedPokemon.length; i++) {
+                if (pokemon.all().includes(matchedPokemon[i])) {
+                    parsedSpecies = matchedPokemon[i];
+                }
+            }
+
+            if (pokemon.getId(parsedSpecies) >= 906) {
+                return "https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Icons/Gen9/" + parsedSpecies.toLowerCase().replace(". ", "-").replace("'", "").replace(" ", "-") + ".png";
+            }
+
+            var pokeIndex = pokemon.getId(parsedSpecies).toString();
+            if (pokeIndex.length < 3) {
+                if (Number(pokeIndex) < 10)
+                    pokeIndex = "00" + pokeIndex;
+                else
+                    pokeIndex = "0" + pokeIndex;
+            }
+
+            if (parsedSpecies.includes("Basculin") && formSlug.includes("hisui")) {
+                return "https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/regular/basculin-white-striped.png";
+            }
+
+            if (pokeSpriteDex[pokeIndex]["gen-8"]["forms"][form] == undefined) {
+                return "https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Icons/Gen9/" + parsedSpecies.toLowerCase().replace(". ", "-").replace("'", "").replace(" ", "-") + formSlug + ".png";
+            }
+
+            if (pokeSpriteDex[pokeIndex]["gen-8"]["forms"][form]["is_prev_gen_icon"]) {
+                return "https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/regular/" + pokeSpriteDex[pokeIndex]["slug"]["eng"] + formSlug + ".png";
+            } else {
+                return "https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/regular/" + pokeSpriteDex[pokeIndex]["slug"]["eng"] + formSlug + ".png";
+            }
+        }
+
+
+        // used for async methods
+        function sleep(ms) {
+            return new Promise((resolve) => setTimeout(resolve, ms));
+        }
+
+
+        async function hideLoadingScreen() {
+            const loading = document.querySelector("#loading-screen");
+            loading.classList.add("hide");
+            await sleep(1100);
+            loading.remove();
+        }
+
+        // -----------------------------------------------------------
+        function setDungeonsToDropdown() {
+            var dropdown = document.querySelector("#dungeon-select");
+            allDungeons.forEach((dungeon) => {
+                var newOption = document.createElement('option');
+                newOption.setAttribute('value', dungeon);
+                newOption.setAttribute('data-dungeon', dungeon);
+                newOption.innerHTML = dungeon;
+                dropdown.appendChild(newOption);
+            });
+
+            var smallDropdown = document.querySelector("#dungeon-select-small");
+            allDungeons.forEach((dungeon) => {
+                var newOption = document.createElement('option');
+                newOption.setAttribute('value', dungeon);
+                newOption.setAttribute('data-dungeon', dungeon);
+                newOption.innerHTML = dungeon;
+                smallDropdown.appendChild(newOption);
+            });
+
+            dropdown.addEventListener("change", function () {
+                if (dropdown.value == "") {
+                    document.querySelector("#to-selected-dungeon-btn").setAttribute('disabled', 'true');
+                } else {
+                    document.querySelector("#to-selected-dungeon-btn").removeAttribute('disabled');
+                }
+            });
+
+            smallDropdown.addEventListener("change", function () {
+                if (smallDropdown.value == "") {
+                    document.querySelector("#to-selected-dungeon-small-btn").setAttribute('disabled', 'true');
+                } else {
+                    document.querySelector("#to-selected-dungeon-small-btn").removeAttribute('disabled');
+                }
+            });
+
+            document.querySelector("#to-selected-dungeon-btn").setAttribute('disabled', 'true');
+            document.querySelector("#to-selected-dungeon-small-btn").setAttribute('disabled', 'true');
+        }
+
+        var currentIsland = "";
+        var currentDungeon = "";
+
+        setIslandButtons();
+
+        function setIslandButtons() {
+            var allIslandButtons = document.querySelectorAll(".go-to-island");
+            allIslandButtons.forEach((btn) => {
+                btn.addEventListener("click", function () {
+                    setIslandDetails(btn.dataset.island);
+                });
+            });
+
+            var allFlyingIslandsButtons = document.querySelectorAll(".flying-island-btn");
+
+            allFlyingIslandsButtons.forEach((btn) => {
+                btn.addEventListener("click", function () {
+                    setIslandDetails(btn.dataset.island);
+                });
+            });
+
+            document.querySelector("#back-to-map-btn").addEventListener("click", function () {
+                toggleIslandDetails(false);
+            });
+        }
+
+        document.querySelector("#to-flying-btn").addEventListener("click", function () {
+            toFlyingIslands(true);
+        });
+
+        document.querySelector("#back-to-sea-btn").addEventListener("click", function () {
+            toFlyingIslands(false);
+        });
+
+        async function toFlyingIslands(open) {
+            var flyingIslands = document.getElementById("flying-islands-map");
+
+            cloudsToSky(open);
+            if (open) {
+                await sleep(1600);
+                flyingIslands.classList.add("fadeInAnim");
+                flyingIslands.classList.remove("d-none");
+            } else {
+                await sleep(800);
+                flyingIslands.classList.replace("fadeInAnim", "d-none");
+            }
+        }
+
+        async function toggleIslandDetails(open) {
+            var infoBox = document.getElementById("map-overview-container");
+
+            if (open) {
+                infoBox.classList.add("fadeInAnim");
+                infoBox.classList.remove("d-none");
+            } else {
+                infoBox.classList.replace("fadeInAnim", "fadeOutAnim");
+                await sleep(1100);
+                infoBox.classList.replace("fadeOutAnim", "d-none");
+                toggleDungeonDetails(false);
+            }
+        }
+
+        function toggleDungeonDetails(open) {
+            var dungeonBox = document.getElementById("dungeon-overview");
+            var islandBox = document.getElementById("island-overview");
+
+            if (open) {
+                islandBox.classList.add("d-none");
+                dungeonBox.classList.add("fadeInAnim");
+                dungeonBox.classList.remove("d-none");
+            } else {
+                dungeonBox.classList.replace("fadeInAnim", "d-none");
+                islandBox.classList.remove("d-none");
+            }
+        }
+
+        function setIslandDetails(islandName) {
+            toggleIslandDetails(true);
+            currentIsland = islandName;
+            document.querySelector("#map-zoomed-in").dataset.island = islandName;
+            document.querySelector("#current-island-name").innerHTML = islandName;
+            document.querySelector("#current-island-blurb").innerHTML = allIslandsAndDungeons[islandName]["Description"];
+
+            var dungeonBtnsContainer = document.querySelector("#dungeon-banner-btns");
+            while (dungeonBtnsContainer.firstChild) {
+                dungeonBtnsContainer.removeChild(dungeonBtnsContainer.firstChild);
+            }
+
+            var dungeons = Object.keys(allIslandsAndDungeons[islandName]["Dungeons"]);
+
+            var dungeonBtnsContainer = document.querySelector("#dungeon-banner-btns");
+
+            for (var i = 0; i < dungeons.length; i++) {
+                dungeonBtnsContainer.appendChild(createDungeonBanner(dungeons[i], allIslandsAndDungeons[islandName]["Dungeons"][dungeons[i]]));
+            }
+        }
+
+        function createDungeonBanner(dungeonName, dungeonObj) {
+            var dungeonBanner = document.createElement('div');
+            dungeonBanner.classList.add("dungeon-banner");
+
+            var dungeonBtn = document.createElement('button');
+            dungeonBtn.classList.add("dungeon-select-banner");
+            dungeonBtn.classList.add("d-flex");
+            dungeonBtn.classList.add("col-5");
+            dungeonBtn.classList.add("align-items-center");
+            dungeonBtn.classList.add("justify-content-center");
+
+            dungeonBtn.setAttribute('data-dungeon', dungeonName);
+            dungeonBtn.setAttribute('data-island', currentIsland);
+            dungeonBtn.setAttribute('id', 'go-to-' + dungeonName.replaceAll(" ", "").toLowerCase());
+
+            //dungeonBtn.setAttribute('data-bs-dismiss', 'modal');
+            //dungeonBtn.setAttribute('data-bs-target', '#search-modal');
+
+            dungeonBtn.addEventListener("click", function () {
+                currentIsland = getIslandFromDungeon(dungeonName);
+                goToDungeon(dungeonName);
+            });
+
+            var dungeonLabel = document.createElement('div');
+            dungeonLabel.classList.add("dungeon-label-banner");
+            dungeonLabel.innerHTML = dungeonName.replaceAll('""', '"');
+
+            var dungeonTailLeft = document.createElement('div');
+            dungeonTailLeft.classList.add("dungeon-banner-tail-left");
+            var dungeonTailRight = document.createElement('div');
+            dungeonTailRight.classList.add("dungeon-banner-tail-right");
+
+            dungeonBtn.appendChild(dungeonLabel);
+            dungeonBanner.appendChild(dungeonBtn);
+            dungeonBanner.appendChild(dungeonTailLeft);
+            dungeonBanner.appendChild(dungeonTailRight);
+
+            if (dungeonObj["Difficulty"].includes("Heroic")) {
+                var difficulty = document.createElement('div');
+                difficulty.classList.add("heroic");
+                difficulty.innerHTML = '<i class="fa-solid fa-certificate"></i>';
+                dungeonBtn.appendChild(difficulty);
+            } else if (dungeonObj["Difficulty"].includes("Legendary")) {
+                var difficulty = document.createElement('div');
+                difficulty.classList.add("legendary");
+                difficulty.innerHTML = '<i class="fa-solid fa-certificate"></i>';
+                dungeonBtn.appendChild(difficulty);
+            }
+
+            return dungeonBanner;
+        }
+
+        // clicking on the map buttons to go to dungeon
+        function goToDungeon(dungeonName) {
+            toggleDungeonDetails(true);
+            currentRecruits = {};
+            createDungeonInfo(dungeonName);
+        }
+
+        function createDungeonInfo(dungeonName) {
+            currentDungeon = dungeonName;
+            document.querySelector("#dungeon-name-box").innerHTML = dungeonName.replaceAll('""', '"');
+            document.querySelector("#dungeon-name-box").dataset.dungeon = dungeonName.replaceAll('""', '"');
+
+            document.querySelector("#dungeon-description-box").innerHTML = allIslandsAndDungeons[currentIsland]["Dungeons"][dungeonName]["Description"];
+
+            var recruitsContainer = document.querySelector("#recruit-container-box");
+            while (recruitsContainer.firstChild) {
+                recruitsContainer.removeChild(recruitsContainer.firstChild);
+            }
+
+            var recruits = allIslandsAndDungeons[currentIsland]["Dungeons"][dungeonName]["Recruits"];
+
+            if (allIslandsAndDungeons[currentIsland]["Dungeons"][dungeonName]["Difficulty"].includes("Heroic")) {
+                recruits = tokenBox;
+            }
+
+            for (var i = 0; i < recruits.length; i++) {
+                recruitsContainer.appendChild(createRecruitBox(recruits[i]));
+            }
+        }
+
+        function createRecruitBox(species) {
+            currentRecruits[species] = {};
+            var recruitBox = document.createElement('div');
+            recruitBox.classList.add("dungeon-recruit-container");
+            recruitBox.classList.add("col-xl-2");
+            recruitBox.classList.add("col-sm-3");
+            recruitBox.classList.add("col-5");
+            recruitBox.setAttribute('data-recruit', species);
+
+            var recruitImg = document.createElement('img');
+            recruitImg.setAttribute('src', getDungeonIcon(species));
+
+            if (species.includes("Token")) {
+                currentRecruits[species]["Image"] = getDungeonIcon("Token");
+            } else {
+                currentRecruits[species]["Image"] = getDungeonIcon(species);
+            }
+
+            var recruitLabel = document.createElement('div');
+            recruitLabel.classList.add("recruit-label");
+            recruitLabel.innerHTML = species;
+
+            recruitBox.appendChild(recruitImg);
+            recruitBox.appendChild(recruitLabel);
+            return recruitBox;
+        }
+
+        function getIslandFromDungeon(dungeon) {
+            if (dungeon.includes("We didn't want you to see this!")) {
+                dungeon = "''We didn't want you to see this!''";
+            }
+            var islandNames = Object.keys(allIslandsAndDungeons);
+            var islandListLength = islandNames.length - 1; // minus 1 to exclude HH
+
+            for (var i = 0; i < islandListLength; i++) {
+                var dungeonList = Object.keys(allIslandsAndDungeons[islandNames[i]]["Dungeons"]);
+                if (dungeonList.includes(dungeon))
+                    return islandNames[i];
+            }
+        }
+
+        document.querySelector("#to-selected-dungeon-btn").addEventListener("click", function () {
+            selectDungeonFromDropdown(document.querySelector("#dungeon-select").value);
+        });
+
+        document.querySelector("#to-selected-dungeon-small-btn").addEventListener("click", function () {
+            selectDungeonFromDropdown(document.querySelector("#dungeon-select-small").value);
+        });
+
+        var flyingIslands = ["Cloud Breach", "Behemoth Isles", "The Starry Cascada Islands", "The Glimmering Isle", "The Land of Mists", "The Lost Kingdom"]
+        function selectDungeonFromDropdown(dungeonValue) {
+            currentDungeon = dungeonValue;
+            currentIsland = getIslandFromDungeon(currentDungeon);
+
+            setIslandDetails(currentIsland);
+            createDungeonInfo(currentDungeon);
+
+            if (flyingIslands.includes(currentIsland))
+                toFlyingIslands(true);
+            else
+                toFlyingIslands(false);
+
+            toggleIslandDetails(true);
+            toggleDungeonDetails(true);
+        }
+
+        // ---------------------------------------
+
+        async function cloudsToSky(on) {
+            var cloudsTransition = document.querySelector("#clouds-transition");
+
+            cloudsTransition.classList.replace("d-none", "to-sky");
+            await sleep(900);
+            document.querySelector("#world-map").classList.add("d-none");
+            var htmlElement = document.querySelector("html");
+
+            if (on) {
+                htmlElement.style.backgroundImage = 'url("https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Backgrounds/Friend%20Area%20Backgrounds/friend-area.png"), radial-gradient(circle, rgba(25,67,70,1) 0%, rgba(0,0,0,0) 88%)';
+            } else {
+                htmlElement.style.backgroundImage = 'radial-gradient(circle, rgba(11,51,79,1) 2%, rgba(17,67,103,0) 8%, rgba(17,67,103,0) 92%, rgba(11,51,79,1) 98%), linear-gradient(0deg, rgba(11,51,79,1) 0%, rgba(17,67,103,1) 3%, rgba(17,67,103,1) 97%, rgba(11,51,79,1) 100%)';
+            }
+
+            if (!on) {
+                document.querySelector("#world-map").classList.replace("d-none", "fadeIn");
+            }
+
+            await sleep(800);
+            cloudsTransition.classList.replace("to-sky", "d-none");
+        }
+
+        function getRecruitDungeons(recruit) {
+            var dungeons = recruitsByDungeon[recruit];
+            var container = document.querySelector("#recruit-dungeons-container");
+
+            while (container.firstChild) {
+                container.removeChild(container.firstChild);
+            }
+
+            if (recruit === "") {
+                document.querySelector("#search-text").innerHTML = "(No recruit selected.)";
+                return;
+            } else {
+                document.querySelector("#search-text").innerHTML = "(Click the banner to go to the dungeon.)";
+            }
+
+            for (var i = 0; i < dungeons.length; i++) {
+                var dungeonName = dungeons[i];
+                if (dungeonName.includes("We didn't want you to see this!")) {
+                    dungeonName = "''We didn't want you to see this!''";
+                }
+                currentIsland = getIslandFromDungeon(dungeonName);
+                var newBanner = createDungeonBanner(dungeonName, allIslandsAndDungeons[getIslandFromDungeon(dungeonName)]["Dungeons"][dungeonName]);
+
+                newBanner.addEventListener("click", function () {
+                    $('#search-modal').modal('hide');
+
+                    setIslandDetails(currentIsland);
+
+                    if (flyingIslands.includes(currentIsland))
+                        toFlyingIslands(true);
+
+                    toggleIslandDetails(true);
+                });
+
+                container.appendChild(newBanner);
+            }
+        }
+    </script>
+
+    <!-- partial:index.partial.html -->
+
+    <div class="water-transition" id="water-transition">
+        <div class="waves"></div>
+    </div>
+
+    <div class="clouds-transition d-none" id="clouds-transition"></div>
+
+    <div class="dungeon-select col-xl-4 col-md-5 col-sm-6 col-12 d-flex flex-wrap align-content-center"
+        id="dungeon-select-container">
+        <select class="col-9 d-lg-block d-none" id="dungeon-select">
+            <option value="" data-dungeon="">Select a dungeon</option>
+        </select>
+        <button class="to-dungeon col-1 d-lg-block d-none" id="to-selected-dungeon-btn"><i
+                class="fa-solid fa-circle-arrow-right"></i></button>
+        <button class="to-search col-1 d-lg-block d-none" data-bs-toggle="modal" data-bs-target="#search-modal"><i
+                class="fa-solid fa-magnifying-glass" data-bs-toggle="tooltip"
+                data-bs-title="Search by recruit"></i></button>
+    </div>
+
+    <button class="credits-link" data-bs-toggle="modal" data-bs-target="#credits-modal">
+        Credits <i class="fa-solid fa-pen fa-sm ms-1"></i>
+    </button>
+
+    <!--- Loading Screen container --->
+    <div class="loading-screen container-fluid" id="loading-screen">
+        <div class="overlay"></div>
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div class="loading-text" id="loading-text">Loading Dungeons . . .</div>
+        </div>
+    </div>
+
+    <!--- World Map container --->
+    <div class="world-map container-fluid d-flex align-content-center" id="world-map">
+        <button class="to-flying-btn d-lg-block d-none" id="to-flying-btn">
+            <div class="label">
+                <div class="arrow"><i class="fa-solid fa-up-long"></i></div> To the Flying Islands
+            </div>
+        </button>
+        <div class="world-map-image"><img
+                src="https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Backgrounds/World-Map-No-Text.png"
+                class="img-fluid w-100">
+            <div class="d-lg-none d-block"
+                style="position:absolute; left:0; right:0; top:0; bottom:0; width:100%; height:100%; margin:auto">
+                <div class="tip-box col-10">
+                    <p class="fw-bold">Select a dungeon from the dropdown below.</p>
+                    <div class="d-flex flex-wrap align-content-center">
+                        <select class="col-10" id="dungeon-select-small">
+                            <option value="" data-dungeon="">Select a dungeon</option>
+                        </select>
+                        <button class="to-dungeon col-1" id="to-selected-dungeon-small-btn"><i
+                                class="fa-solid fa-circle-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-lg-block d-none">
+                <button class="go-to-island" data-island="Kala Island">
+                    <div class="island-button">Kala Island</div>
+                </button>
+                <button class="go-to-island" data-island="Pele Island">
+                    <div class="island-button">Pele Island</div>
+                </button>
+                <button class="go-to-island" data-island="Kumu Island">
+                    <div class="island-button">Kumu Island</div>
+                </button>
+                <button class="go-to-island" data-island="Slumbering Mountains">
+                    <div class="island-button">Slumbering Mountains</div>
+                </button>
+                <button class="go-to-island" data-island="Ash Islands">
+                    <div class="island-button">Ash Islands</div>
+                </button>
+                <button class="go-to-island" data-island="Fairy Ring Isle">
+                    <div class="island-button">Fairy Ring Isle</div>
+                </button>
+                <button class="go-to-island" data-island="Isle of Steam">
+                    <div class="island-button">Isle of Steam</div>
+                </button>
+                <button class="go-to-island" data-island="Draconian Peaks">
+                    <div class="island-button">Draconian Peaks</div>
+                </button>
+                <button class="go-to-island" data-island="Serene Island">
+                    <div class="island-button">Serene Island</div>
+                </button>
+                <button class="go-to-island" data-island="The Decayed Isles">
+                    <div class="island-button">Decayed Isles</div>
+                </button>
+                <button class="go-to-island" data-island="Sea of Beginning">
+                    <div class="island-button">Sea of Beginning</div>
+                </button>
+                <button class="go-to-island" data-island="Spiral Archipelago">
+                    <div class="island-button">Spiral Archipelago</div>
+                </button>
+                <button class="go-to-island" data-island="Skull Island">
+                    <div class="island-button">Skull Island</div>
+                </button>
+                <button class="go-to-island" data-island="Desert Region">
+                    <div class="island-button">Desert Region</div>
+                </button>
+                <button class="go-to-island" data-island="Lanier Islands">
+                    <div class="island-button">Lanier Islands</div>
+                </button>
+                <button class="go-to-island" data-island="Disadattato Island">
+                    <div class="island-button">Disadattato Island</div>
+                </button>
+                <button class="go-to-island" data-island="Islands of the Colossus">
+                    <div class="island-button">Islands of the Colossus</div>
+                </button>
+                <button class="go-to-island" data-island="Parella Island">
+                    <div class="island-button">Parella Island</div>
+                </button>
+                <button class="go-to-island" data-island="The Hissing Isle">
+                    <div class="island-button">Hissing Isle</div>
+                </button>
+                <button class="go-to-island" data-island="Autumnal Heights">
+                    <div class="island-button">Autumnal Heights</div>
+                </button>
+                <button class="go-to-island" data-island="Frozen Isle">
+                    <div class="island-button">Frozen Isle</div>
+                </button>
+                <button class="go-to-island" data-island="Snow Continent">
+                    <div class="island-button">Snow Continent</div>
+                </button>
+                <button class="go-to-island" data-island="The Ancient Tundra">
+                    <div class="island-button">Ancient Tundra</div>
+                </button>
+                <button class="go-to-island" data-island="Sweetful Isle">
+                    <div class="island-button">Sweetful Isle</div>
+                    <button class="go-to-island" data-island="Frozen Wasteland">
+                        <div class="island-button">Frozen Wasteland</div>
+                    </button>
+                    <button class="go-to-island" data-island="Othrys">
+                        <div class="island-button">Othrys</div>
+                    </button>
+                    <button class="go-to-island" data-island="Grass Continent">
+                        <div class="island-button">Grass Continent</div>
+                    </button>
+                    <button class="go-to-island" data-island="Air Continent">
+                        <div class="island-button">Air Continent</div>
+                    </button>
+                    <button class="go-to-island" data-island="Mist Continent">
+                        <div class="island-button">Mist Continent</div>
+                    </button>
+                    <button class="go-to-island" data-island="Water Continent">
+                        <div class="island-button">Water Continent</div>
+                    </button>
+                    <button class="go-to-island" data-island="Sand Continent">
+                        <div class="island-button">Sand Continent</div>
+                    </button>
+                    <button class="go-to-island" data-island="Sea of Wonders">
+                        <div class="island-button">Sea of Wonders</div>
+                    </button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--- Flying Islands container --->
+    <div class="flying-islands-map row overflow-hidden justify-content-center align-content-center d-none"
+        id="flying-islands-map">
+        <div class="flying-islands-map-blur"></div>
+        <button class="back-to-sea-btn d-lg-block d-none" id="back-to-sea-btn">
+            <div class="label">
+                <div class="arrow"><i class="fa-solid fa-up-long"></i></div> To the Great Ocean
+            </div>
+        </button>
+        <div class="flying-islands-btns-container d-flex flex-wrap overflow-scroll col-11 p-4 m-auto"
+            style="max-height: 90%;">
+            <button class="flying-island-btn col-md-4 col-sm-6 col-9" data-island="Cloud Breach"><img
+                    src="https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Backgrounds/Clouds/ev_cloud_01.png"
+                    class="col-12">
+                <div class="flying-island-label">Cloud Breach</div>
+            </button>
+            <button class="flying-island-btn col-md-4 col-sm-6 col-9" data-island="Behemoth Isles"><img
+                    src="https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Backgrounds/Clouds/ev_cloud_02.png"
+                    class="col-12">
+                <div class="flying-island-label">Behemoth Isles</div>
+            </button>
+            <button class="flying-island-btn col-md-4 col-sm-8 col-11" data-island="The Glimmering Isle"><img
+                    src="https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Backgrounds/Clouds/ev_cloud_03.png"
+                    class="col-12">
+                <div class="flying-island-label">Glimmering Isle</div>
+            </button>
+            <button class="flying-island-btn col-md-4 col-sm-8 col-11" data-island="The Starry Cascada Islands"><img
+                    src="https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Backgrounds/Clouds/ev_cloud_04.png"
+                    class="col-12">
+                <div class="flying-island-label">Starry Cascada Islands</div>
+            </button>
+            <button class="flying-island-btn col-md-4 col-sm-8 col-11" data-island="The Land of Mists"><img
+                    src="https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Backgrounds/Clouds/ev_cloud_05.png"
+                    class="col-12">
+                <div class="flying-island-label">Land of Mists</div>
+            </button>
+            <button class="flying-island-btn col-md-4 col-sm-8 col-11" data-island="The Lost Kingdom"><img
+                    src="https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Backgrounds/Clouds/ev_cloud_07.png"
+                    class="col-12">
+                <div class="flying-island-label">Lost Kingdom</div>
+            </button>
+
+        </div>
+    </div>
+
+    <!--- Island information container --->
+    <div class="map-overview-container container-fluid d-flex flex-wrap justify-content-center d-none"
+        id="map-overview-container">
+        <div class="map-info-blur"></div>
+        <div class="row col-lg-4 col-sm-5 mx-5 mt-5 mb-2 justify-content-center align-content-center">
+            <div class="map-zoomed-in mx-auto mb-2" id="map-zoomed-in" data-island="">
+            </div>
+            <button class="big-button map-link" id="back-to-map-btn">Back to Map</button>
+        </div>
+        <div class="map-information m-auto col-xl-7 col-lg-9 col-11 text-center">
+            <div class="island-overview" id="island-overview">
+                <div class="section-header mt-5 mb-2 fs-3" id="current-island-name">Island Name</div>
+                <div class="p-4" id="current-island-blurb">
+                    <p>Island description goes here.</p>
+                </div>
+            </div>
+
+            <div class="dungeon-overview d-none" id="dungeon-overview">
+                <div class="section-header mt-4 mb-2 fs-5" id="dungeon-name-box" data-dungeon="">Dungeon Name</div>
+                <div class="p-4" id="dungeon-description-box">
+                    <p>Dungeon description goes here.</p>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center pb-3" id="recruit-container-box">
+
+                    <div class="dungeon-recruit-container col-xl-2 col-sm-3 col-5 d-none">
+                        <img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/shiny/venusaur.png"
+                            data-pokemon="Venusaur">
+                        <div class="recruit-label">Venusaur</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex flex-wrap justify-content-center" id="dungeon-banner-btns">
+                <div class="dungeon-banner d-none">
+                    <button class="dungeon-select-banner d-flex col-5 align-items-center justify-content-center">
+                        <div class="dungeon-label-banner">
+                            Dungeon Name
+                        </div>
+                    </button>
+                    <div class="dungeon-banner-tail-left"></div>
+                    <div class="dungeon-banner-tail-right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- Island information container END --->
+
+    <!-- Recruit Search Modal -->
+    <div class="modal modal-lg fade" id="search-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Where can I find ... ?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-12 d-flex">
+                        <select class="col-lg-6 col-11 mx-auto" id="recruit-select">
+                            <option value="">Select a recruit</option>
+                        </select>
+                    </div>
+
+                    <hr class="border border-secondary border-1 opacity-50">
+
+                    <h2 class="modal-title fs-5">Dungeons</h2>
+
+                    <div class="col-12 text-center mt-3" id="search-text">(Select a recruit to get started.)</div>
+
+                    <div class="col-12 d-flex flex-wrap mt-4 justify-content-center align-items-center"
+                        id="recruit-dungeons-container">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Credits Modal -->
+    <div class="modal modal-lg fade" id="credits-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Credits</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><i class="fa-solid fa-caret-right me-3"></i><b>Official <i>Pokémon Mystery Dungeon: Rescue Team
+                                DX</i> background illustrations</b> sourced from <a
+                            href="https://www.spriters-resource.com/nintendo_switch/pokemonmysterydungeonrescueteamdx/">The
+                            Spriters Resource</a></p>
+                    <p><i class="fa-solid fa-caret-right me-3"></i><b>Gen I-VIII Pokémon pixel sprites</b> (dungeons,
+                        results screen) sourced from <a href="https://github.com/msikma/pokesprite">msikma's PokéSprite
+                            respository</a></p>
+                    <p><i class="fa-solid fa-caret-right me-3"></i><b>Gen IX Pokémon pixel sprites</b> (dungeons,
+                        results screen) sourced from <a href="https://play.pokemonshowdown.com/sprites/">Pokémon
+                            Showdown</a> and the <a
+                            href="https://www.pokecommunity.com/threads/generation-9-resource-pack-v21-1.527398/">Generation
+                            9 Resource Pack on PokéCommunity</a></p>
+                    <p><i class="fa-solid fa-caret-right me-3"></i><b>Potions & Juices art</b> (dungeons, results
+                        screen) created by <a href="https://www.deviantart.com/scribble-nebula">Scribble-Nebula</a> <i
+                            class="fa-brands fa-deviantart ms-1"></i></p>
+                    <p><i class="fa-solid fa-caret-right me-3"></i><b>World map illustration</b> created by <a
+                            href="https://www.deviantart.com/minish-mae">Minish-Mae</a> <i
+                            class="fa-brands fa-deviantart ms-1"></i></p>
+                    <p><i class="fa-solid fa-caret-right me-3"></i><b>Interactive World Map</b> coded by
+                        <u>dragon-heist</u></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
