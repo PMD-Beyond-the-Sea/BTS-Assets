@@ -66,7 +66,8 @@
                     "Drilbur",
                     "Pansear",
                     "Sandygast",
-                    "Salandit"
+                    "Salandit",
+                    "Tinkatink"
                 ]
             },
             "Volcano Shrine": {
@@ -160,7 +161,8 @@
                     "Electrike",
                     "Shinx",
                     "Joltik",
-                    "Tynamo"
+                    "Tynamo",
+                    "Mareep"
                 ]
             },
             "Purity Field": {
@@ -215,7 +217,8 @@
                     "Fletchling",
                     "Helioptile",
                     "Flabebe",
-                    "Skiddo"
+                    "Skiddo",
+                    "Cottonee"
                 ]
             },
             "Beaver Hills": {
@@ -262,7 +265,8 @@
                     "Wishiwashi",
                     "Sobble",
                     "Chewtle",
-                    "Cramorant"
+                    "Cramorant",
+                    "Jangmo-o"
                 ]
             },
             "Illusion Brush": {
@@ -347,7 +351,8 @@
                     "Tirtouga",
                     "Amaura",
                     "Tyrunt",
-                    "Dracovish"
+                    "Dracovish",
+                    "Unown"
                 ]
             },
             "Snowy Ridge": {
@@ -671,7 +676,8 @@
                     "Tyrogue",
                     "Scraggy",
                     "Pancham",
-                    "Larvitar"
+                    "Larvitar",
+                    "Charcadet"
                 ]
             }
         }
@@ -702,7 +708,8 @@
                     "Comfey",
                     "Sandygast",
                     "Maractus",
-                    "Tropius"
+                    "Tropius",
+                    "Pawmi"
                 ]
             },
             "''We didn't want you to see this!''": {
@@ -716,7 +723,8 @@
                     "Elgyem",
                     "Trapinch",
                     "Sandile",
-                    "Burmy (Sandy Cloak)"
+                    "Burmy (Sandy Cloak)",
+                    "Porygon"
                 ]
             }
         }
@@ -808,7 +816,8 @@
                     "Nidoran",
                     "Espurr",
                     "Hippopotas",
-                    "Frillish"
+                    "Frillish",
+                    "Diglett (Alola)"
                 ]
             },
             "Noiseless Nursery": {
@@ -1066,7 +1075,8 @@
                     "Panpour",
                     "Totodile",
                     "Rolycoly",
-                    "Grimer (Alola)"
+                    "Grimer (Alola)",
+                    "Fuecoco"
                 ]
             }
         }
@@ -1239,12 +1249,10 @@
                 "Difficulty": "Heroic (80+)",
                 "Recruits": [
                     "Random Recruit Token",
-                    "Solrock",
-                    "Lunatone",
-                    "Bronzor",
-                    "Porygon",
-                    "Beldum",
-                    "Bagon"
+                    "Random Gen. Recruit Token",
+                    "Random Type Recruit Token",
+                    "Category of Choice Recruit Token",
+                    "Pokémon of Choice Token"
                 ]
             }
         }
@@ -1342,7 +1350,8 @@
                     "Emolga",
                     "Petilil",
                     "Sewaddle",
-                    "Geodude (Kanto)"
+                    "Geodude (Kanto)",
+                    "Oddish"
                 ]
             },
             "Crags of Lament": {
@@ -1366,7 +1375,9 @@
                     "Panpour",
                     "Silicobra",
                     "Timburr",
-                    "Falinks"
+                    "Falinks",
+                    "Rellor",
+                    "Diglett (Kanto)"
                 ]
             },
             "Glacier Palace": {
@@ -1424,7 +1435,8 @@
                     "Spinarak",
                     "Baltoy",
                     "Golett",
-                    "Honedge"
+                    "Honedge",
+                    "Solosis"
                 ]
             },
             "Revelation Mountain": {
@@ -1482,26 +1494,22 @@
                 "Description": "<p>The dungeon seems simple enough. A craggy orangish/yellow valley full of cacti and sand. The only thing you need to worry about is the tough Pokemon lurking inside, right? Wrong!! Every couple of minutes, a strong wind comes bursting through the corridors of the dungeon, and if you're not careful, it might just blow you right back to the beginning! Not only that, but the mysterious force that prevents you from staying on a floor too long seems to appear quicker here! If you spend too long dawdling, not only do you have the strong wind to deal with, but also the mysterious force could kick you out!</p><p>It may not be wise to check every inch of the dungeon, but who knows what treasure could be lying in wait?</p>",
                 "Difficulty": "Heroic (80+)",
                 "Recruits": [
-                    "Magnemite",
-                    "Porygon",
-                    "Elekid",
-                    "Klink",
-                    "Swirlix",
-                    "Hoppip"
+                    "Random Recruit Token",
+                    "Random Gen. Recruit Token",
+                    "Random Type Recruit Token",
+                    "Category of Choice Recruit Token",
+                    "Pokémon of Choice Token"
                 ]
             },
             "Hall of Magic": {
                 "Description": "<p>Left? Right? Up? Down? Too many corridors to even begin to wonder! Mirrors everywhere you look! Not only that, but if you walk one way, you could end up another way! This dungeon is very decrepit, giving off a look of an ancient tomb of sorts. The Pokemon that live here are tricksters and masters at the art of magic, and if you enter their home, there's no doubt they'll try to confuse you and keep you from reaching the end. Best their mind games and make it to the end of the dungeon!</p>",
                 "Difficulty": "Heroic (80+)",
                 "Recruits": [
-                    "Spoink",
-                    "Chingling",
-                    "Gothita",
-                    "Abra",
-                    "Rotom",
-                    "Litwick",
-                    "Golett",
-                    "Klefki"
+                    "Random Recruit Token",
+                    "Random Gen. Recruit Token",
+                    "Random Type Recruit Token",
+                    "Category of Choice Recruit Token",
+                    "Pokémon of Choice Token"
                 ]
             },
             "Mysterious Geoglyph": {
@@ -1529,7 +1537,8 @@
                     "Dratini",
                     "Eevee",
                     "Wingull",
-                    "Pikipek"
+                    "Pikipek",
+                    "Pawmi"
                 ]
             },
             "Blizzard Island": {
@@ -1576,14 +1585,11 @@
                 "Description": "<p>A giant tree in the southern area of the Sea of Wonders. It's said that the tree's destruction gave way to Dark Matter unleashing it's wrath upon the world. Scars from the destruction can still be seen within the roots and bark of the tree itself. Once a withering, upsetting sight, the Tree of Life now blossoms with rainbow leaves and vines from the outside. The inside of the tree and trunk are now home to plenty of Pokemon and a feeling of renewal can be felt throughout the dungeon.</p><p>Xerneas lives at the top of the dungeon but hasn't been seen for centuries. Maybe if you find them, something good will come out of your exchange?</p>",
                 "Difficulty": "Heroic (80+)",
                 "Recruits": [
-                    "Flabebe",
-                    "Solosis",
-                    "Ralts",
-                    "Cottonee",
-                    "Oddish",
-                    "Tangela",
-                    "Cacnea",
-                    "Scyther"
+                    "Random Recruit Token",
+                    "Random Gen. Recruit Token",
+                    "Random Type Recruit Token",
+                    "Category of Choice Recruit Token",
+                    "Pokémon of Choice Token"
                 ]
             },
             "Ocean Tempest": {
@@ -1721,13 +1727,11 @@
                 "Description": "<p>A cursed dungeon filled with various pokemon that seem to have stitches all over them. Some of them might even be made of entirely bone! In these eerie tunnels shows artwork of a  past civilization that found it's ruin by unknown means. Now these undead creatures seem to be out for revenge. Tread carefully, if you dare!</p>",
                 "Difficulty": "Heroic (80+)",
                 "Recruits": [
-                    "Fuecoco",
-                    "Cubone",
-                    "Dreepy",
-                    "Rellor",
-                    "Tinkatink",
-                    "Mankey",
-                    "Pawmi"
+                    "Random Recruit Token",
+                    "Random Gen. Recruit Token",
+                    "Random Type Recruit Token",
+                    "Category of Choice Recruit Token",
+                    "Pokémon of Choice Token"
                 ]
             },
             "Secret Walls of Blackwood Manor": {
@@ -1839,7 +1843,8 @@
                     "Diglett",
                     "Wiglett",
                     "Dewpider",
-                    "Wimpod"
+                    "Wimpod",
+                    "Spoink"
                 ]
             },
             "Faerie's Grove": {
@@ -1981,13 +1986,11 @@
                 "Description": "<p>The Charcadet remember one story. It was a story from after their ascent… fresh enough in their memory that they still wince to think of it.</p><p>A Pokemon came, heralding the end; by its power alone, their kingdom was felled, and few escaped the wreckage of the once glorious castle city. The dungeon itself is a monument to that frightful day; castle towers lay toppled, and the once glorious glowing gemstones that lit up its streets now flicker ominously to light your path. By some strange magic, the forest refuses to spread into the old stones, so the only forest to be found here are walls and piles of rubble.</p><p>The castle still stands and is a sight to behold despite its disrepair. The entrance is wide open, allowing any and all passage. They say the Pokemon from the past still lives there, waiting for an opponent worthy of its power. Do you believe yourself up to the challenge?</p>",
                 "Difficulty": "Heroic (80+)",
                 "Recruits": [
-                    "Sigilyph",
-                    "Charcadet",
-                    "Unown",
-                    "Jangmo-o",
-                    "Skarmory",
-                    "Tinkatink",
-                    "Glimmet"
+                    "Random Recruit Token",
+                    "Random Gen. Recruit Token",
+                    "Random Type Recruit Token",
+                    "Category of Choice Recruit Token",
+                    "Pokémon of Choice Token"
                 ]
             },
             "Darklight Crypt": {
