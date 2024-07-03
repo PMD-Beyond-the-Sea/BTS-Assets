@@ -1653,18 +1653,13 @@
             },
             "Treasure Reef": {
                 "Description": "<p>Found just under an inconspicuous shimmering patch of water, this dungeon is absolutely gorgeous! It teems with a large amount of life within this shimmering reef which sparkles like gemstones and coral grows aplenty in this place, over various ancient wrecks settled at the bottom of this reef. Surely treasure lies within for those who are brave enough to seek it!</p><p>However, the residents of such a dungeon range from reserved and timid, but friendly to fiercely protective of such a place for anyone who may tarnish its beauty. And such a place can truly draw one even more in, not ever wanting to wish to leave its beautiful idyllic underwater utopia...</p>",
-                "Difficulty": "",
+                "Difficulty": "Heroic (80+)",
                 "Recruits": [
-                    "Finizen",
-                    "Mareanie",
-                    "Pincurchin",
-                    "Kabuto",
-                    "Clauncher",
-                    "Wishiwashi",
-                    "Dondozo",
-                    "Tatsugiri",
-                    "Veluza",
-                    "Staryu"
+                    "Random Recruit Token",
+                    "Random Gen. Recruit Token",
+                    "Random Type Recruit Token",
+                    "Category of Choice Recruit Token",
+                    "Pokémon of Choice Token"
                 ]
             },
             "Cloudy Heavens": {
