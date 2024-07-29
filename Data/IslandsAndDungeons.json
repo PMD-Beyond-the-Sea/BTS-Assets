@@ -1465,7 +1465,7 @@
             },
             "Purity Forest": {
                 "Description": "<p>One of the ultimate tests for exploration teams!!</p><p>You go in at level one, you can bring in no items, and it's up to the whimsy of the forest and your wits.</p><p>Welcome to Purity Forest!!</p><p>The forest's guardian, Celebi, watches over everything happening in their wood. To them, it is a sacred place, and only the chosen may visit them in the depths. Perhaps this difficult dungeon is a challenge they've issued to you? Nonetheless, the forest seemingly changes the deeper you go into it. From a pleasant forest, to a craggy cliff, to a pond, you'll find lots of different terrain inside! On top of that, all of the feral Pokemon here will make getting to the end of the dungeon a living nightmare.</p><p>If you manage to get to the end, Celebi will graciously reward you with something special! … Or not!!</p><p>Looks like you'll have to see for yourself!</p><p>May luck go with you!</p>",
-                "Difficulty": "",
+                "Difficulty": "Legendary (90+)",
                 "Recruits": [
                     "Playful Potion",
                     "Delight Potion",
