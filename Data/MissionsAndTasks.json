@@ -2,80 +2,116 @@
     "Missions" : {
         "Bounty Hunters" : {
             "01" : {
-                "Client" : "--",
+                "Client" : "BH1 Client ",
                 "Escort" : false,
-                "Objective" : "--",
-                "Dungeon" : "--",
-                "Reward" : []
+                "Objective" : "BH1 Objective text goes here!",
+                "Dungeon" : "BH1 Dungeon Name",
+                "Reward" : [
+                    "Reward 1",
+                    "Reward 2",
+                    "Reward 3"
+                ]
             },
             "02" : {
-                "Client" : "--",
+                "Client" : "BH2 Client ",
                 "Escort" : false,
-                "Objective" : "--",
-                "Dungeon" : "--",
-                "Reward" : []
+                "Objective" : "BH2 Objective text goes here!",
+                "Dungeon" : "BH2 Dungeon Name",
+                "Reward" : [
+                    "Reward 1",
+                    "Reward 2",
+                    "Reward 3"
+                ]
             },
             "03" : {
-                "Client" : "--",
-                "Escort" : false,
-                "Objective" : "--",
-                "Dungeon" : "--",
-                "Reward" : []
+                "Client" : "BH3 Client ",
+                "Escort" : true,
+                "Objective" : "BH3 Objective text goes here!",
+                "Dungeon" : "BH3 Dungeon Name",
+                "Reward" : [
+                    "Reward 1",
+                    "Reward 2",
+                    "Reward 3"
+                ]
             }
         },
         "Rescuers" : {
             "01" : {
-                "Client" : "--",
+                "Client" : "R1 Client ",
                 "Escort" : false,
-                "Objective" : "--",
-                "Dungeon" : "--",
-                "Reward" : []
+                "Objective" : "R1 Objective text goes here!",
+                "Dungeon" : "R1 Dungeon Name",
+                "Reward" : [
+                    "Reward 1",
+                    "Reward 2",
+                    "Reward 3"
+                ]
             },
             "02" : {
-                "Client" : "--",
+                "Client" : "R2 Client ",
                 "Escort" : false,
-                "Objective" : "--",
-                "Dungeon" : "--",
-                "Reward" : []
+                "Objective" : "R2 Objective text goes here!",
+                "Dungeon" : "R2 Dungeon Name",
+                "Reward" : [
+                    "Reward 1",
+                    "Reward 2",
+                    "Reward 3"
+                ]
             },
             "03" : {
-                "Client" : "--",
+                "Client" : "R3 Client ",
                 "Escort" : false,
-                "Objective" : "--",
-                "Dungeon" : "--",
-                "Reward" : []
+                "Objective" : "R3 Objective text goes here!",
+                "Dungeon" : "R3 Dungeon Name",
+                "Reward" : [
+                    "Reward 1",
+                    "Reward 2",
+                    "Reward 3"
+                ]
             }
         },
         "Wayfarers" : {
             "01" : {
-                "Client" : "--",
-                "Escort" : false,
-                "Objective" : "--",
-                "Dungeon" : "--",
-                "Reward" : []
+                "Client" : "W1 Client ",
+                "Escort" : true,
+                "Objective" : "W1 Objective text goes here!",
+                "Dungeon" : "W1 Dungeon Name",
+                "Reward" : [
+                    "Reward 1",
+                    "Reward 2",
+                    "Reward 3"
+                ]
             },
             "02" : {
-                "Client" : "--",
+                "Client" : "W2 Client ",
                 "Escort" : false,
-                "Objective" : "--",
-                "Dungeon" : "--",
-                "Reward" : []
+                "Objective" : "W2 Objective text goes here!",
+                "Dungeon" : "W2 Dungeon Name",
+                "Reward" : [
+                    "Reward 1",
+                    "Reward 2",
+                    "Reward 3"
+                ]
             },
             "03" : {
-                "Client" : "--",
+                "Client" : "W3 Client ",
                 "Escort" : false,
-                "Objective" : "--",
-                "Dungeon" : "--",
-                "Reward" : []
+                "Objective" : "W3 Objective text goes here!",
+                "Dungeon" : "W13 Dungeon Name",
+                "Reward" : [
+                    "Reward 1",
+                    "Reward 2",
+                    "Reward 3"
+                ]
             }
         }
     },
     "Tasks" : {
-        "Event" : "The GCSF's 5th Anniversary",
+        "Event" : "",
         "GCSF" : {
-            "Task 01" : "Celebrating the Guild",
-            "Task 02" : "Reflections",
-            "Task 03" : "Looking Ahead"
+            "Task 01" : "Task Name A",
+            "Task 02" : "Task Name B",
+            "Task 03" : "Task Name C"
         },
         "Holiday Hills" : {
             "Task 02" : "Christmas in July",
