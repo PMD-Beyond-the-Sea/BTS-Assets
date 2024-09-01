@@ -713,7 +713,7 @@
                 ]
             },
             "''We didn't want you to see this!''": {
-                "Description": "<p>After checking behind the Triptrop, you find even more land on the island. There's a cryptic sign on the leafy path that says ‘We didn't want you to see this!'. What? In front of you lays an odd landscape of jungle, ice peaks, and savannah all mixed into one land. You could take one step and feel snow under your feet and a couple more feet you find yourself sweating in the savannah. Why is this so strange, and why are the Pokemon strange too? Should you really be here for retirement?</p>",
+                "Description": "<p>After checking behind the Triptrop, you find even more land on the island. There's a cryptic sign on the leafy path that says <i>'We didn't want you to see this!'</i>. What? In front of you lays an odd landscape of jungle, ice peaks, and savannah all mixed into one land. You could take one step and feel snow under your feet and a couple more feet you find yourself sweating in the savannah. Why is this so strange, and why are the Pokemon strange too? Should you really be here for retirement?</p>",
                 "Difficulty": "",
                 "Recruits": [
                     "Arctovish",
@@ -972,7 +972,7 @@
         "Description": "<p>Sailing towards unseen land, you start to feel hungry. Something in the air compelled you to sail to the port where you are greeted with a small market town named Hershey. It is a small town, however, the market is booming with travelers who have come to try the delectable goodness of the food found on this island.</p>",
         "Dungeons": {
             "Berry Grove": {
-                "Description": "<p>From the West of Hershey lays the Berry Grove dungeon, the grove is lined by a small collection of trees and mass amounts of bushes, a few field areas and some plotted lands for the residents of Hershey to grow their fruits and vegetables. The bushes are blooming with fruits, as well as the trees.</p>",
+                "Description": "<p>To the west of Hershey lays the Berry Grove dungeon, the grove is lined by a small collection of trees and mass amounts of bushes, a few field areas and some plotted lands for the residents of Hershey to grow their fruits and vegetables. The bushes are blooming with fruits, as well as the trees.</p>",
                 "Difficulty": "",
                 "Recruits": [
                     "Cherubi",
@@ -1245,7 +1245,7 @@
                 ]
             },
             "Temporal Tower": {
-                "Description": "<p>Once you're off the Rainbow Stoneship, Temporal Tower lies right before you. Even after centuries of standing, and nearly having collapsed, it still stands tall and proud! As you climb the spiraling tower, you'll even notice wounds from the past. Cracks and fissures from Primal Dialga's rampage all those years ago still show as you climb it. The Pokemon here definitely don't see visitors, so they will go all out as a last resort to keep you away from the pinnacle. Although the Time Gears don't rest here anymore, the pinnacle is a very sacred place where an ancestor of Tempo used to reign. For some reason, being here makes you a bit melancholic.</p>",
+                "Description": "<p>Once you're off the Rainbow Stoneship, Temporal Tower lies right before you. Even after centuries of standing, and nearly having collapsed, it still stands tall and proud! As you climb the spiraling tower, you'll even notice wounds from the past. Cracks and fissures from Primal Dialga's rampage all those years ago still show as you climb it. The Pokemon here definitely don't see visitors, so they will go all out as a last resort to keep you away from the pinnacle. Although the Time Gears don't rest here anymore, the pinnacle is a very sacred place where an ancestor of Tempo used to reign.</p><p>For some reason, being here makes you a bit melancholic.</p>",
                 "Difficulty": "Heroic (80+)",
                 "Recruits": [
                     "Random Recruit Token",
