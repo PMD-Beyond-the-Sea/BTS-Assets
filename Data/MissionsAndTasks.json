@@ -114,9 +114,10 @@
             "Task 03" : "Bump in the Night"
         },
         "Holiday Hills" : {
-            "Task 02" : "Christmas in July",
-            "Task 03" : "Beating the Heat",
-            "Task 04" : "Lounging by the Water"
+            "Task 01" : "Evacuating Ethovalon",
+            "Task 02" : "Bring Back the Light",
+            "Task 03" : "Respite at the Outskirts",
+            "Task 04" : "Planned Costumes"
         }
     }
 }
