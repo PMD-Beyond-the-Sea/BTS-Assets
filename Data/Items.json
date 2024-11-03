@@ -1,7 +1,9 @@
 {
-    "Golden Mask" : "Allows you to choose the Pokemon you want from the dungeon! Cannot be used alongside a Wishing Star.",
-    "Lost Loot" : "Grants an additional +5,000 Poké upon completing a dungeon!",
-    "Wonder Chest" : "Grants your team's characters +5 levels! Cannot be used alongside a Tera Orb.",
-    "Tera Orb" : "Grants your team's characters +10 levels! Cannot be used alongside a Wonder Chest.",
-    "Wishing Star" : "Allows you to choose the Potion or Juice you want from the dungeon! Cannot be used alongside a Golden Mask."
+    "Recruit Slots 1-3" : {
+        "price" : 2000,
+        "description" : "Want a new recruit on your team? You can buy your first slots for this price!\n\n✦ All three of these slots come together in a bundle, you get all three for 2,000p!\n✦ In order to recruit a Pokemon from a completed dungeon, you must have Team Slots purchased and open!\n✦ Recruit Slots have to be purchased in order, starting here with 1- 3!",
+        "image" : "recruit-slots-1",
+        "shopId" : "team-items-services",
+        "headerId" : "dhao4br33oay"
+    }
 }
