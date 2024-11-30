@@ -2,106 +2,92 @@
     "Missions" : {
         "Bounty Hunters" : {
             "01" : {
-                "Client" : "Makuhita",
-                "Mission Type" : "Acquisition",
-                "Objective" : "Retrieve the stolen Hue Berries from Drapion!",
+                "Client" : "Officer Magnezone",
+                "Mission Type" : "Arrest",
+                "Objective" : "Capture the fugitives Bonsly, Rattatto, and Growlithe!",
                 "Dungeon" : "Lost Township",
                 "Reward" : [
-                    "Hue Berry",
-                    "Key",
-                    "100p"
+                    "TM Pounce",
+                    "Poké Radar",
+                    "500p"
                 ]
             },
             "02" : {
-                "Client" : "Officer Magnezone",
-                "Mission Type" : "Arrest",
-                "Objective" : "Arrest the masked pink Pokemon!",
-                "Dungeon" : "Ancient Ruins",
+                "Client" : "",
+                "Mission Type" : "",
+                "Objective" : "",
+                "Dungeon" : "",
                 "Reward" : [
-                    "Normal-Type Recruit Token",
-                    "TM Foul Play",
-                    "300p"
+                    ""
                 ]
             },
             "03" : {
-                "Client" : "Chansey",
-                "Mission Type" : "Arrest",
-                "Objective" : "Arrest the dissident juveniles!",
-                "Dungeon" : "''We didn't want you to see this!''",
+                "Client" : "",
+                "Mission Type" : "",
+                "Objective" : "",
+                "Dungeon" : "",
                 "Reward" : [
-                    "Fairy-Type Recruit Token",
-                    "TM Play Rough",
-                    "300p"
+                    ""
                 ]
             }
         },
         "Rescuers" : {
             "01" : {
-                "Client" : "Emolga",
+                "Client" : "Arbok",
                 "Mission Type" : "Rescue",
-                "Objective" : "Find and help Emolga with their damaged wing!",
-                "Dungeon" : "Air Fortress",
+                "Objective" : "Find and keep Cosmog (?) out of trouble!",
+                "Dungeon" : "Ancestral Battlegrounds",
                 "Reward" : [
-                    "TM Brave Bird",
-                    "Treasure Box",
+                    "Tera Shard",
+                    "Random Recruit Token",
                     "100p"
                 ]
             },
             "02" : {
-                "Client" : "Sneasler",
-                "Mission Type" : "Acquisition",
-                "Objective" : "Gather bioluminescent plants for Sneasler!",
-                "Dungeon" : "Glowlight Woodlands",
+                "Client" : "",
+                "Mission Type" : "",
+                "Objective" : "",
+                "Dungeon" : "",
                 "Reward" : [
-                    "Shiny Potion",
-                    "Poke Radar",
-                    "500p"
+                    ""
                 ]
             },
             "03" : {
-                "Client" : "Mienfoo",
-                "Mission Type" : "Escort",
-                "Objective" : "Escort Mienfoo (Shiny) to Torracat!",
-                "Dungeon" : "Den of Darkness",
+                "Client" : "",
+                "Mission Type" : "",
+                "Objective" : "",
+                "Dungeon" : "",
                 "Reward" : [
-                    "Fighting-Type Recruit Token",
-                    "Move Tutor",
-                    "100p"
+                    ""
                 ]
             }
         },
         "Wayfarers" : {
             "01" : {
-                "Client" : "Watchog",
-                "Mission Type" : "Escort",
-                "Objective" : "Teach the children of Serene Village about exploring!",
-                "Dungeon" : "School Forest",
+                "Client" : "",
+                "Mission Type" : "",
+                "Objective" : "",
+                "Dungeon" : "",
                 "Reward" : [
-                    "TM Helping Hand",
-                    "TM Substitute",
-                    "100p"
+                    "
                 ]
             },
             "02" : {
-                "Client" : "Spinda",
-                "Mission Type" : "Search",
-                "Objective" : "Investigate the rumors of the 'Mirage Pokemon'!",
-                "Dungeon" : "Purity Field",
+                "Client" : "",
+                "Mission Type" : "",
+                "Objective" : "",
+                "Dungeon" : "",
                 "Reward" : [
-                    "Treasure Box",
-                    "TM Metronome",
-                    "100p"
+                    ""
                 ]
             },
             "03" : {
-                "Client" : "Indeedee",
-                "Mission Type" : "Escort",
-                "Objective" : "Escort Indeedee and find the Hidden Room!",
-                "Dungeon" : "Decayed Mansion",
+                "Client" : "",
+                "Mission Type" : "",
+                "Objective" : "",
+                "Dungeon" : "",
                 "Reward" : [
-                    "Treasure Box",
-                    "Move Tutor (Miracle Eye)",
-                    "100p"
+                    ""
                 ]
             }
         }
@@ -109,15 +95,15 @@
     "Tasks" : {
         "Event" : "",
         "GCSF" : {
-            "Task 01" : "Lay of the Land",
-            "Task 02" : "Feast Your Eyes",
-            "Task 03" : "Bump in the Night"
+            "Task 01" : "Camping Trip",
+            "Task 02" : "Class is in Session",
+            "Task 03" : "Assessing the Damage"
         },
         "Holiday Hills" : {
-            "Task 01" : "Evacuating Ethovalon",
-            "Task 02" : "Bring Back the Light",
-            "Task 03" : "Respite at the Outskirts",
-            "Task 04" : "Planned Costumes"
+            "Task 01" : "",
+            "Task 02" : "",
+            "Task 03" : "",
+            "Task 04" : ""
         }
     }
 }
