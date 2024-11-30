@@ -64,12 +64,14 @@
         },
         "Wayfarers" : {
             "01" : {
-                "Client" : "",
-                "Mission Type" : "",
-                "Objective" : "",
-                "Dungeon" : "",
+                "Client" : "Wynton and Wyndam",
+                "Mission Type" : "Investigation",
+                "Objective" : "Talk to the locals about a mysterious 'overgrowth potion'!",
+                "Dungeon" : "Coconutty Triptrop Peak",
                 "Reward" : [
-                    ""
+                    "Key",
+                    "Treasure Box",
+                    "500p"
                 ]
             },
             "02" : {
