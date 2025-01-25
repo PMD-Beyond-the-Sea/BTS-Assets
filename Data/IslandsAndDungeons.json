@@ -2067,6 +2067,24 @@
                 "Corsola (Galar)",
                 "Teddiursa"
             ]
+        },
+        "Winter 2025": {
+            "Dungeon Name": "Festival of Frost",
+            "Description": "",
+            "Recruits": [
+                "Reindeer Weedle",
+                "Heartseeker Comfey",
+                "Lovegram Wingull",
+                "Snow Dew Flabebe",
+                "Snowman Dedenne",
+                "Festive Tree Turtonator",
+                "Spheal (Shiny)",
+                "Vanillite (Shiny)",
+                "Eiscue (Shiny)",
+                "Piplup",
+                "Poliwag",
+                "Snorunt (Shiny)"
+            ]
         }
     },
     "Ultra Space Wilds": {
