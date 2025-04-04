@@ -2085,6 +2085,24 @@
                 "Poliwag",
                 "Snorunt (Shiny)"
             ]
+        },
+        "Spring 2025": {
+            "Dungeon Name": "Dewdrop Meadows",
+            "Description": "",
+            "Recruits": [
+                "Spring Petal Ledyba",
+                "Iridescent Growlithe (Hisui)",
+                "Magnolia Vulpix (Kanto)",
+                "Lily of the Valley Mawile",
+                "Carillon Misdreavus",
+                "Lily Pad Totodile",
+                "Dewpider",
+                "Chikorita",
+                "Caterpie",
+                "Wooper (Johto)",
+                "Cherubi",
+                "Froakie"
+            ]
         }
     },
     "Ultra Space Wilds": {
