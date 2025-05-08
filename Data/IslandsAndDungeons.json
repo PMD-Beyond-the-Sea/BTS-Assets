@@ -145,6 +145,15 @@
                     "Dewpider",
                     "Mareanie"
                 ]
+            },
+            "Sunless Arboretum": {
+                "Description": "<p>Covered for a millennium, this ancient pyramid can only be accessed via the disorienting jungle surrounding it. An ancient city surrounds the long forgotten pyramid, both equally lost to time. Vines, flora, and all kinds of tropical flowers have begun growing through the cracks of the stone lining the streets of this city. Careful where you step! There seems to be active tripwire that may trigger booby traps! Who put them there? Or are they from an era long gone?</p><p>The inside of the pyramid is dark, decrepit and hazardous. One wrong move and you could be tumbling down a trapdoor or hurdling yourself into a pit of spikes! Despite the dangers and the active traps, there may be treasure in it's depths! However, it seems like someone isn't very keen on visitors here.</p>",
+                "Difficulty": "Legendary (90+)",
+                "Recruits": [
+                    "Overgrowth Juice",
+                    "Fiendish Potion",
+                    "Animal Potion"
+                ]
             }
         }
     },
@@ -315,6 +324,15 @@
                     "Heatmor",
                     "Burmy (Trash Cloak)",
                     "Rolycoly"
+                ]
+            },
+            "Soulheart Forge": {
+                "Description": "<p>Deep beneath Allurian, long forgotten by the inhabitants of the surface, is a magnificent forge unlike any other. The catacombs are often endless, leading travelers astray as they try to find the heart of the forge, which in of itself is a marvel of engineering. Huge arches, breathtaking architecture, and towering columns give way to just how massive this underground forge truly is. If you manage to find the ancient city deep within the winding tunnels, you may be graced with the true treasure-- and that's the forge itself.</p><p>Not only did the inhabitants busy themselves with armory and weaponry, but it seems they were on track to create an advancement in technology unbeknownst to those on the surface. Stone golems are littered about the forge and the city, some toppled with giant slabs of limestone, as if they had sentience at one point, used for the backbreaking labor. Perhaps there may be proof of their ingenuity lurking somewhere in the dark? Despite the strange abcense of blacksmiths and residents, there's no apparent reason for the forge to have been abandoned ...</p>",
+                "Difficulty": "Legendary (90+)",
+                "Recruits": [
+                    "Synthetic Juice",
+                    "Artsy Potion",
+                    "Crystalline Juice"
                 ]
             }
         }
@@ -799,7 +817,7 @@
                 "Recruits": [
                     "Animal Potion",
                     "Monster Juice",
-                    "Playful Potion"
+                    "Overgrowth Juice"
                 ]
             }
         }
@@ -1332,8 +1350,8 @@
                 "Difficulty": "Legendary (90+)",
                 "Recruits": [
                     "Artsy Potion",
-                    "Animal Potion",
-                    "Crystalline Juice"
+                    "Temporal Potion",
+                    "Monster Juice"
                 ]
             }
         }
@@ -1469,7 +1487,7 @@
                 "Recruits": [
                     "Playful Potion",
                     "Delight Potion",
-                    "Happy Potion"
+                    "Overgrowth Juice"
                 ]
             }
         }
@@ -1517,7 +1535,7 @@
                 "Difficulty": "Legendary (90+)",
                 "Recruits": [
                     "Horror Potion",
-                    "Paradox Potion",
+                    "Synthetic Juice",
                     "Artsy Potion"
                 ]
             }
@@ -1598,7 +1616,7 @@
                 "Recruits": [
                     "Glowlight Juice",
                     "Ethereal Potion",
-                    "Fiendish Potion"
+                    "Animal Potion"
                 ]
             }
         }
@@ -1806,7 +1824,7 @@
                 "Recruits": [
                     "Astral Potion",
                     "Glowlight Juice",
-                    "Artsy Potion"
+                    "Temporal Potion"
                 ]
             }
         }
@@ -1876,7 +1894,7 @@
                 "Recruits": [
                     "Crystalline Juice",
                     "Ethereal Potion",
-                    "Animal Potion"
+                    "Happy Potion"
                 ]
             }
         }
@@ -1942,7 +1960,7 @@
                 "Recruits": [
                     "Crystalline Juice",
                     "Fiendish Potion",
-                    "Paradox Potion"
+                    "Temporal Potion"
                 ]
             }
         }
@@ -1992,9 +2010,9 @@
                 "Description": "<p>Unknown to anyone else still living on the island, behind the castle in Crown's Demise is the entrance to a massive crypt, just as devoid of nature as the ruined castle town. At first, it's a normal crypt, albeit filled not with ghosts, but electric Pokemon. The further you go, the thicker the electricity in the air.</p><p>Deep inside the caverns, you're greeted by the remnants of an ancient workshop. Broken machines, strangely advanced for a place such as this, litter the floors and walls… they were destroyed, deliberately, by something.</p><p>Upon closer inspection, you find strange potions upon the ground. Miraculously, they were unharmed. The caps are forged from steel, and the vials flicker with electricity. Lightning bolts from within the liquid reach out for the glass at all points of contact. Maybe they would be best left here, a mystery to all, and this crypt left behind as well to remain a secret. They say curiosity killed the cat…</p><p>Ah, but satisfaction did bring it back.</p><p>Mechanical whirring fills the halls behind you, and the sound of live electricity zaps across the stone. Maybe the Charcadet don't have the complete story. You're being watched and followed – and whatever lurks within this crypt likely plans to do the same to you as it did to this civilization.</p>",
                 "Difficulty": "Legendary (90+)",
                 "Recruits": [
-                    "Paradox Potion",
+                    "Temporal Potion",
                     "Glowlight Juice",
-                    "Monster Juice"
+                    "Synthetic Juice"
                 ]
             }
         }
