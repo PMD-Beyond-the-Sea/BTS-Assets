@@ -12,7 +12,9 @@
                     "Surskit",
                     "Wooper (Johto)",
                     "Barboach",
-                    "Tympole"
+                    "Tympole",
+                    "Ducklett",
+                    "Bidoof"
                 ]
             },
             "Tiny Meadow": {
@@ -28,8 +30,7 @@
                     "Bulbasaur",
                     "Bellsprout",
                     "Rattata (Kanto)",
-                    "Skwovet",
-                    "Stunfisk (Galar)"
+                    "Skwovet"
                 ]
             },
             "Buggy Woods": {
@@ -39,7 +40,6 @@
                     "Caterpie",
                     "Weedle",
                     "Pineco",
-                    "Yanma",
                     "Wurmple",
                     "Ledyba",
                     "Kricketot",
@@ -62,7 +62,6 @@
                     "Cleffa",
                     "Mawile",
                     "Elgyem",
-                    "Darumaka (Unova)",
                     "Drilbur",
                     "Pansear",
                     "Sandygast",
@@ -94,7 +93,8 @@
                     "Dwebble",
                     "Sandile",
                     "Rhyhorn",
-                    "Diglett (Kanto)"
+                    "Diglett (Kanto)",
+                    "Orthworm"
                 ]
             }
         }
@@ -109,10 +109,11 @@
                     "Sableye",
                     "Spiritomb",
                     "Yamask (Unova)",
-                    "Yamask (Galar)",
                     "Honedge",
                     "Morelull",
-                    "Nincada"
+                    "Nincada",
+                    "Ferroseed",
+                    "Seedot"
                 ]
             },
             "Canopy Treetops": {
@@ -136,7 +137,6 @@
                 "Difficulty": "",
                 "Recruits": [
                     "Venonat",
-                    "Grimer (Kanto)",
                     "Gligar",
                     "Croagunk",
                     "Stunky",
@@ -171,7 +171,9 @@
                     "Shinx",
                     "Joltik",
                     "Tynamo",
-                    "Mareep"
+                    "Mareep",
+                    "Plusle",
+                    "Minun"
                 ]
             },
             "Purity Field": {
@@ -183,7 +185,9 @@
                     "Delibird",
                     "Illumise",
                     "Volbeat",
-                    "Absol"
+                    "Absol",
+                    "Audino",
+                    "Milcery"
                 ]
             },
             "Inferno Field": {
@@ -196,7 +200,8 @@
                     "Magby",
                     "Numel",
                     "Sizzlipede",
-                    "Ditto"
+                    "Ditto",
+                    "Scorbunny"
                 ]
             }
         }
@@ -213,7 +218,9 @@
                     "Koffing",
                     "Zigzagoon (Hoenn)",
                     "Spinda",
-                    "Wurmple"
+                    "Wurmple",
+                    "Burmy (Sandy Cloak)",
+                    "Tandemaus"
                 ]
             },
             "Sunny Slope": {
@@ -222,12 +229,13 @@
                 "Recruits": [
                     "Sunkern",
                     "Hoppip",
-                    "Tropius",
                     "Fletchling",
                     "Helioptile",
                     "Flabebe",
                     "Skiddo",
-                    "Cottonee"
+                    "Cottonee",
+                    "Capsakid",
+                    "Chikorita"
                 ]
             },
             "Beaver Hills": {
@@ -235,7 +243,7 @@
                 "Difficulty": "",
                 "Recruits": [
                     "Bidoof",
-                    "Stunfisk",
+                    "Stunfisk (Unova)",
                     "Foongus",
                     "Deerling",
                     "Basculin (Unova)",
@@ -259,7 +267,8 @@
                     "Cottonee",
                     "Audino",
                     "Cutiefly",
-                    "Klefki"
+                    "Klefki",
+                    "Togepi"
                 ]
             },
             "Calm Lake": {
@@ -267,7 +276,6 @@
                 "Difficulty": "",
                 "Recruits": [
                     "Magikarp",
-                    "Corsola (Johto)",
                     "Lotad",
                     "Feebas",
                     "Ducklett",
@@ -275,7 +283,8 @@
                     "Sobble",
                     "Chewtle",
                     "Cramorant",
-                    "Jangmo-o"
+                    "Jangmo-o",
+                    "Slowpoke (Kanto)"
                 ]
             },
             "Illusion Brush": {
@@ -288,7 +297,8 @@
                     "Phantump",
                     "Pumpkaboo",
                     "Gothita",
-                    "Zorua (Unova)"
+                    "Zorua (Unova)",
+                    "Mime Jr."
                 ]
             }
         }
@@ -307,8 +317,7 @@
                     "Chingling",
                     "Aron",
                     "Pawniard",
-                    "Litwick",
-                    "Oricorio (Pa'u Style)"
+                    "Litwick"
                 ]
             },
             "Abandoned Ironworks": {
@@ -369,8 +378,7 @@
                     "Tirtouga",
                     "Amaura",
                     "Tyrunt",
-                    "Dracovish",
-                    "Unown"
+                    "Dracovish"
                 ]
             },
             "Snowy Ridge": {
@@ -522,7 +530,8 @@
                     "Tynamo",
                     "Drampa",
                     "Drifloon",
-                    "Frillish"
+                    "Frillish",
+                    "Mareanie"
                 ]
             },
             "Warm Seabed": {
@@ -534,7 +543,10 @@
                     "Bruxish",
                     "Wailmer",
                     "Carvanha",
-                    "Relicanth"
+                    "Relicanth",
+                    "Staryu",
+                    "Finizen",
+                    "Clauncher"
                 ]
             }
         }
@@ -550,7 +562,11 @@
                     "Dewpider",
                     "Wimpod",
                     "Clobbopus",
-                    "Drampa"
+                    "Drampa",
+                    "Slowpoke (Galar)",
+                    "Basculin (Hisui)",
+                    "Wailmer",
+                    "Relicanth"
                 ]
             },
             "Crystal Crags": {
@@ -561,7 +577,10 @@
                     "Wynaut",
                     "Lileep",
                     "Ralts",
-                    "Chingling"
+                    "Chingling",
+                    "Veluza",
+                    "Omanyte",
+                    "Kabuto"
                 ]
             },
             "Crow's Nest": {
@@ -573,7 +592,10 @@
                     "Murkrow",
                     "Starly",
                     "Pidove",
-                    "Wingull"
+                    "Wingull",
+                    "Farfetch'd (Kanto)",
+                    "Wattrel",
+                    "Squawkabilly"
                 ]
             }
         }
@@ -606,7 +628,8 @@
                     "Beldum",
                     "Ferroseed",
                     "Honedge",
-                    "Nosepass"
+                    "Nosepass",
+                    "Varoom"
                 ]
             },
             "Profane Forum": {
@@ -649,7 +672,8 @@
                     "Yamask (Galar)",
                     "Torkoal",
                     "Sigilyph",
-                    "Voltorb (Hisui)"
+                    "Voltorb (Hisui)",
+                    "Unown"
                 ]
             }
         }
@@ -667,7 +691,8 @@
                     "Rowlet",
                     "Hoothoot",
                     "Rockruff",
-                    "Morpeko"
+                    "Morpeko",
+                    "Bramblin"
                 ]
             },
             "Viper's Den": {
@@ -708,6 +733,7 @@
                 "Difficulty": "",
                 "Recruits": [
                     "Dracovish",
+                    "Dracozolt",
                     "Murkrow",
                     "Shuppet",
                     "Spiritomb",
@@ -727,7 +753,8 @@
                     "Sandygast",
                     "Maractus",
                     "Tropius",
-                    "Pawmi"
+                    "Pawmi",
+                    "Komala"
                 ]
             },
             "''We didn't want you to see this!''": {
@@ -835,7 +862,8 @@
                     "Espurr",
                     "Hippopotas",
                     "Frillish",
-                    "Diglett (Alola)"
+                    "Diglett (Alola)",
+                    "Grookey"
                 ]
             },
             "Noiseless Nursery": {
@@ -849,7 +877,8 @@
                     "Magby",
                     "Munchlax",
                     "Toxel",
-                    "Kangaskhan"
+                    "Kangaskhan",
+                    "Pichu"
                 ]
             },
             "Pink Pools": {
@@ -861,7 +890,9 @@
                     "Clamperl",
                     "Bruxish",
                     "Cherubi",
-                    "Fomantis"
+                    "Fomantis",
+                    "Oricorio (Pa'u Style)",
+                    "Flamigo"
                 ]
             }
         }
@@ -899,7 +930,8 @@
                     "Kricketot",
                     "Patrat",
                     "Skwovet",
-                    "Rookidee"
+                    "Rookidee",
+                    "Grubbin"
                 ]
             },
             "Autumnal Woods": {
@@ -926,7 +958,9 @@
                     "Drifloon",
                     "Shuppet",
                     "Rotom",
-                    "Oricorio (Sensu Style)"
+                    "Oricorio (Sensu Style)",
+                    "Hoothoot",
+                    "Patrat"
                 ]
             }
         }
@@ -943,7 +977,9 @@
                     "Makuhita",
                     "Throh",
                     "Meditite",
-                    "Riolu"
+                    "Riolu",
+                    "Duraludon",
+                    "Frigibax"
                 ]
             },
             "Völsung Temple": {
@@ -956,7 +992,8 @@
                     "Smoochum",
                     "Stantler",
                     "Furfrou",
-                    "Komala"
+                    "Komala",
+                    "Chespin"
                 ]
             },
             "Glacier Waves": {
@@ -968,20 +1005,23 @@
                     "Oshawott",
                     "Staryu",
                     "Krabby",
-                    "Spheal"
+                    "Spheal",
+                    "Dondozo",
+                    "Pincurchin"
                 ]
             },
             "Snowfall Village": {
                 "Description": "<p>Arriving at this village you're treated immediately with hostility by those who reside within. This village seems to be decorated with wooden statues, totems, and lots of warm huts. The pokemon here aren't happy to see new comers, and will gladly show you just why this place is known for the fighters they produce!</p>",
                 "Difficulty": "",
                 "Recruits": [
-                    "Farfetch’d (Galar)",
+                    "Farfetch'd (Galar)",
                     "Pancham",
                     "Hawlucha",
                     "Timburr",
                     "Cufant",
                     "Bouffalant",
-                    "Castform"
+                    "Castform",
+                    "Sentret"
                 ]
             }
         }
@@ -999,7 +1039,8 @@
                     "Plusle",
                     "Minun",
                     "Snivy",
-                    "Taillow"
+                    "Taillow",
+                    "Zigzagoon (Hoenn)"
                 ]
             },
             "Rocky Road Forest": {
@@ -1026,7 +1067,8 @@
                     "Sentret",
                     "Lickitung",
                     "Miltank",
-                    "Buneary"
+                    "Buneary",
+                    "Munchlax"
                 ]
             },
             "Gourmet Buffet": {
@@ -1053,7 +1095,8 @@
                     "Snom",
                     "Squirtle",
                     "Psyduck",
-                    "Growlithe (Kanto)"
+                    "Burmy (Trash Cloak)",
+                    "Pachirisu"
                 ]
             },
             "Snowbound Mountains": {
@@ -1066,21 +1109,23 @@
                     "Snubbull",
                     "Mienfoo",
                     "Cryogonal",
-                    "Sneasel (Hisui)"
+                    "Sneasel (Hisui)",
+                    "Sawk",
+                    "Throh"
                 ]
             },
             "Verglas Labyrinth": {
                 "Description": "<p>Outside of this dense and dark labyrinth you can see statues that seem to represent some kind of deity. Was this once a place of worship? You can't be sure because the entire labyrinth is caved in and destroyed, but something tells you treasure could be lurking in it's depths! Because of the frigid temperatures outside, the floors of this dungeon have become black ice-- be careful not to slide down the dark corridors! … You don't know what could be awaiting you in the darkness ... Luckily there are some torches that light up the walls!</p>",
                 "Difficulty": "",
                 "Recruits": [
-                    "Darumaka (Galar)",
                     "Rattata (Kanto)",
                     "Hatenna",
                     "Drilbur",
                     "Noibat",
                     "Misdreavus",
                     "Sneasel (Hisui)",
-                    "Bronzor"
+                    "Bronzor",
+                    "Joltik"
                 ]
             },
             "Volcanic Springs": {
@@ -1110,7 +1155,10 @@
                     "Spheal",
                     "Bouffalant",
                     "Oshawott",
-                    "Zorua (Hisui)"
+                    "Zorua (Hisui)",
+                    "Furfrou",
+                    "Lillipup",
+                    "Yamper"
                 ]
             },
             "Freezy Freezy Lake": {
@@ -1121,7 +1169,10 @@
                     "Remoraid",
                     "Wishiwashi",
                     "Luvdisc",
-                    "Chinchou"
+                    "Chinchou",
+                    "Cetoddle",
+                    "Crabrawler",
+                    "Psyduck"
                 ]
             },
             "Den of Darkness": {
@@ -1132,7 +1183,11 @@
                     "Sneasel (Johto)",
                     "Zorua (Unova)",
                     "Inkay",
-                    "Impidimp"
+                    "Impidimp",
+                    "Zigzagoon (Galar)",
+                    "Morpeko",
+                    "Skorupi",
+                    "Croagunk"
                 ]
             },
             "Igloo Outskirts": {
@@ -1142,8 +1197,11 @@
                     "Shellder",
                     "Delibird",
                     "Eiscue",
-                    "Meowth (Alola)",
-                    "Cufant"
+                    "Cufant",
+                    "Vanillite",
+                    "Snom",
+                    "Squirtle",
+                    "Makuhita"
                 ]
             }
         }
@@ -1161,7 +1219,8 @@
                     "Rookidee",
                     "Stonjourner",
                     "Onix",
-                    "Baltoy"
+                    "Baltoy",
+                    "Cyclizar"
                 ]
             },
             "Primordial Ooze": {
@@ -1188,7 +1247,8 @@
                     "Whismur",
                     "Litten",
                     "Grubbin",
-                    "Larvesta"
+                    "Larvesta",
+                    "Karrablast"
                 ]
             }
         }
@@ -1206,7 +1266,8 @@
                     "Cacnea",
                     "Sandshrew (Kanto)",
                     "Nincada",
-                    "Durant"
+                    "Durant",
+                    "Togedemaru"
                 ]
             },
             "Treeshroud Forest": {
@@ -1232,8 +1293,9 @@
                     "Tepig",
                     "Numel",
                     "Yanma",
-                    "Wooper (Johto)",
-                    "Panpour"
+                    "Panpour",
+                    "Yungoos",
+                    "Fidough"
                 ]
             },
             "Sky Peak": {
@@ -1246,7 +1308,9 @@
                     "Teddiursa",
                     "Tauros (Kanto)",
                     "Carnivine",
-                    "Rockruff"
+                    "Rockruff",
+                    "Oricorio (Pa'u Style)",
+                    "Skiddo"
                 ]
             },
             "The Hidden Land": {
@@ -1259,7 +1323,8 @@
                     "Gible",
                     "Tropius",
                     "Shieldon",
-                    "Cranidos"
+                    "Cranidos",
+                    "Electrike"
                 ]
             },
             "Temporal Tower": {
@@ -1302,7 +1367,8 @@
                     "Chingling",
                     "Seel",
                     "Vulpix (Alola)",
-                    "Seviper"
+                    "Seviper",
+                    "Riolu"
                 ]
             },
             "Magma Cavern": {
@@ -1314,7 +1380,9 @@
                     "Mawile",
                     "Slugma",
                     "Magby",
-                    "Grimer (Kanto)"
+                    "Grimer (Kanto)",
+                    "Torchic",
+                    "Charmander"
                 ]
             },
             "Sky Tower": {
@@ -1327,7 +1395,9 @@
                     "Bagon",
                     "Ledyba",
                     "Venonat",
-                    "Archen"
+                    "Archen",
+                    "Pidove",
+                    "Taillow"
                 ]
             },
             "Stormy Sea": {
@@ -1369,7 +1439,9 @@
                     "Petilil",
                     "Sewaddle",
                     "Geodude (Kanto)",
-                    "Oddish"
+                    "Oddish",
+                    "Shelmet",
+                    "Scatterbug"
                 ]
             },
             "Crags of Lament": {
@@ -1380,7 +1452,10 @@
                     "Swinub",
                     "Venipede",
                     "Stunfisk (Unova)",
-                    "Stunfisk (Galar)"
+                    "Stunfisk (Galar)",
+                    "Gligar",
+                    "Hawlucha",
+                    "Sigilyph"
                 ]
             },
             "Holehills": {
@@ -1409,7 +1484,7 @@
                     "Gothita",
                     "Munna",
                     "Larvesta",
-                    "Darumaka (Galar)"
+                    "Smeargle"
                 ]
             }
         }
@@ -1428,7 +1503,8 @@
                     "Helioptile",
                     "Voltorb",
                     "Happiny",
-                    "Wurmple"
+                    "Wurmple",
+                    "Pinsir"
                 ]
             },
             "Poliwrath River": {
@@ -1440,7 +1516,10 @@
                     "Poliwag",
                     "Barboach",
                     "Krabby",
-                    "Lotad"
+                    "Lotad",
+                    "Froakie",
+                    "Tadbulb",
+                    "Cramorant"
                 ]
             },
             "Ancient Barrow": {
@@ -1454,7 +1533,8 @@
                     "Baltoy",
                     "Golett",
                     "Honedge",
-                    "Solosis"
+                    "Solosis",
+                    "Stunfisk (Galar)"
                 ]
             },
             "Revelation Mountain": {
@@ -1505,7 +1585,8 @@
                     "Larvesta",
                     "Darumaka (Unova)",
                     "Larvitar",
-                    "Lunatone"
+                    "Lunatone",
+                    "Doduo"
                 ]
             },
             "Valley of Strong Winds": {
@@ -1568,7 +1649,9 @@
                     "Swablu",
                     "Cryogonal",
                     "Piplup",
-                    "Castform"
+                    "Castform",
+                    "Buizel",
+                    "Slakoth"
                 ]
             },
             "Devil's Bayou": {
@@ -1583,7 +1666,7 @@
                     "Yanma",
                     "Carnivine",
                     "Seviper",
-                    "Phantump"
+                    "Dhelmise"
                 ]
             },
             "Fire Island Volcano": {
@@ -1596,7 +1679,8 @@
                     "Litleo",
                     "Oricorio (Baile Style)",
                     "Salandit",
-                    "Turtonator"
+                    "Turtonator",
+                    "Fletchling"
                 ]
             },
             "Tree of Life": {
@@ -1636,7 +1720,8 @@
                     "Tatsugiri",
                     "Bombirdier",
                     "Skitty",
-                    "Veluza"
+                    "Veluza",
+                    "Oricorio (Pom-Pom Style)"
                 ]
             },
             "Raindrop Forest": {
@@ -1666,7 +1751,8 @@
                     "Gimmighoul",
                     "Tinkatink",
                     "Cyclizar",
-                    "Varoom"
+                    "Varoom",
+                    "Bonsly"
                 ]
             },
             "Treasure Reef": {
@@ -1733,7 +1819,9 @@
                     "Cetoddle",
                     "Lechonk",
                     "Darumaka (Galar)",
-                    "Arctozolt"
+                    "Arctozolt",
+                    "Tepig",
+                    "Happiny"
                 ]
             },
             "The Cursed Tunnel of Askabar": {
@@ -1853,11 +1941,11 @@
                     "Glimmet",
                     "Carbink",
                     "Goomy",
-                    "Diglett",
                     "Wiglett",
                     "Dewpider",
                     "Wimpod",
-                    "Spoink"
+                    "Spoink",
+                    "Alomomola"
                 ]
             },
             "Faerie's Grove": {
@@ -1913,7 +2001,8 @@
                     "Lotad",
                     "Shroomish",
                     "Surskit",
-                    "Sprigatito"
+                    "Sprigatito",
+                    "Tarountula"
                 ]
             },
             "Clouded Sanctuary": {
@@ -1926,7 +2015,8 @@
                     "Nymble",
                     "Mudbray",
                     "Tadbulb",
-                    "Poltchageist"
+                    "Poltchageist",
+                    "Wooloo"
                 ]
             },
             "Heaven's Gate": {
@@ -1938,7 +2028,9 @@
                     "Snubbull",
                     "Spritzee",
                     "Pancham",
-                    "Meditite"
+                    "Meditite",
+                    "Flittle",
+                    "Indeedee"
                 ]
             },
             "Canyon of Spirits": {
@@ -1951,7 +2043,8 @@
                     "Nacli",
                     "Mimikyu",
                     "Vullaby",
-                    "Durant"
+                    "Durant",
+                    "Girafarig"
                 ]
             },
             "Lover's Cave": {
@@ -1992,7 +2085,8 @@
                     "Natu",
                     "Rowlet",
                     "Maschiff",
-                    "Poltchageist"
+                    "Poltchageist",
+                    "Gulpin"
                 ]
             },
             "Crown's Demise": {
