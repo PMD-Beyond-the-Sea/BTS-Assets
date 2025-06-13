@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- GOOGLE SITE HEAD -------------------->
+    <!-- <meta charset="UTF-8">
+    <title>PMD Beyond the Sea - Recruit Finder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <!-- GOOGLE SITE HEAD -------------------->
+
+    <!-- HOSTED SITE HEAD -------------------->
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <title>Recruit Finder</title>
+    <meta property="title" content="PMD Beyond the Sea - Recruit Finder" />
+    <meta property="type" content="website" />
+    <meta property="url" content=""/>
+    <meta property="image" content="assets/favicon.png" />
+    <meta name="description" content="An alternate host for the ARPG's Recruit Finder.">
+
+    <!-- No AI scraping directives -->
+    <meta name="robots" content="noai">
+    <meta name="robots" content="noimageai">
+
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Styles                                                            -->
+    <!-- ----------------------------------------------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/styling.css">
+    <!-- HOSTED SITE HEAD -------------------->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rakkas&family=Mochiy+Pop+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+        :root {
+            --text-body-color: #073763;
+        }
+
+        .toast {
+            --bs-toast-bg: rgba(var(--bs-body-bg-rgb), 1);
+            z-index: 12;
+        }
+
+        /* Loading Icon */
+        #loader {
+            width: 5rem; 
+            height: 5rem;
+            position: absolute;
+            top: calc(50% + 2rem);
+            left: calc(50% - 2.5rem);
+            animation-duration: 2s;
+            opacity: .5;
+            border-color: var(--text-body-color);
+            border-right-color: transparent !important;
+            z-index: 100;
+        }
+
+        li.active .page {
+            background: #4999D1;
+            color: white;
+            font-weight: bold;
+        }
+
+        .page {
+            border-radius: .25em;
+            padding: .3em .4em;
+            border: rgba(7, 55, 99, 0.6) 1px solid;
+            margin-left: .2em;
+            margin-right: .2em;
+            background: #B2E2F8;
+            font-weight: normal;
+        }
+
+        .form-control {
+            font-size: 1em;
+            padding: 0.2em 0.5em;
+            background-color: #B2E2F8;
+            border: 1px solid #4999D1;
+            box-shadow: 0.2em 0.2em 0 #4999D1;
+            border-radius: 0.25rem;
+            color: #000;
+            text-align: center;
+            font-family: "DM Sans", sans-serif;
+            margin: 0.25em 0 0.25em 0;
+            color: #073763;
+            font-weight: 600;
+        }
+
+        option[value="none"],
+        #select-user:has([value="none"]:checked) {
+            color: rgba(7, 55, 99, 0.6);
+            font-style: italic;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            background: #E3F0FF;
+            color: var(--text-body-color) !important;
+        }
+
+        a {
+            color: #1C4587 !important;
+        }
+
+        a:hover {
+            color: #38761D !important;
+        }
+
+        .loading:before {
+            font-family: 'FontAwesome';
+            content: '\f251';
+            font-size: 1.5em;
+            animation: loading-hourglass 3s;
+            animation-iteration-count: infinite;
+        }
+
+        .loading-text {
+            font-size: 1.2em;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+        }
+
+        @keyframes loading-hourglass {
+            0% {
+                content: '\f251';
+            }
+
+            33% {
+                content: '\f252';
+            }
+
+            66% {
+                content: '\f253';
+            }
+        }
+
+        .user-recruits-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 1em 2em 2em 2em;
+            padding: 1em;
+            position: relative;
+        }
+
+        hr {
+            margin-top: 3em;
+            color: rgb(73, 153, 209, 0.7);
+            width: 85%;
+        }
+
+        .dropdown-label {
+            font-size: 1.15em;
+            margin-top: 0.5em;
+            font-weight: 700;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        .show-results {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2em;
+            margin-bottom: 1em;
+            width: 100%;
+            color: #073763;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .search-term {
+            color: #38761d;
+        }
+
+        .recruit-btn {
+            border: none;
+            background: transparent;
+        }
+
+        .recruit-container {
+            background: #ffd6af;
+            border-radius: 0.5em;
+            box-shadow: 0.3em 0.3em 0 #bc8154;
+            color: #561e15;
+            position: relative;
+            animation: fade-in 0.4s;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .recruit-container.none {
+            font-family: "DM Sans", sans-serif;
+            font-size: 1.25em;
+            padding: 0.75em;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .recruit-container:hover {
+            background: #e8b586;
+            box-shadow: 0.3em 0.3em 0 #bc8154;
+            color: #561e15;
+        }
+
+        .recruit-container .divider {
+            color: #bc8154;
+            opacity: 1;
+            margin: 0.8em auto;
+        }
+
+        .recruit-label {
+            text-align: center;
+        }
+
+        .recruit-label img {
+            max-width: 68px;
+            max-height: 56px;
+        }
+
+        .recruit-label .species {
+            font-family: "VT323", monospace;
+            font-size: 1.65em;
+            letter-spacing: 0.01em;
+        }
+
+        .recruit-container .team,
+        .recruit-container .location,
+        .recruit-container .item,
+        .recruit-container .date,
+        .recruit-container .radar,
+        .recruit-container .token,
+        .recruit-container .rolled-token,
+        .recruit-container .swap {
+            font-size: 1em;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 500;
+            margin: 0.5em 1.5em;
+        }
+
+        .recruit-container .team:before {
+            font-family: 'FontAwesome';
+            content: '\f005';
+            margin-right: 0.5em;
+            color: #824141;
+        }
+
+        .recruit-container .location:before {
+            font-family: 'FontAwesome';
+            content: '\f5a0';
+            margin-right: 0.5em;
+            color: #824141;
+        }
+
+        .recruit-container .item:before {
+            font-family: 'FontAwesome';
+            content: '\f187';
+            margin-right: 0.5em;
+            color: #824141;
+        }
+
+        .recruit-container .swap:before {
+            font-family: 'FontAwesome';
+            content: '\f362';
+            margin-right: 0.5em;
+            color: #824141;
+        }
+
+        .recruit-container .radar:before {
+            font-family: 'FontAwesome';
+            content: '\f140';
+            margin-right: 0.5em;
+            color: #824141;
+        }
+
+        .recruit-container .radar:before {
+            font-family: 'FontAwesome';
+            content: '\f140';
+            margin-right: 0.5em;
+            color: #824141;
+        }
+
+        .recruit-container .rolled-token:before {
+            font-family: 'FontAwesome';
+            content: '\f05e';
+            margin-right: 0.5em;
+            color: #824141;
+        }
+
+        .recruit-container .token:before {
+            font-family: 'FontAwesome';
+            content: '\f522';
+            margin-right: 0.5em;
+            color: #824141;
+        }
+
+        .recruit-container .date:before {
+            font-family: 'FontAwesome';
+            content: '\f073';
+            margin-right: 0.5em;
+            color: #824141;
+        }
+
+        .recruit-container .link a {
+            position: absolute;
+            right: 2%;
+            top: 2%;
+            font-size: 1.3em;
+            color: #824141;
+        }
+
+        .recruit-container .link a:hover {
+            position: absolute;
+            right: 2%;
+            top: 2%;
+            font-size: 1.3em;
+            color: #561e15;
+        }
+
+        .user-search {
+            background: #23bc82;
+            border: 0.2em #159657 outset;
+            border-radius: 0.3em;
+            color: #dbfff4;
+            width: fit-content;
+            text-align: center;
+            padding: 0.1em 0.5em;
+            font-size: 1.05em;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+        }
+
+        .user-search:hover {
+            background: #159657;
+            border: 0.2em #23bc82 inset;
+            cursor: pointer;
+        }
+
+        .user-search:disabled,
+        .clear-search:disabled {
+            opacity: .6;
+        }
+
+        .user-search:disabled:hover,
+        .clear-search:disabled:hover {
+            cursor: not-allowed;
+        }
+
+        .team-search {
+            background: #7f77ef;
+            border: 0.2em #5a52c9 outset;
+            border-radius: 0.3em;
+            color: #f4edff;
+            width: fit-content;
+            text-align: center;
+            margin-left: 0.5em;
+            padding: 0.1em 0.5em;
+            font-size: 1.05em;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+        }
+
+        .team-search:hover {
+            background: #5a52c9;
+            border: 0.2em #7f77ef inset;
+            cursor: pointer;
+        }
+
+        .clear-search {
+            background: #dd4045;
+            border: 0.2em #840303 outset;
+            color: #ffd3df;
+            border-radius: 0.3em;
+            width: fit-content;
+            text-align: center;
+            margin-left: 0.5em;
+            padding: 0.1em 0.5em;
+            font-size: 1.05em;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+        }
+
+        .clear-search:hover {
+            background: #840303;
+            border: 0.2em #dd4045 inset;
+            cursor: pointer;
+        }
+
+        select {
+            appearance: none;
+            /* safari */
+            -webkit-appearance: none;
+            /* other styles for aesthetics */
+            font-size: 1em;
+            padding: 0.2em 0.5em;
+            background-color: #B2E2F8;
+            border: 1px solid #4999D1;
+            box-shadow: 0.2em 0.2em 0 #4999D1;
+            border-radius: 0.25rem;
+            color: #000;
+            cursor: pointer;
+            text-align: center;
+            font-family: "DM Sans", sans-serif;
+            margin: 0.25em 0 0.25em 0;
+            color: #073763;
+            font-weight: 600;
+
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.7rem top 50%;
+            background-size: 0.65rem auto;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+    <script type="module">
+        import PokeDex from 'https://cdn.jsdelivr.net/npm/pokemon@3.0.0/+esm';
+        import PublicGoogleSheetsParser from "https://esm.sh/public-google-sheets-parser";
+
+        const toastLiveExample = document.getElementById('liveToast')
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+
+        let AvailableRecruits = [];
+        let RawRecruitData;
+        let LoadedUsers = [];
+
+        let ParadoxList = [];
+        let UsersList = [];
+        let TeamsByUser = {};
+
+        let ListOptions = {
+            page: 20,
+            pagination: [
+                {
+                    innerWindow: 2,
+                    outerWindow: 1
+                }
+            ],
+            valueNames: [
+                'date',
+                'team',
+                'user',
+                'item',
+                'dungeon',
+                'recruit',
+                'recruit-1',
+                'recruit-2',
+                'recruit-3',
+                { attr: 'data-url', name: 'cardlink' },
+                { attr: 'src', name: 'recruit-1-img' },
+                { attr: 'src', name: 'recruit-2-img' },
+                { attr: 'src', name: 'recruit-3-img' },
+                { attr: 'data-hide', name: 'recruit-2-container' },
+                { attr: 'data-hide', name: 'recruit-3-container' },
+                { attr: 'data-hide', name: 'item-container' }
+            ],
+            item: function(values) {
+                return `
+                <button class="recruit-btn container col-xl-3 col-lg-4 col-md-6 col-12" onclick="CopyLinkToRecruit('${values.cardlink}')">
+                    <div class="recruit-container col-12 my-4 mx-auto p-md-3 p-1">
+                        <div class="w-100 d-flex flex-wrap justify-content-center">
+                            <div class="recruit-label mx-md-4 mx-3">
+                                <img class="recruit-1-img" src="${values['recruit-1-img']}">
+                                <div class="recruit-1">Species</div>
+                            </div>
+                            <div class="recruit-label mx-md-4 mx-3 recruit-2-container ${!values['recruit-2'] ? 'd-none' : ''}">
+                                <img class="recruit-2-img" src="${!values['recruit-2'] ? '' : values['recruit-2-img']}">
+                                <div class="recruit-2">${!values['recruit-2'] ? '' : values['recruit-2']}</div>
+                            </div>
+                            <div class="recruit-label mx-md-4 mx-3 recruit-3-container ${!values['recruit-3'] ? 'd-none' : ''}">
+                                <img class="recruit-3-img" src="${!values['recruit-3'] ? '' : values['recruit-3-img']}">
+                                <div class="recruit-3">${!values['recruit-3'] ? '' : values['recruit-3']}</div>
+                            </div>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="team">${values.team}</div>
+                        <div class="location dungeon">${values.dungeon}</div>
+                        <div class="item item-container ${!values.item ? 'd-none' : values.item}">${values.item}</div>
+                        <div class="date">Date</div>
+                        <div class="user d-none">${values.user}</div>
+                        <div class="recruit d-none">${values.recruit}</div>
+
+                    </div>
+                </button>
+                `
+            }
+        }
+
+        let RecruitList = new List('user-recruits-container', ListOptions);
+
+        let PokeSpriteDex = async function () {
+            let data = await fetch('https://cdn.jsdelivr.net/gh/msikma/pokesprite@master/data/pokemon.json');
+            return data.json();
+        }
+
+        async function GetAllUserData() {
+            let userParser = new PublicGoogleSheetsParser(`1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8`, { sheetId: `1076126972` });
+            let userData = await userParser.parse();
+            userData.forEach(processed => {
+                let users = Object.keys(TeamsByUser);
+
+                let username = processed.User;
+                if (username.includes(" / ")) {
+                    let usernames = username.split(" / ");
+                    usernames.forEach(user => {
+                        if (!users.includes(user)) {
+                            TeamsByUser[user] = [];
+                        }
+
+                        [1,2,3,4].forEach((teamNo) => {
+                            if (!processed[`Team ${teamNo}`]) return;
+                            if (!TeamsByUser[user].includes(processed[`Team ${teamNo}`])) return TeamsByUser[user].push(processed[`Team ${teamNo}`]);
+                        });
+
+                        TeamsByUser[user] = [...new Set(TeamsByUser[user])];
+                    });
+                } else {
+                    if (!users.includes(processed.User)) {
+                        TeamsByUser[processed.User] = [];
+                    }
+
+                    [1,2,3,4].forEach((teamNo) => {
+                        if (!processed[`Team ${teamNo}`]) return;
+                        if (!TeamsByUser[processed.User].includes(processed[`Team ${teamNo}`])) return TeamsByUser[processed.User].push(processed[`Team ${teamNo}`]);
+                    });
+
+                    TeamsByUser[processed.User] = [...new Set(TeamsByUser[processed.User])];
+                }
+            });
+
+            UsersList = Object.keys(TeamsByUser);
+            UsersList.sort((a, b) => a.toLowerCase() < b.toLowerCase() ? -1 : 1);
+            return TeamsByUser;
+        }
+
+        async function GetRecruitsData() {
+            let recruitsParser2024 = new PublicGoogleSheetsParser(`109FnZIn6ZSIeesv80ZprMV9XgwsqeNcfFN9AxW5pNvU`, { sheetId: `1038401414`, useFormat: true });
+            let recruitsData2024 = await recruitsParser2024.parse();
+
+            let recruitsParser2025 = new PublicGoogleSheetsParser(`1CIEgsIv5fN0IzkJbJcTAA1qI-reWsjaDWYh77CLTCO0`, { sheetId: `1038401414`, useFormat: true });
+            let recruitsData2025 = await recruitsParser2025.parse();
+
+            RawRecruitData = [...recruitsData2024, ...recruitsData2025];
+            return RawRecruitData.length;
+        }
+
+        async function ParseRecruitData(user) {
+            if (LoadedUsers.includes(user)) {
+                let parsedArr = await AvailableRecruits.filter((data) => data.user.includes(user));
+                console.log(`⚠ ${user}'s recruit data has already been parsed! Returning filtered array of ${parsedArr.length} entries.`);
+                return parsedArr;
+            }
+
+            let recruitsData = RawRecruitData.filter((data) => data.User.includes(user));
+
+            let parsedRecruitsData = recruitsData.filter((data) => !data.User.includes(" & ")).map((obj) => {
+                let newObj = {
+                    date: obj.Date,
+                    year: `20${/(\d+)\s\|\|/.exec(obj.Date)[1]}`,
+                    user: obj.User,
+                    team: obj.Team,
+                    dungeon: obj.Dungeon,
+                    cardlink: obj.Link,
+                    recruit: obj.Recruit,
+                    'recruit-1': obj.Recruit
+                }
+
+                if (obj.Item) {
+                    newObj.item = obj.Item;
+                    newObj['item-container'] = false;
+                }
+                return newObj;
+            });
+
+            let collabTeams = recruitsData.filter((obj) => obj.User.includes(" & "));
+            for (const sub of collabTeams) {
+                let users = sub.User.split(' & ');
+                for (const username of users) {
+                    let soloObj = {
+                        date: sub.Date,
+                        year: `20${/(\d+)\s\|\|/.exec(sub.Date)[1]}`,
+                        user: username,
+                        team: sub.Team,
+                        dungeon: sub.Dungeon,
+                        cardlink: sub.Link,
+                        recruit: sub.Recruit,
+                        'recruit-1': sub.Recruit,
+                    };
+                    sub['recruit-1-img'] = await GetDungeonIcon(sub.Recruit);
+                    
+                    if (sub.Item) {
+                        soloObj.item = sub.Item;
+                        soloObj['item-container'] = false;
+                    }
+
+                    let dupeArr = parsedRecruitsData.filter((dupeObj) => dupeObj.date === sub.Date && dupeObj.team === sub.Team);
+                    if (dupeArr.length < 1)
+                        parsedRecruitsData.push(soloObj);
+                }
+                
+            }
+
+            for (const sub of parsedRecruitsData) {
+                let recruits = sub['recruit-1'].split(', ');
+                for (let i = 0; i < recruits.length; i++) {
+                    sub[`recruit-${i + 1}`] = recruits[i];
+                    sub[`recruit-${i + 1}-img`] = await GetDungeonIcon(recruits[i]);
+                    if (i === 0) continue;
+                    sub[`recruit-${i + 1}-container`] = false;
+                }
+
+                if (sub.Item) {
+                    sub.item = sub.item;
+                    sub['item-container'] = false;
+                }
+                AvailableRecruits.push(sub);
+            }
+
+            if (!LoadedUsers.includes(user)) {
+                LoadedUsers.push(user);
+                console.log(`➕ ${user}'s data has been loaded. ${parsedRecruitsData.length} entries have been added to the Available Recruits array.`);
+                return parsedRecruitsData;
+            }
+        }
+
+        async function LoadDataFromSheets() {
+            await GetParadoxList();
+
+            let loadTeamsData = await GetAllUserData();
+            console.log(`✅ Loaded data for ${Object.keys(loadTeamsData).length} users.`);
+
+            let loadRecruitsData = await GetRecruitsData();
+            console.log(`✅ Loaded raw data for ${loadRecruitsData} recruit entries.`);
+
+            return true;
+        }
+
+        function SetSearchParams(info) {
+            let arr = ['team', 'dungeon', 'recruit', 'item', 'year'];
+
+            $('#search').on('keyup', () => {
+                let selection = $("#search-filter option:selected").val();
+                let searchString = $('#search').val();
+                if (selection && selection != 'all') {
+                    info.search(searchString, [selection]);
+                } else {
+                    info.search(searchString, arr);
+                }
+            });
+        }
+
+        $(window).on('load', async function() {
+            await LoadDataFromSheets();
+            console.log(`✅ All recruit data loaded!`);
+
+            await CreateUserSelect();
+            $(`#loading`).remove();
+            $(`#username-select`).removeClass('d-none');
+            $(`#user-search`).prop('disabled', true);
+        });
+
+        /* -------------------------------------------------- */
+        /* UTILITY FUNCTIONS -------------------------------- */
+        /* -------------------------------------------------- */
+        function RandomNumber(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        function Wait(ms) {
+            return new Promise((resolve) => setTimeout(resolve, ms));
+        }
+
+        /* -------------------------------------------------- */
+        /* ASSET GETTERS ------------------------------------ */
+        /* -------------------------------------------------- */
+        function GetParadoxList() {
+            // #984 is Iron Tusk, the first paradox Pokemon in the dex
+            // #996 is Frigibax, comes after Iron Thorns #995
+            for (let i = 984; i < 996; i++) {
+                ParadoxList.push(PokeDex.getName(i));
+            }
+
+            // separated Pokemon to push as there is a gap between the paradox Pokemon in the dex
+            ParadoxList.push(PokeDex.getName(1005)); // Roaring Moon
+            ParadoxList.push(PokeDex.getName(1006)); // Iron Valiant
+
+            return ParadoxList;
+        }
+
+        async function GetParsedPokemon(newPokemon) {
+            let paradoxPokemon = ParadoxList.filter((i) => newPokemon.toLowerCase().includes(i.toLowerCase()));
+            if (paradoxPokemon.length > 0) return paradoxPokemon[0];
+
+            // list species with "*" as shiny, remove all "!" characters
+            let matchedPokemon = newPokemon.replace("!", " ").replace("*", " (Shiny) ").replace("Were-", " ");
+
+            let pokemonWithAccents = PokeDex.all().filter(i => i.includes(`é`));
+            let pokemonWithGender = PokeDex.all().filter(i => i.includes(`♂`) || i.includes(`♀`));
+
+            if (pokemonWithGender.map((gendered) => gendered.replaceAll(/♂|♀/g, ``)).includes(newPokemon)) {
+                if (RandomNumber(2) > 0) matchedPokemon += "♂";
+                else matchedPokemon += "♀";
+            } else if (pokemonWithAccents.map((accents) => accents.replaceAll(`é`, `e`)).includes(newPokemon)) {
+                matchedPokemon = pokemonWithAccents.filter(i => i.replaceAll(`é`, `e`) === newPokemon)[0].replaceAll(`e`, `é`);
+            }
+
+            let splitPokemon = matchedPokemon.split(` `);
+            for (let i = 0; i < splitPokemon.length; i++) {
+                try {
+                    let id = PokeDex.getId(splitPokemon[i]);
+                    return splitPokemon[i];
+                } catch (err) {
+                    continue;
+                }
+            }
+        }
+
+        function IsPokemonShiny(newPokemon) {
+            if (/[Ss]hiny|\*/gi.test(newPokemon))
+                return true;
+            else return false;
+        }
+
+        function GetPokemonVariant(newPokemon) {
+            if (/[Gg]alar|[Gg]alarian|[Gg]\!|[Gg]\./i.test(newPokemon)) {
+                return { slug: "-galar", variant: "-galarian" };
+            } else if (/[Aa]lola|[Aa]lolan|[Aa]\!|[Aa]\./i.test(newPokemon)) {
+                return { slug: "-alola", variant: "-alolan" };;
+            } else if (/[Hh]isui|[Hh]isuian|[Hh]\!|[Hh]\./i.test(newPokemon)) {
+                return { slug: "-hisui", variant: "-hisuian" };;
+            } else if (/[Pp]aldea|[Pp]aldean|[Pp]\!|[Pp]\./i.test(newPokemon)) {
+                return { slug: "-paldea", variant: "-paldean" };;
+            } else if (/[Mm]ega|[Mm]\!|[Mm]\./i.test(newPokemon)) {
+                return { slug: "-mega", variant: "-mega" };;
+            } else {
+                return { slug: "", variant: "" };
+            }
+        }
+
+        async function GetDungeonIcon(newPokemon) {
+            
+            // if the species is a token, return an icon URL
+            if (/token|random|recruit|gen\.|category|choice/gi.test(newPokemon)) {
+                return "https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Items/Potions%20%26%20Juices/Random.png";
+            }
+
+            // if the species is a Potion or Juice, return an icon URL
+            if (newPokemon.includes("Potion") || newPokemon.includes("Juice")) {
+                return "https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Items/Potions%20%26%20Juices/" + newPokemon.replaceAll(" ", "-") + ".png";
+            }
+
+            // if the species is a Basculin
+            if (/Basculin.*Hisui/i.test(newPokemon))
+                return `https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/${IsPokemonShiny(newPokemon) ? 'shiny' : 'regular'}/basculin-white-striped.png`;
+
+            // if the species is a Burmy
+            if (/Burmy.*Trash/i.test(newPokemon))
+                return `https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/${IsPokemonShiny(newPokemon) ? 'shiny' : 'regular'}/burmy-trash.png`;
+            if (/Burmy.*Sand/i.test(newPokemon))
+                return `https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/${IsPokemonShiny(newPokemon) ? 'shiny' : 'regular'}/burmy-sandy.png`;
+
+            // if the species is an Oricorio
+            if (/Oricorio.*Pa\'u/i.test(newPokemon))
+                return `https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/${IsPokemonShiny(newPokemon) ? 'shiny' : 'regular'}/oricorio-pau.png`;
+            if (/Oricorio.*Sensu/i.test(newPokemon))
+                return `https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/${IsPokemonShiny(newPokemon) ? 'shiny' : 'regular'}/oricorio-sensu.png`;
+            if (/Oricorio.*Pom\-Pom/i.test(newPokemon))
+                return `https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/${IsPokemonShiny(newPokemon) ? 'shiny' : 'regular'}/oricorio-pom-pom.png`;
+
+            let parsedSpecies = await GetParsedPokemon(newPokemon);
+            let formSlug = GetPokemonVariant(newPokemon).slug;
+            let variantString = GetPokemonVariant(newPokemon).variant;
+            let form = GetPokemonVariant(newPokemon).slug === '' ? '' : `$${formSlug.substring(1, formSlug.length)}`;
+
+            // if the species is from the Gen 9/Paldean dex and onwards, use a sprite separate from the PokeSprite repo
+            try {
+                if (PokeDex.getId(parsedSpecies) >= 906 || formSlug.includes('paldea')) {
+                    return `https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Icons/Gen9/${parsedSpecies.toLowerCase()
+                        .replaceAll(/\.\s|\s/g, "-").replaceAll("'", "")}${formSlug !== '' ? formSlug : ''}.png`;
+                }
+            } catch (error) {
+                console.log(newPokemon);
+            }
+
+            // add numbers to the lookup ID to search through PokeSprites properly
+            let pokeIndex = PokeDex.getId(parsedSpecies).toString();
+            if (pokeIndex.length < 3) {
+                if (Number(pokeIndex) < 10)
+                    pokeIndex = `00${pokeIndex}`;
+                else
+                    pokeIndex = `0${pokeIndex}`;
+            }
+
+            let pokeSpritesList = await PokeSpriteDex();
+            let pokeSprite = pokeSpritesList[pokeIndex];
+
+            // if a sprite DOES exist for the species in Gen 8, return icon URL
+            if (pokeSprite["gen-8"]["forms"][form] !== undefined && pokeSprite["gen-8"]["forms"][form]["is_prev_gen_icon"] !== undefined) {
+                return `https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen7x/${IsPokemonShiny(newPokemon) ? 'shiny' : 'regular'}/${pokeSprite["slug"]["eng"]}${formSlug}.png`;
+            } else {
+                // if sprite does not exist in Gen 8, check Gen 7 and return icon URL
+                return `https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/${IsPokemonShiny(newPokemon) ? 'shiny' : 'regular'}/${pokeSprite["slug"]["eng"]}${formSlug}.png`;
+            }
+
+            parsedSpecies = parsedSpecies.replaceAll(/\. |\s/g, `-`).replaceAll(`'`, ``).toLowerCase();
+            // if a sprite does not exist for the species in the PokeSprites repo, return icon URL
+            if (pokeSprite["gen-8"]["forms"][form] === undefined)
+                return `https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Icons/Gen9/${parsedSpecies}${formSlug}.png`;
+        }
+
+        function GetPokemonSpriteURL(newPokemon) {
+            return PokeDex
+                .getName(PokeDex.getId(newPokemon)).toLowerCase()
+                .replaceAll(/\. |\s/g, `-`)
+                .replaceAll(`é`, `e`)
+                .replaceAll(`♂`, `-m`)
+                .replaceAll(`♀`, `-f`)
+                .replaceAll(`.`, ``);
+        }
+
+        async function SetRecruitsToList(user) {            
+            $(`#loader`).removeClass('d-none');
+            $(`.pagination`).addClass('d-none');
+
+            await RecruitList.clear();
+            let values = await ParseRecruitData(user);
+
+            RecruitList = new List('user-recruits-container', ListOptions, values);
+
+            SetSearchParams(RecruitList);
+
+            $(`#results-number`).html(RecruitList.size());
+            $(`#search-term`).html(user);
+
+            $(`#user-search`).prop('disabled', false);
+            $(`#loader`).addClass('d-none');
+            $(`.pagination`).removeClass('d-none');
+        }
+
+        /* -------------------------------------------------- */
+
+        $(`#select-user`).on('change', function() {
+            if ($(this).val() !== 'none')
+                $(`#user-search`).prop('disabled', false);
+            else
+                $(`#user-search`).prop('disabled', true);
+        });
+
+        function CreateUserSelect() {
+            let select = $(`#select-user`);
+            UsersList.forEach((user) => {
+                select.append(`<option value="${user}">${user}</option>`);
+            });
+            return true;
+        }
+
+        $(`#user-search`).on('click', function() {
+            let user = $(`#select-user`).find(':selected').val();
+            SetRecruitsToList(user);
+            $(this).prop('disabled', true);
+            $(`#clear-search`).prop('disabled', false);
+        });
+
+        $(`#clear-search`).on('click', function() {
+            RecruitList.clear();
+            $(`#select-user`).val('none');
+            $(this).prop('disabled', true);
+            $(`#user-search`).prop('disabled', true);
+            $(`.pagination`).addClass('d-none');
+            $(`#results-number`).html(RecruitList.size());
+            $(`#search-term`).html('[N/A]');
+        });
+
+    </script>
+    <script>
+        let CopyLinkToRecruit = function(link) {
+            navigator.clipboard.writeText(link);
+            document.querySelector(`#toast-link`).setAttribute('href', link);
+            document.querySelector(`#toast-link`).innerHTML = link;
+            bootstrap.Toast.getOrCreateInstance(document.getElementById('liveToast')).show();
+        }
+    </script>
+    <script>
+        document.getElementsByClassName('page').forEach((elem) => {
+            elem.addEventListener('click', function(event) { event.preventDefault(); });
+        });
+    </script>
+
+    <!----------------------------------------------------------------------
+    <-- Header
+    <---------------------------------------------------------------------->
+    <script src="assets/resources.js"></script>
+    <div class="load-html" id="header" data-source="includes/header.html"></div>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/groups/192302?1726989569" class="rounded me-2"
+                    alt="PMD Beyond the Sea Logo" width=25px>
+                <strong class="me-auto">GCSF Bulletin</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="toast-notif">
+                The following link to the <b>#grading-logs</b> has been copied to your clipboard! Paste this into <b>#inventory</b> if you wish to use an item or to recruit them to your team!<br><br><code><a href="" id="toast-link"></a></code>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-danger alert-dismissible fade show col-11 mx-auto mt-4 text-center" role="alert">
+        <i class="fa-solid fa-warning me-1"></i> Clicking on a recruit will copy the link to your clipboard! Be sure you
+        don't accidentally overwrite something you wish to keep before you click on a recruit!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="show-results" id="results">
+        <div id="loading">
+            <div class="loading"></div>
+            <div class="loading-text">Loading recruits . . .</div>
+        </div>
+        <div id="username-select" class="mx-auto d-none">
+            <div class="dropdown-label">User</div>
+            <select id="select-user" class="col-11 col-md-4 col-lg-3">
+                <option value="none">(none)</option>
+            </select>
+
+            <div class="justify-content-center d-flex flex-wrap my-3">
+                <button class="col-11 col-md-3 mx-2 my-1 user-search" id="user-search" disabled><i class="fa-solid fa-circle-user"></i> Search by User</button>
+                <button class="col-11 col-md-3 mx-2 my-1 clear-search" id="clear-search" disabled><i class="fa-solid fa-arrow-rotate-left"></i> Clear Results</button>
+            </div>
+        </div>
+
+        Found <span class="search-term" id="results-number">0</span> total results for <span class="search-term"
+            id="search-term">[N/A]</span>
+        <br><sub>(Note: only <b>unclaimed</b> recruits are shown here!)</sub>
+    </div>
+
+    <hr class="divider">
+
+    <div class="" id="user-recruits-container">
+        <div class="d-flex flex-wrap justify-content-center mx-auto col-md-10 col-12">
+            <div class="col-4 col-lg-2 px-2">
+                <select class="form-control" id="search-filter">
+                    <option value="team">Team</option>
+                    <option value="dungeon">Dungeon</option>
+                    <option value="recruit">Recruit</option>
+                    <option value="item">Item</option>
+                    <option value="year">Year</option>
+                </select>
+            </div>
+            <div class="col-8 col-lg-10 px-2">
+                <input class="form-control bg-faded search" type="search" placeholder="Type here to search" id="search">
+            </div>
+        </div>
+
+        <ul class="pagination mx-auto mt-3 d-flex justify-content-center d-none"></ul>
+        <!-- Spinner for loading-->
+        <div class="spinner-border m-auto d-none" id="loader"></div>
+        <ul class="list user-recruits-container">
+        </ul>
+    </div>
+
+    <div class="d-none">
+        <button class="recruit-btn container col-xl-3 col-lg-4 col-md-6 col-12" id="recruit-template">
+            <div class="cardlink d-none" data-url=""></div>
+            <div class="recruit-container col-12 my-4 mx-auto p-md-3 p-1">
+                <div class="w-100 d-flex flex-wrap justify-content-center">
+                    <div class="recruit-label mx-md-4 mx-3">
+                        <img class="recruit-1-img" src="https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Icons/Gen9/sprigatito.png">
+                        <div class="recruit-1">Species</div>
+                    </div>
+                    <div class="recruit-label mx-md-4 mx-3 recruit-2-container d-none" data-hide=true>
+                        <img class="recruit-2-img" src="https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Icons/Gen9/sprigatito.png">
+                        <div class="recruit-2">Species</div>
+                    </div>
+                    <div class="recruit-label mx-md-4 mx-3 recruit-3-container d-none" data-hide=true>
+                        <img class="recruit-3-img" src="https://raw.githubusercontent.com/PMD-Beyond-the-Sea/PMD-BTS-Assets/main/Icons/Gen9/sprigatito.png">
+                        <div class="recruit-3">Species</div>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <div class="team">Team Name</div>
+                <div class="location dungeon">Location</div>
+                <div class="item item-container d-none" data-hide=true>Item Used</div>
+                <div class="date">Date</div>
+                <div class="year d-none"></div>
+                <div class="user d-none"></div>
+                <div class="recruit d-none"></div>
+
+            </div>
+        </button>
+    </div>
+
+</body>
+
+</html>
