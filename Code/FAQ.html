@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PMD Beyond the Sea - FAQ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css");
+
+        :root {
+            --body-bg-color: #E3F0FF;
+            --body-bg-light-color: #f1f7ff;
+            --text-body-color: #073763;
+            --text-primary-color: #1C4587;
+            --text-primary2-color: #1861cf;
+            --text-warning-color: #B05F06;
+            --text-success-color: #38761D;
+            --text-danger-color: #990000;
+            --text-light-color: #E3F0FF;
+            --text-dark-color: #0b243c;
+            --text-faded-color: #6e7887;
+            --body-block-color: #2C5FB0;
+            --border-primary-color: #73a6f8;
+            --body-bg-faded-color: #bcd9fa;
+        }
+
+        body {
+            background: var(--body-bg-color);
+            color: var(--text-body-color);
+            font-family: Arial;
+            line-height: 1.5;
+        }
+
+        ul {
+            text-indent: 0;
+            padding-left: 5.5rem;
+        }
+
+        .nav {
+            margin-bottom: -1px;
+        }
+
+        .nav-tabs .nav-link {
+            color: var(--body-block-color);
+            border-bottom: 0;
+            font-weight: normal;
+        }
+
+        .nav-tabs .nav-link:disabled {
+            color: var(--text-faded-color);
+        }
+
+        .nav-tabs .nav-link.active {
+            color: var(--text-body-color);
+            border-color: var(--border-primary-color);
+            border-bottom: 0;
+            font-weight: 600;
+        }
+        
+        .nav-tabs .nav-link.active {
+            background: var(--body-bg-faded-color);
+        }
+
+        .text-primary {
+            color: var(--text-primary2-color) !important;
+        }
+
+        .text-warning {
+            color: var(--text-warning-color) !important;
+        }
+
+        .text-success {
+            color: var(--text-success-color) !important;
+        }
+
+        .text-danger {
+            color: var(--text-danger-color) !important;
+        }
+
+        .text-light {
+            color: var(--text-light-color) !important;
+        }
+
+        .text-dark {
+            color: var(--text-dark-color) !important;
+        }
+
+        .text-pre {
+            white-space: break-spaces;
+        }
+
+        .accordion-body {
+            text-align: left;
+            text-indent: 2rem;
+            padding: 1.2rem .5rem;
+        }
+
+        @media only screen and (min-width: 768px) {
+            hr {
+                padding-left: 1.25%;
+                padding-right: 1.25%;
+            }
+        }
+
+        hr {
+            border-color: #5B5B66;
+            border-width: 2px;
+            margin: 2.5rem 0;
+            width: 100%;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: "DM Sans", sans-serif;
+            color: var(--text-primary-color);
+            font-weight: 700;
+        }
+
+        h1 {
+            line-height: 1.38;
+            letter-spacing: .1rem;
+            font-size: 2.7rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tab-content.questions {
+            background: var(--body-bg-faded-color);
+            border-color: var(--border-primary-color);
+            border-width: 1px;
+            border-style: solid;
+            border-radius: .25rem;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: var(--text-primary-color);
+            min-height: 100vh;
+        }
+
+        .main-container {
+            max-width: 1280px;
+            padding: 2rem 0;
+            margin: 0 auto;
+        }
+
+        .main-container p {
+            padding: 0 1.5rem;
+        }
+
+        .accordion-body,
+        .accordion-button {
+            color: var(--text-primary-color);
+            background: var(--body-bg-light-color);
+        }
+
+        .accordion-button {
+            font-weight: 600;
+        }
+
+        .accordion-button.collapsed {
+            background: var(--body-bg-light-color);
+        }
+
+        .accordion-item {
+            border-color: var(--border-primary-color);
+        }
+
+        a {
+            font-weight: 600;
+            text-decoration: underline dotted var(--text-primary2-color);
+            color: var(--text-primary2-color);
+            transition: 0.15s linear;
+            margin-left: .1rem;
+            margin-right: .1rem;
+        }
+
+        a:hover {
+            color: var(--text-success-color);
+            transition: 0.15s linear;
+        }
+
+        a[data-link="discord"]:before {
+            font-family: "FontAwesome";
+            font-size: 0.9em;
+            margin-right: 0.1em;
+            font-weight: normal;
+            content: "\23";
+        }
+
+        a[data-link="discord"]:after {
+            font-family: "FontAwesome";
+            margin-left: .3rem;
+            font-weight: normal;
+            content: "\f392";
+            background: var(--text-primary-color);
+            color: white;
+            border-radius: .25rem;
+            padding: .2em;
+            font-size: .9em;
+        }
+
+        a[data-link="website"]:after {
+            font-family: "FontAwesome";
+            margin-left: .2rem;
+            font-weight: normal;
+            content: "\f0c1";
+        }
+    </style>
+</head>
+
+<body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script type="module">
+        const LinkPaths = {
+            website: {
+                activities: {
+                    label: 'Activities & Events',
+                    path: `getting-started/activities-events`
+                },
+                'character creation': {
+                    label: 'Character Creation',
+                    path: `getting-started/character-creation`
+                },
+                'activity checks': {
+                    label: 'Activity Checks',
+                    path: `getting-started/activity-checks`},
+                dungeons: {
+                    label: 'Mystery Dungeons',
+                    path: `mystery-dungeons`
+                },
+                missions: {
+                    label: 'Missions & Tasks',
+                    path: 'missions-tasks',
+                },
+                paradox: {
+                    label: 'Paradox Partners',
+                    path: `general-info/paradox-partners`
+                },
+                mythical: {
+                    label: 'Mythical Helpers',
+                    path: `general-info/mythical-helpers`
+                },
+                islands: {
+                    label: 'List of Islands & Cities',
+                    path: `general-info/list-of-islands-cities`
+                },
+                evolution: {
+                    label: 'Evolution',
+                    path: `general-info/evolution`
+                },
+                'tasks grader': {
+                    label: 'Daily Life & Tasks Grader',
+                    path: `earnings-inventories/daily-life-tasks-grader`
+                }
+            },
+            discord: {
+                'official invite': {
+                    label: 'Official Server',
+                    cid: `https://discord.com/invite/pmdbts`
+                },
+                questions: {
+                    label: 'questions',
+                    cid: `572883027240419329`
+                },
+                tickets: {
+                    label: 'submit-a-ticket',
+                    cid: `1192050365026291732`
+                },
+                'design check': {
+                    label: 'design-check',
+                    cid: `777050681806422036`
+                },
+                inventory: {
+                    label: 'inventory',
+                    cid: `771137141044281395`
+                },
+                rolls: {
+                    label: 'pokemon-rolls',
+                    cid: `583332082693046317`
+                },
+                grading: {
+                    label: 'grading-logs',
+                    cid: '1192388381322264606'
+                },
+                missinglogs: {
+                    label: 'Missing Submissions',
+                    cid: `1275952606685954169`
+                },
+                bugslogs: {
+                    label: 'Bug Reports',
+                    cid: `1275952606685954169`
+                },
+                dungeonlogs: {
+                    label: 'Dungeons',
+                    cid: `1192410617039040552`
+                },
+                hhdungeonlogs: {
+                    label: 'Holiday Hills Dungeons',
+                    cid: `1192411545481785344`
+                },
+                tasklogs: {
+                    label: 'Tasks',
+                    cid: `1192410878444843079`
+                },
+                hhtasklogs: {
+                    label: 'Holiday Hills Tasks',
+                    cid: `1192411679716294696`
+                },
+                dailylife: {
+                    label: 'Daily Life',
+                    cid: `1192411338350264330`
+                },
+                luminousspring: {
+                    label: 'Luminous Spring',
+                    cid: `1293139126815686666`
+                }
+            }
+        }
+
+        $(window).on('load', function() {
+            ReplaceDataLinks();
+        });
+
+        function ReplaceDataLinks() {
+            let websiteUrl = `https://sites.google.com/view/pmd-beyond-the-sea/`;
+            let discordUrl = `https://discord.com/channels/572882160990683138/`;
+
+            $(`[data-link="website"]`).each(function () {
+                let page = $(this).attr('data-page');
+                if (page === '') return;
+                $(this).attr('href', `${websiteUrl}${LinkPaths.website[page].path}`).html(!$(this).attr('data-label') ? LinkPaths.website[page].label : $(this).attr('data-label'));
+            });
+
+            $(`[data-link="discord"]`).each(function () {
+                let channel = $(this).attr('data-channel');
+                if (channel === '') return;
+                $(this).attr('href', channel === `official invite` ? LinkPaths.discord['official invite'] : `${discordUrl}${LinkPaths.discord[channel].cid}`).html(LinkPaths.discord[channel].label);
+            });
+        }
+    </script>
+
+    <div class="d-flex">
+        <div class="h-100 sidebar d-none"></div>
+        <div class="text-center main-container mb-4">
+            <div class="p-md-0 p-2">
+                <h1>Frequently Asked Questions</h1>
+                <p>Before asking in <a href="" data-link="discord" data-channel="questions"></a> about anything, be sure to check that it isn't already answered below or somewhere else on the website!
+                </p>
+            </div>
+            <hr>
+            <ul class="nav nav-tabs ps-3" id="questions-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general-questions-tab" type="button"
+                        role="tab" aria-controls="general-questions-tab" aria-selected="true"><span class="d-none d-md-inline">General</span><span class="d-inline d-md-none"><i class="fa-solid fa-circle-info"></i></span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="mechanics-tab" data-bs-toggle="tab" data-bs-target="#mechanics-questions-tab" type="button"
+                        role="tab" aria-controls="mechanics-questions-tab" aria-selected="false"><span class="d-none d-md-inline">Mechanics</span><span class="d-inline d-md-none"><i class="fa-solid fa-gear"></i></span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="character-tab" data-bs-toggle="tab" data-bs-target="#character-questions-tab" type="button"
+                        role="tab" aria-controls="character-questions-tab" aria-selected="false"><span class="d-none d-md-inline">Characters</span><span class="d-inline d-md-none"><i class="fa-solid fa-users"></i></span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="lore-tab" data-bs-toggle="tab" data-bs-target="#lore-questions-tab" type="button"
+                        role="tab" aria-controls="lore-questions-tab" aria-selected="false"><span class="d-none d-md-inline">Lore</span><span class="d-inline d-md-none"><i class="fa-solid fa-book"></i></span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="inventory-tab" data-bs-toggle="tab" data-bs-target="#inventory-questions-tab" type="button"
+                        role="tab" aria-controls="inventory-questions-tab" aria-selected="false"><span class="d-none d-md-inline">Inventory</span><span class="d-inline d-md-none"><i class="fa-solid fa-briefcase"></i></span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="grading-tab" data-bs-toggle="tab" data-bs-target="#grading-questions-tab" type="button"
+                        role="tab" aria-controls="grading-questions-tab" aria-selected="false"><span class="d-none d-md-inline">Grading</span><span class="d-inline d-md-none"><i class="fa-solid fa-coins"></i></span></button>
+                </li>
+            </ul>
+
+            <div class="tab-content questions col-12" id="questions-content">
+                <div class="tab-pane fade show active p-3" id="general-questions-tab" role="tabpanel" aria-labelledby="general-tab" tabindex="0">
+                    <h3 class="text-center d-block d-md-none">General</h1>
+                    <div class="accordion" id="general-questions-accordion">
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general-questions-1"
+                                    aria-expanded="false" aria-controls="general-questions-1">
+                                    What is PMD Beyond the Sea about?
+                                </button>
+                            </h2>
+                            <div id="general-questions-1" class="accordion-collapse collapse" data-bs-parent="#general-questions-accordion">
+                                <div class="accordion-body">
+                                    <p><b>PMD Beyond the Sea</b> is an ARPG (art roleplaying game) group that takes inspiration from the Pokemon Mystery Dungeon series. The group began in 2019.</p>
+
+                                    <p>In this group, you take control of either a solo or duo team and tackle missions, mystery dungeons, and explore the Great Ocean to find new islands and rebuild communications with the outside world.</p>
+
+                                    <p>Your team signs up at the Ethovalon Guild Office and becomes members of the Global Communication Setup Foundation, what is effectively an exploration or adventurers guild. There are <b>3 main branches</b> you can choose from: <span class="fw-bold text-primary">Wayfarers</span>, <span class="fw-bold text-danger">Bounty Hunters</span>, and <span class="fw-bold text-success">Rescuers</span>; each of whom serve a different function within the guild. After signing up, how you handle your team is up to you! Check out our <a href="" data-link="website" data-page="activities"></a> page for more information on what sort of things you can get up to!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-questions-2" aria-expanded="false" aria-controls="general-questions-2">
+                                    <span>Is this a <span class="text-warning">gijinka / humanoid</span> group or a <span class="text-warning">feral</span> group?</span>
+                                </button>
+                            </h2>
+                            <div id="general-questions-2" class="accordion-collapse collapse" data-bs-parent="#general-questions-accordion">
+                                <div class="accordion-body">
+                                    <p><b>Both</b>, actually!</p>
+
+                                    <p>A <b>gijinka</b> refers to a <b>humanoid with Pokemon characteristics</b> (similar to kemonomimi or other humanoid designs inspired by Pokemon). While outside of a mystery dungeon, your character is in their gijinka/humanoid form.</p>
+
+                                    <p>Once that character passes through the entrance of a mystery dungeon, the chaotic energy that create the dungeon springs into action and transforms your character into their <b>feral form</b> (i.e. their Pokemon form). Feral forms are only used while in dungeons, so keep that in mind!</p>
+
+                                    <p>For information on designing both forms of your character, check out the <a href="" data-link="website" data-page="character creation"></a> page!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-questions-3" aria-expanded="false" aria-controls="general-questions-3">
+                                    Are bases allowed for artwork / applications?
+                                </button>
+                            </h2>
+                            <div id="general-questions-3" class="accordion-collapse collapse" data-bs-parent="#general-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>Bases and tracing are <b class="text-danger">not allowed</b> in this group in both general artwork and for application art.</p>
+                                    <p>If you are looking for an alternative, you may ask around the community for artists who would be willing to draw a character for you in the proper channels (if using the <a href="" data-link="discord" data-channel="official invite"></a>). If you do use artwork created by somebody else, <b>remember to properly credit the artist</b>!</p>
+                                    <p>Pieces found to be using a base or traced over somebody else's work (especially without permission) will be removed from the group and no earnings will be awarded for it. You will also receive a warning.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-questions-4" aria-expanded="false" aria-controls="general-questions-4">
+                                    <span>When do <span class="text-warning">activity checks</span> take place?</span>
+                                </button>
+                            </h2>
+                            <div id="general-questions-4" class="accordion-collapse collapse" data-bs-parent="#general-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>Every <b>April</b> and <b>October</b> there will be a bi-annual activity check! This is to help keep the group active and to make room for potential members whenever we have an opening! No matter if you're an old member or a new member, you'll have to submit something during the quarter to stay within the group!</p>
+                                    <p>For more information on what counts and does not count for an activity check and how to submit for one, see the  <a href="" data-link="website" data-page="activity checks"></a> page!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-questions-5" aria-expanded="false" aria-controls="general-questions-5">
+                                    <span>What is "hiatus status"?</span>
+                                </button>
+                            </h2>
+                            <div id="general-questions-5" class="accordion-collapse collapse" data-bs-parent="#general-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>A "hiatus" can be taken from the group if you are sure you are unable to submit for an activity check on time. Essentially, it means you will be exempt from the current check if there is one running or the next one if there is no check currently running.</p>
+                                    <p>Once you submit something however, you will be taken off of hiatus status and will no longer be exempt from the upcoming check.</p>
+                                    <p>There are limits to how often you can take a hiatus however. For more information, see the  <a href="" data-link="website" data-page="activity checks"></a> page!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-questions-6" aria-expanded="false" aria-controls="general-questions-6">
+                                    <span>How do I request an extension?</span>
+                                </button>
+                            </h2>
+                            <div id="general-questions-6" class="accordion-collapse collapse" data-bs-parent="#general-questions-accordion">
+                                <div class="accordion-body">
+                                    <p><b>Each user can request up to 3 extensions per month</b>. Extensions will typically last only 1 week, ending on the <b>7th of the following month</b>.</p>
+                                    <p>>Extensions can be requested in <a href="" data-link="discord" data-channel="questions"></a> for a few different things such as:</p>
+                                    <ul>
+                                        <li>Collabs between multiple group members</li>
+                                        <li>Uses for Monthly Items (i.e. Lost Loot, Wonder Chest, Golden Mask, etc.), allowing the item to be used past the end of the month and not consume a charge upon use</li>
+                                        <li>Certain event submissions such as for Holiday Hills</li>
+                                    </ul>
+                                    <p>Note that if you request extensions for collabs however, you are still beholden to the 3 extensions maximum. If you request 3 extensions with Person A, you cannot then request an additional extension with Person B.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-questions-7" aria-expanded="false" aria-controls="general-questions-7">
+                                    <span>How do I get a <span class="text-warning">design checked for approval</span>?</span>
+                                </button>
+                            </h2>
+                            <div id="general-questions-7" class="accordion-collapse collapse" data-bs-parent="#general-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>Every week, members and tourists are able to post designs to be checked in the <a href="" data-link="discord" data-channel="design check"></a> channel between <b>Monday</b> and <b>Sunday at 11:59 PM EST</b>. Design checks usually re-open on Monday after all feedback for the week's batch has been sent!</p>
+                                    <p>When posting, please use the following form:</p>
+                                    <ul>
+                                        <li><b>Species:</b> <i>Which Pokemon is your character?</i></li>
+                                        <li><b>Variant(s):</b> <i>List all the variants the design uses (i.e. Hue, Ethereal, Astral, Monster, Glowlight, etc). This includes any special forms such as Mega, and transformations such as those attained using a Transformation Scarf.</i></li>
+                                        <li><b>Notes:</b> <i>Any additional information or context you would like to provide and/or any questions you may want answered during approval. <u>Please mention if it is a <b>minor check</b> or a <b>resubmission</b> of a previous check!</u></i></li>
+                                    </ul>
+                                    <p>Each user may submit a <b>maximum of 3 <u>completed</u> designs</b> as well as <b>up to 3 minor design checks</b>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-questions-8" aria-expanded="false" aria-controls="general-questions-8">
+                                    <span>What counts as a <span class="text-warning">minor design check</span>?</span>
+                                </button>
+                            </h2>
+                            <div id="general-questions-8" class="accordion-collapse collapse" data-bs-parent="#general-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>A <b>minor check</b> should only be asking for approval on a <b>specific</b> part of a work-in-progress design (i.e. hairstyle, clothing, rough anatomy, etc). Usually, this may only be an uncolored sketch, lines, or otherwise something obviously unfinished that you're still working on.</p>
+                                    <p>This also <b>includes resubmissions of previously checked designs</b> that required updates according to feedback given.</p>
+                                    <p>A <b>full design check</b> would include a full-body piece for the gijinka and/or feral that is more or less completed with few or no adjustments that still need to be made.</p>
+                                    <p>Members are allowed to submit a <b>maximum of 3 minor design checks</b> each week. If a design is submitted as a minor check that is not one, a staff member will let you know that it instead counts as a completed design or that you will have to wait for the next week (if you've hit your cap).</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="tab-pane fade p-3" id="mechanics-questions-tab" role="tabpanel" aria-labelledby="mechanics-tab" tabindex="0">
+                    <h3 class="text-center d-block d-md-none">Mechanics</h1>
+                    <div class="accordion" id="mechanics-questions-accordion">
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mechanics-questions-1" aria-expanded="false" aria-controls="general-questions-1">
+                                    <span>How do I <span class="text-warning">level up</span> my characters?</span>
+                                </button>
+                            </h2>
+                            <div id="mechanics-questions-1" class="accordion-collapse collapse" data-bs-parent="#mechanics-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>Characters level up primarily by participating in mystery dungeon activities! Each dungeon completion can give between 1 to 5 levels before any additional bonuses given by items.</p>
+                                    <p>For more information, see the <a href="" data-link="website" data-page="dungeons"></a> page!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mechanics-questions-2" aria-expanded="false" aria-controls="mechanics-questions-2">
+                                    <span>How do I <span class="text-warning">get more characters</span> / recruit Pokemon to my team?</span>
+                                </button>
+                            </h2>
+                            <div id="mechanics-questions-2" class="accordion-collapse collapse" data-bs-parent="#mechanics-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>You can gain more characters by encountering Pokemon in a mystery dungeon! If you decide to recruit them, you do so by letting us know in <a href="" data-link="discord" data-channel="inventory"></a> and linking to the confirmation of your dungeon submission. If your team has enough open recruit slots to allow them to join, they'll be added to the team and you can submit an application for them in the future!</p>
+                                    <p>For more information on <b>regular recruits</b> (i.e. non-Mythical, non-Paradox), see the <a href="" data-link="website" data-page="dungeons"></a> page!</p>
+                                    <p>There are also special recruits however, and you can find out more about them at <a href="" data-link="website" data-page="paradox"></a> and <a href="" data-link="website" data-page="mythical"></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mechanics-questions-3" aria-expanded="false" aria-controls="mechanics-questions-3">
+                                    <span>How do I <span class="text-warning">rank up</span> my team?</span>
+                                </button>
+                            </h2>
+                            <div id="mechanics-questions-3" class="accordion-collapse collapse" data-bs-parent="#mechanics-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>You can rank your team up by participating in missions when they are available! Each mission of your team's branch rewards 1 Rank Point, while missions from other branches reward 0.5 Rank Points. After accumulating a total of 3 Rank Points, your team will rank up!</p>
+                                    <p>For more information, see the <a href="" data-link="website" data-page="missions"></a> page!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mechanics-questions-4" aria-expanded="false" aria-controls="mechanics-questions-4">
+                                    <span>How do I <span class="text-warning">get another team</span>?</span>
+                                </button>
+                            </h2>
+                            <div id="mechanics-questions-4" class="accordion-collapse collapse" data-bs-parent="#mechanics-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>To get another team, there are a number of requirements your previous team must fulfill:</p>
+                                    <ul>
+                                        <li>Your team's leaders must be <b>Level 100</b></li>
+                                        <li>Your team's Rank must be Gold or higher</li>
+                                    </ul>
+                                    <p>Once these requirements are fulfilled, you'll be allowed to purchase your next team! The price will vary depending on if this is your second, third, or fourth team.</p>
+                                    <p>For a more detailed explanation and to see the cost of team slots, see the <a href="https://sites.google.com/view/pmd-beyond-the-sea/ethovalon-shops/team-items-services#h.70pc1352buwm" data-link="website" data-page="">Second Team</a> item!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mechanics-questions-5" aria-expanded="false" aria-controls="mechanics-questions-5">
+                                    <span>How do I <span class="text-warning">evolve</span> my Pokemon?</span>
+                                </button>
+                            </h2>
+                            <div id="mechanics-questions-5" class="accordion-collapse collapse" data-bs-parent="#mechanics-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>To evolve your Pokemon, you will first need to fulfill the requirements necessary for them to evolve based on the current generation of mainline games. This requirement may be based on <b>level</b>, <b>moves</b>, <b>items</b>, or it might be something a bit... <b>bizarre</b>.</p>
+                                    <p>Once the requirement is fulfilled however, you create and submit a <b class="text-warning">Luminous Spring</b> piece depicting your character evolving. This can be done in any medium you wish (i.e. drawn, written, animated, etc.) but it must be submitted to the <a href="" data-link="website" data-page="tasks grader"></a>.</p>
+                                    <p>For a full explanation, see the <a href="" data-link="website" data-page="evolution"></a> page! Be sure to look this over, as it will include all the details on what is required for your Luminous Spring submission!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade p-3" id="character-questions-tab" role="tabpanel" aria-labelledby="character-tab" tabindex="0">
+                    <h3 class="text-center d-block d-md-none">Characters</h1>
+                    <div class="accordion" id="character-questions-accordion">
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#character-questions-1"
+                                    aria-expanded="false" aria-controls="character-questions-1">
+                                    <span>Are any Pokemon species off-limits?</span>
+                                </button>
+                            </h2>
+                            <div id="character-questions-1" class="accordion-collapse collapse" data-bs-parent="#character-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>All <b>Legendary</b> and <b>Sub-Legendary Pokemon</b> as well as <b>Ultra Beasts</b> are <span class="text-danger">completely disallowed as regular group characters</span>. Often, these species are are reserved for important group NPCs.</p>
+                                    <p>The only workaround to this rule is to acquire a <b>Cosplay Mimikyu</b>, which are allowed to dress-up as a Legendary/Sub-Legendary <span class="text-danger">but not as Solgaleo, Lunala, Necrozma, or any Ultra Beast</span> at this time.</p>
+                                    <p><span class="text-danger">Solgaleo, Lunala, Necrozma, and Ultra Beasts are also not allowed to be included in any character backstories at this time.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#character-questions-2"
+                                    aria-expanded="false" aria-controls="character-questions-2">
+                                    <span>Can I include a(n) <span class="text-warning">Legendary / Sub-Legendary / Ultra Beast</span> in my backstory?</span>
+                                </button>
+                            </h2>
+                            <div id="character-questions-2" class="accordion-collapse collapse" data-bs-parent="#character-questions-accordion">
+                                <div class="accordion-body">
+                                    <p><b>We recommend straying away from including Legendary or Sub-Legendary Pokemon in your backstories</b> as some of them may already be NPCs created and owned by mods that regularly interact with the GCSF!</p>
+                                    <p>However, if you have a character with the <a href="https://sites.google.com/view/pmd-beyond-the-sea/general-info/potions-variants#h.orziph9k8fwy">Paradox variant</a> who is from the distant past or future, you are free to include that <a href="https://sites.google.com/view/pmd-beyond-the-sea/archive/npc-glossary#h.jptdkwimfll9">Tempo the Dialga</a> had somehow brought them to the current time period.</p>
+                                    <p class="text-danger">Solgaleo, Lunala, Necrozma, and Ultra Beasts are not allowed to be included in any character backstories at this time.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#character-questions-3"
+                                    aria-expanded="false" aria-controls="character-questions-3">
+                                    <span>One of my rolled leaders is a <span class="text-warning">Pokemon with a Regional Variant</span>! Can I choose which one I want to use?</span>
+                                </button>
+                            </h2>
+                            <div id="character-questions-3" class="accordion-collapse collapse" data-bs-parent="#character-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>Yes!</p>
+                                    <p>If a Pokemon rolled in <a href="" data-link="discord" data-channel="rolls"></a> for the purposes of creating a new team has a Regional Variant, you are allowed to choose <b>any</b> of the official regional variants. Usually, mods will specify "any" or "any region" after Pokemon with variants. If they don't, then they likely just forgot to! You are still free to do so!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#character-questions-4"
+                                    aria-expanded="false" aria-controls="character-questions-4">
+                                    <span>Can my character be a prince / princess / monarch?</span>
+                                </button>
+                            </h2>
+                            <div id="character-questions-4" class="accordion-collapse collapse" data-bs-parent="#character-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>Characters of royal descent are allowed, but they may run into potential critiques that other characters wouldn't normally be subjected to. Princes, princesses, monarchs, and other <b>rulers with active duties to their kingdom shouldn't be shirking their duties</b> after all! That said, runaway royalty is a perfectly valid route to take as well! Another alternative is to create a noble, lord, or lady with less responsibility to a nation.</p>
+                                    <p>Additionally, royal characters should not be royals on any canon islands to avoid overlap with other members -- it is best to create an entirely new island/nation for them in that case!</p>
+                                    <p>For a list of the official islands and cities across the Great Ocean, see the <a href="" data-link="website" data-page="islands"></a> page!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#character-questions-5"
+                                    aria-expanded="false" aria-controls="character-questions-5">
+                                    <span>Are Pokemon gender-restricted in the group like they are in the official games?</span>
+                                </button>
+                            </h2>
+                            <div id="character-questions-5" class="accordion-collapse collapse" data-bs-parent="#character-questions-accordion">
+                                <div class="accordion-body">
+                                    <p class="fw-bold">No, gender restrictions do not exist in this world.</p>
+                                    <p>Any species that can only be one sex/gender in the games or any evolutionary line that requires a specific gender do not exist. You can have a cisgender male Salazzle, a cisgender female Tauros, etc.</p>
+                                    <p>Additionally, there are no restrictions on gender identity or expression in this world! Feel free to do as you see fit with your characters!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#character-questions-6"
+                                    aria-expanded="false" aria-controls="character-questions-6">
+                                    <span>Can my character switch between all-fours and being bipedal in their Pokemon form?</span>
+                                </button>
+                            </h2>
+                            <div id="character-questions-6" class="accordion-collapse collapse" data-bs-parent="#character-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>In most cases, Pokemon <b class="text-danger">cannot</b> swap freely between being on all-fours and being bipdeal. However, Pokemon like Pikachu, Meowth, and Purrloin have been depicted in the official series as being able to stand on their hind legs or walk around on all-fours and are allowed to be bipedal in the group.</p>
+                                    <p>In general, if switching a Pokemon that uses all four legs to bipedal would break the silhouette of the species significantly, it will be disallowed.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#character-questions-7"
+                                    aria-expanded="false" aria-controls="character-questions-7">
+                                    <span>Can I start with an <span class="text-warning">evolved Pokemon</span>?</span>
+                                </button>
+                            </h2>
+                            <div id="character-questions-7" class="accordion-collapse collapse" data-bs-parent="#character-questions-accordion">
+                                <div class="accordion-body">
+                                    <p><b>If you are creating your first team</b> using Pokemon rolled for you in <a href="" data-link="discord" data-channel="rolls"></a>, then no. You cannot start with an evolved Pokemon as you'll be lacking the items necessary to do so!</p>
+                                    <p>Recruits and team leaders for <b>your second, third, or fourth team can start as evolved Pokemon</b> as long as you have the right amount of <a href="https://sites.google.com/view/pmd-beyond-the-sea/ethovalon-shops/character-items-services#h.jzbw0yk2qu9q">Evolution Crystals</a> in your inventory and you submit a <a href="" data-link="website" data-page="evolution" data-label="Luminous Spring"></a> piece to go with the application. Once accepted, you will have to submit your Luminous Spring piece via the <a href="" data-link="website" data-page="tasks grader"></a> to confirm the evolution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#character-questions-8"
+                                    aria-expanded="false" aria-controls="character-questions-8">
+                                    <span>Can I start with a <span class="text-warning">shiny / Variant Pokemon</span>?</span>
+                                </button>
+                            </h2>
+                            <div id="character-questions-8" class="accordion-collapse collapse" data-bs-parent="#character-questions-accordion">
+                                <div class="accordion-body">
+                                    <p><b>If you are creating your first team</b> using Pokemon rolled for you in <a href="" data-link="discord" data-channel="rolls"></a>, then no. You cannot start with a shiny or Variant Pokemon as you'll be lacking the items necessary to do so!</p>
+                                    <p>Recruits and team leaders for <b>your second, third, or fourth team can start as a shiny or Variant Pokemon</b> as long as you have the necessary items to use on them. <b>Before submitting their application for approval,</b> let a mod know in the <a href="" data-link="discord" data-channel="inventory"></a> channel that you'd like to apply a Potion/Juice to the character. Their species will be updated in the team inventory to reflect the updates.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#character-questions-9"
+                                    aria-expanded="false" aria-controls="character-questions-9">
+                                    <span>Can my character be <span class="text-warning">a time traveler</span>?</span>
+                                </button>
+                            </h2>
+                            <div id="character-questions-9" class="accordion-collapse collapse" data-bs-parent="#character-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>Characters <span class="text-success fw-bold">can</span> be originally from the ancient past or the distant future! In most cases, this will include some sort of event related to <a href="https://sites.google.com/view/pmd-beyond-the-sea/general-info/npc-glossary#h.i9wf3rp5ihkr">Tempo the Dialga</a>, possibly even as something he caused unintentionally.</p>
+                                    <p>In order to make a character from a different time period however, you'll need to complete the <a href="https://sites.google.com/view/pmd-beyond-the-sea/tasks/personal-story-tasks#h.m5m6g0x1jadb" class="fw-bold fst-italic">An Age Apart</a> task and link it at the same time that you submit your character application for approval.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#character-questions-10"
+                                    aria-expanded="false" aria-controls="character-questions-10">
+                                    <span>Can my character be <span class="text-warning">a vampire / werewolf / zombie / cursed</span>?</span>
+                                </button>
+                            </h2>
+                            <div id="character-questions-10" class="accordion-collapse collapse" data-bs-parent="#character-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>You are allowed to make a character who is monstrous or otherwise cursed in some way by using a <a href="https://sites.google.com/view/pmd-beyond-the-sea/ethovalon-shops/character-items-services#h.k5lac4fip9so" class="fw-bold">Cursed Vial</a>.</p>
+                                        <p>This is <b>different from using Monster Juice</b> -- where Monster Juice is used to give a character a monstrous <i>appearance</i>, a Cursed Vial can be used to properly give your character the history and abilities associated with being a monster / cursed.</p>
+                                    <ul>
+                                        <li>For example, Monster Juice could give your character bat wings and fangs inspired by a vampire, but your character would not be required to be a vampire.</li>
+                                        <li>With a Cursed Vial, your character can have fangs (as they are a minor quirk associated with vampires) and <i>become</i> a proper vampire with the related abilities and drawbacks.</li>
+                                    </ul>
+                                    <p>In order to acquire a Cursed Vial, you'll need to complete the <a href="https://sites.google.com/view/pmd-beyond-the-sea/tasks/personal-story-tasks#h.d2vrk7alcwhu" class="fw-bold fst-italic">Vial Origins</a> task. To <b>start with a cursed character</b>, you'll need to link at the same time that you submit your character application for approval.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#character-questions-11"
+                                    aria-expanded="false" aria-controls="character-questions-11">
+                                    <span>Can my character be <span class="text-warning">a living doll / construct / android</span>?</span>
+                                </button>
+                            </h2>
+                            <div id="character-questions-11" class="accordion-collapse collapse" data-bs-parent="#character-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>You are allowed to make a character a living construct by using an <a href="https://sites.google.com/view/pmd-beyond-the-sea/ethovalon-shops/character-items-services#h.3cyoqalhjzrz" class="fw-bold">Artificer's Vial</a>.</p>
+                                    <p>This is <b>different from using Synthetic Juice</b>. Synthetic Juice can turn a part of a character's body (or even their entire body) into an unusual material, however that character will still be considered having been naturally born. An Artificer's Vial can be used to properly give your character the backstory that they were created by other people or otherwise gained sentience unnaturally.</p>
+                                    <p>Using a Synthetic Juice or Paradox Potion to have a material body or otherwise being a traditionally man-made Pokemon (such as Voltorb, Varoom, Baltoy, etc.) is <b>a prerequisite for using the Artificer's Vial</b>.</p>
+                                    <ul>
+                                        <li>For example, Synthetic Juice could turn your character's body into wood.</li>
+                                        <li>With an Artificer's Vial, you are allowed to give your character the backstory that they were a being that was carved out of wood and later given life through a magical ritual of some sort.</li>
+                                    </ul>
+                                    <p>In order to acquire an Artificer's Vial, you'll need to complete the <a href="https://sites.google.com/view/pmd-beyond-the-sea/tasks/personal-story-tasks#h.ir1eii1t1tua" class="fw-bold fst-italic">Creation Story</a> task. To <b>start with a construct character</b>, you'll need to link at the same time that you submit your character application for approval.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade p-3" id="lore-questions-tab" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <h3 class="text-center d-block d-md-none">Lore</h1>
+                    <div class="accordion" id="lore-questions-accordion">
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lore-questions-0"
+                                    aria-expanded="false" aria-controls="lore-questions-0">
+                                    <span>Why are <span class="text-warning">Solgaleo / Lunala / Necrozma / Ultra Beasts</span> disallowed at this time?</span>
+                                </button>
+                            </h2>
+                            <div id="lore-questions-0" class="accordion-collapse collapse" data-bs-parent="#lore-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>Solgaleo, Lunala, Necrozma, all Ultra Beasts (as well as Cosmog and Cosmeom) are considered <b>aliens</b> and the existence of most of them are completely unknown to the world at present. As these Pokemon are currently being used in an ongoing plot, they are not permitted to be used by group members at this time. This may change in the future!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lore-questions-1"
+                                    aria-expanded="false" aria-controls="lore-questions-1">
+                                    <span>How old is the GCSF?</span>
+                                </button>
+                            </h2>
+                            <div id="lore-questions-1" class="accordion-collapse collapse" data-bs-parent="#lore-questions-accordion">
+                                <div class="accordion-body">
+                                    <p><b>The age of the GCSF follows real-world passage of time</b> (but the world does not follow the real-world calendar years)! As the group was established in May 2019, the guild is now <b>5 years old</b> as of May 2024!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lore-questions-2"
+                                    aria-expanded="false" aria-controls="lore-questions-2">
+                                    <span>Where is Ethovalon located?</span>
+                                </button>
+                            </h2>
+                            <div id="lore-questions-2" class="accordion-collapse collapse" data-bs-parent="#lore-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>Ethovalon is located on <a href="https://sites.google.com/view/pmd-beyond-the-sea/general-info/list-of-islands-cities#h.8vx88qq9gvo0">Kala Island</a>, one of three major islands in the west.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lore-questions-3"
+                                    aria-expanded="false" aria-controls="lore-questions-3">
+                                    <span>Where does my team live? Do they get a house?</span>
+                                </button>
+                            </h2>
+                            <div id="lore-questions-3" class="accordion-collapse collapse" data-bs-parent="#lore-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>After signing up to the GCSF, each team receives a base (albeit pretty rundown) in the housing district of Ethovalon. Your team base does not necessarily have to be in the housing district however, and teams are free to go off to find their own accommodations if desired.</p>
+                                    <p>The only limit is that <b>teams and characters must be primarily based in or around Ethovalon on Kala Island</b>! While members can have other homes to return to, they'll need to be near the guild's headquarters in order to participate in activities!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lore-questions-4"
+                                    aria-expanded="false" aria-controls="lore-questions-4">
+                                    <span>Do teams receive anything upon joining the GCSF?</span>
+                                </button>
+                            </h2>
+                            <div id="lore-questions-4" class="accordion-collapse collapse" data-bs-parent="#lore-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>For roleplaying purposes only (i.e. these are not items that get added to your inventory), the team receives a starter kit which includes several exploration badges for you and your team members, a toolbox/bag, and as well as an up-to-date map of the Great Ocean and flying islands!</p>
+                                    <p>A world map can be viewed on <a href="" data-link="website" data-page="islands"></a> and is pretty identical in layout to what you'd be receiving.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade p-3" id="inventory-questions-tab" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+                    <h3 class="text-center d-block d-md-none">Inventory</h1>
+                    <div class="accordion" id="inventory-questions-accordion">
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#inventory-questions-1"
+                                    aria-expanded="false" aria-controls="inventory-questions-1">
+                                    <span>When do my earnings get added to my inventory?</span>
+                                </button>
+                            </h2>
+                            <div id="inventory-questions-1" class="accordion-collapse collapse" data-bs-parent="#inventory-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>Inventory management is all handled by the staff, unlike the grading itself! When your earnings have been added to your team, the corresponding post in <a href="" data-link="discord" data-channel="grading"></a> will have a ✅ emoji added as a reaction to it.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#inventory-questions-2"
+                                    aria-expanded="false" aria-controls="inventory-questions-2">
+                                    <span>How do I use my <span class="text-warning">Potion / Juice / Recruit Token</span>?</span>
+                                </button>
+                            </h2>
+                            <div id="inventory-questions-2" class="accordion-collapse collapse" data-bs-parent="#inventory-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>To use a <b>character customization item</b>, roll a <b>Recruit Token</b>, or recruit a character to your team, simply post into the <a href="" data-link="discord" data-channel="inventory"></a> with your request.</p>
+                                    <p><b>To use an item on a character,</b> mention the <b>name of the character</b> and the <b>team name</b> (if your team's name isn't in your Discord nickname).</p>
+                                    <p><b>To roll a Recruit Token,</b> mention which team's inventory the token is coming from! If the token was received in a dungeon, or you wish to re-roll a token rolled while submitting a token, be sure to link the correct post from <a href="" data-link="discord" data-channel="grading"></a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#inventory-questions-3"
+                                    aria-expanded="false" aria-controls="inventory-questions-3">
+                                    <span>I have changed my username / would like to change my username with the group.</span>
+                                </button>
+                            </h2>
+                            <div id="inventory-questions-3" class="accordion-collapse collapse" data-bs-parent="#inventory-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>Please let a mod know in <a href="" data-link="discord" data-channel="questions"></a> or via <a href="" data-link="discord" data-channel="tickets"></a> if you ever decide to change your username so that we can keep track of all our members! It is preferred that your Discord nickname or username is similar enough to the name you decide to go by in the inventories so that it's easy to find you if needed!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade p-3" id="grading-questions-tab" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+                    <h3 class="text-center d-block d-md-none">Grading</h1>
+                    <div class="accordion" id="grading-questions-accordion">
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grading-questions-1"
+                                    aria-expanded="false" aria-controls="grading-questions-1">
+                                    <span>Where can I find confirmation that my submission went through?</span>
+                                </button>
+                            </h2>
+                            <div id="grading-questions-1" class="accordion-collapse collapse" data-bs-parent="#grading-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>At the end of the submission process, you will be asked to <b>wait at least 15 seconds for the grader to submit all your information</b>. In this time, be sure to check <a href="" data-link="discord" data-channel="grading"></a> under the correct thread to ensure your team has been accounted for.</p>
+                                    <p>Each thread is linked directly in the channel and includes:</p>
+                                    <ul>
+                                        <li><a href="" data-link="discord" data-channel="dungeonlogs"></a>; for regular dungeon submissions and occasional event dungeons</li>
+                                        <li><a href="" data-link="discord" data-channel="tasklogs"></a>; for regular task submissions and occasional event tasks</li>
+                                        <li><a href="" data-link="discord" data-channel="dailylife"></a>; for submissions unrelated to events, dungeons, or tasks</li>
+                                        <li><a href="" data-link="discord" data-channel="luminousspring"></a>; for submissions where characters are evolving</li>
+                                        <li><a href="" data-link="discord" data-channel="hhdungeonlogs"></a>; for dungeons completed for a Holiday Hills event</li>
+                                        <li><a href="" data-link="discord" data-channel="hhtasklogs"></a>; for tasks completed for a Holiday Hills event</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grading-questions-2"
+                                    aria-expanded="false" aria-controls="grading-questions-2">
+                                    <span>My submission never appeared in <a href="" class="text-warning" data-link="discord" data-channel="grading"></a>! What can I do?</span>
+                                </button>
+                            </h2>
+                            <div id="grading-questions-2" class="accordion-collapse collapse" data-bs-parent="#grading-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>If by the time the 15 seconds have passed and there has not been a post made for you, take a screenshot or otherwise copy down the information in text form to let the staff know in the <a href="" data-link="discord" data-channel="missinglogs"></a> thread. <span class="text-warning fw-bold">Ping the <span class="text-success">@Grader Help</span> role when you do so to ensure that this gets resolved ASAP!</span></p>
+                                    <p>However, if more than a few hours have passed between when you attempted to submit something and when you are reporting the issue, we may not be able to help. This policy is to ensure there is no cheating involved or attempts to circumvent event or extension deadlines!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- QUESTION --->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grading-questions-3"
+                                    aria-expanded="false" aria-controls="grading-questions-3">
+                                    <span>I found a bug / encountered unexpected behavior with the grader! What can I do?</span>
+                                </button>
+                            </h2>
+                            <div id="grading-questions-3" class="accordion-collapse collapse" data-bs-parent="#grading-questions-accordion">
+                                <div class="accordion-body">
+                                    <p>If you have another bug to report unrelated to a missing submission, let the staff know in the <a href="" data-link="discord" data-channel="bugslogs"></a> thread. <span class="text-warning fw-bold">If it is time-sensitive, ping the <span class="text-success">@Grader Help</span> role!</p>
+                                    <p>If you are able to, send screenshots or a detailed description about what happened so that we can look into it as thoroughly as possible! Your reports on such issues will help us to improve the systems and ensure they are functioning as intended in the future!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

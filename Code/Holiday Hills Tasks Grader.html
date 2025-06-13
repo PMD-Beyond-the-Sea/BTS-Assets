@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>PMD Beyond the Sea - Guild Life Grader</title>
+    <title>PMD Beyond the Sea - Holiday Hills Tasks Grader</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
@@ -28,10 +28,6 @@
             margin: 0;
             padding: 0;
             color: #2d2b60;
-            --dropshadow-color: rgb(45, 43, 96);
-            --textshadow-color: rgb(45, 43, 96, 0.5);
-            --debug-dropshadow-color: rgb(253, 70, 70);
-            --debug-textshadow-color: rgba(253, 70, 70, 0.5);
         }
 
         .loading.locked:before {
@@ -220,29 +216,15 @@
             letter-spacing: 0.15em;
             color: white;
             font-family: "Mochiy Pop One";
-            filter: drop-shadow(1px 1px 0 var(--dropshadow-color)) drop-shadow(-1px -1px 0 var(--dropshadow-color)) drop-shadow(-1px 1px 0 var(--dropshadow-color)) drop-shadow(1px -1px 0 var(--dropshadow-color)) drop-shadow(2px 2px 0 white) drop-shadow(-2px -2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white);
-            text-shadow: 0.07em 0.07em 0 var(--textshadow-color),
-                -0.07em -0.07em 0 var(--textshadow-color),
-                0.07em -0.07em 0 var(--textshadow-color), -0.07em 0.07em 0 var(--textshadow-color),
-                0.05em 0.05em 0 var(--textshadow-color), -0.05em -0.05em 0 var(--textshadow-color),
-                0.05em -0.05em 0 var(--textshadow-color), -0.05em 0.05em 0 var(--textshadow-color),
-                0.06em 0.06em 0 var(--textshadow-color), -0.06em -0.06em 0 var(--textshadow-color),
-                0.06em -0.06em 0 var(--textshadow-color), -0.06em 0.06em 0 var(--textshadow-color);
+            filter: drop-shadow(1px 1px 0 rgb(45, 43, 96)) drop-shadow(-1px -1px 0 rgb(45, 43, 96)) drop-shadow(-1px 1px 0 rgb(45, 43, 96)) drop-shadow(1px -1px 0 rgb(45, 43, 96)) drop-shadow(2px 2px 0 white) drop-shadow(-2px -2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white);
+            text-shadow: 0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                -0.07em -0.07em 0 rgb(45, 43, 96, 0.5),
+                0.07em -0.07em 0 rgb(45, 43, 96, 0.5), -0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                0.05em 0.05em 0 rgb(45, 43, 96, 0.5), -0.05em -0.05em 0 rgb(45, 43, 96, 0.5),
+                0.05em -0.05em 0 rgb(45, 43, 96, 0.5), -0.05em 0.05em 0 rgb(45, 43, 96, 0.5),
+                0.06em 0.06em 0 rgb(45, 43, 96, 0.5), -0.06em -0.06em 0 rgb(45, 43, 96, 0.5),
+                0.06em -0.06em 0 rgb(45, 43, 96, 0.5), -0.06em 0.06em 0 rgb(45, 43, 96, 0.5);
             font-size: 1.5em;
-        }
-
-        #debug-header {
-            letter-spacing: 0.15em;
-            color: white;
-            font-family: "Mochiy Pop One";
-            filter: drop-shadow(1px 1px 0 var(--debug-dropshadow-color)) drop-shadow(-1px -1px 0 var(--debug-dropshadow-color)) drop-shadow(-1px 1px 0 var(--debug-dropshadow-color)) drop-shadow(1px -1px 0 var(--debug-dropshadow-color)) drop-shadow(2px 2px 0 white) drop-shadow(-2px -2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white);
-            text-shadow: 0.07em 0.07em 0 var(--debug-textshadow-color),
-                -0.07em -0.07em 0 var(--debug-textshadow-color),
-                0.07em -0.07em 0 var(--debug-textshadow-color), -0.07em 0.07em 0 var(--debug-textshadow-color),
-                0.05em 0.05em 0 var(--debug-textshadow-color), -0.05em -0.05em 0 var(--debug-textshadow-color),
-                0.05em -0.05em 0 var(--debug-textshadow-color), -0.05em 0.05em 0 var(--debug-textshadow-color),
-                0.06em 0.06em 0 var(--debug-textshadow-color), -0.06em -0.06em 0 var(--debug-textshadow-color),
-                0.06em -0.06em 0 var(--debug-textshadow-color), -0.06em 0.06em 0 var(--debug-textshadow-color);
         }
 
         select {
@@ -269,8 +251,7 @@
         }
 
         #submission-type,
-        #tasks,
-        #missions {
+        #tasks {
             font-size: 1.1em;
         }
 
@@ -453,8 +434,7 @@
         }
 
         #select-user-1,
-        #select-team-1,
-        #select-reward-1 {
+        #select-team-1 {
             color: #073763;
             background-color: #b2e2f8;
             border: 1px solid #4999d1;
@@ -463,8 +443,7 @@
         }
 
         #select-user-2,
-        #select-team-2,
-        #select-reward-2 {
+        #select-team-2 {
             color: #682e0c;
             background-color: #ffe8c4;
             border: 1px solid #af763a;
@@ -472,8 +451,7 @@
         }
 
         #select-user-3,
-        #select-team-3,
-        #select-reward-3 {
+        #select-team-3 {
             color: #203310;
             background-color: #c7ddb3;
             border: 1px solid #33662d;
@@ -481,8 +459,7 @@
         }
 
         #select-user-4,
-        #select-team-4,
-        #select-reward-4 {
+        #select-team-4 {
             color: #34225b;
             background-color: #ded8ff;
             border: 1px solid #8760c9;
@@ -490,8 +467,7 @@
         }
 
         #select-user-5,
-        #select-team-5,
-        #select-reward-5 {
+        #select-team-5 {
             color: #4c1313;
             background-color: #f9c0c9;
             border: 1px solid #b24a4a;
@@ -499,8 +475,7 @@
         }
 
         #select-user-6,
-        #select-team-6,
-        #select-reward-6 {
+        #select-team-6 {
             color: #563b21;
             background-color: #f9eebb;
             border: 1px solid #b2894c;
@@ -508,8 +483,7 @@
         }
 
         #select-user-7,
-        #select-team-7,
-        #select-reward-7 {
+        #select-team-7 {
             color: #541941;
             background-color: #ffd3f9;
             border: 1px solid #c649a1;
@@ -517,8 +491,7 @@
         }
 
         #select-user-8,
-        #select-team-8,
-        #select-reward-8 {
+        #select-team-8 {
             color: #2b3344;
             background-color: #dae1ef;
             border: 1px solid #6a7487;
@@ -528,64 +501,56 @@
         #username-select-1,
         #team-select-1,
         #select-user-1,
-        #select-team-1 button,
-        #select-reward-1 {
+        #select-team-1 button {
             color: #073763;
         }
 
         #username-select-2,
         #team-select-2,
         #select-user-2,
-        #select-team-2 button,
-        #select-reward-2 {
+        #select-team-2 button {
             color: #682e0c;
         }
 
         #username-select-3,
         #team-select-3,
         #select-user-3,
-        #select-team-3 button,
-        #select-reward-3 {
+        #select-team-3 button {
             color: #203310;
         }
 
         #username-select-4,
         #team-select-4,
         #select-user-4,
-        #select-team-4 button,
-        #select-reward-4 {
+        #select-team-4 button {
             color: #34225b;
         }
 
         #username-select-5,
         #team-select-5,
         #select-user-5,
-        #select-team-5 button,
-        #select-reward-5 {
+        #select-team-5 button {
             color: #4c1313;
         }
 
         #username-select-6,
         #team-select-6,
         #select-user-6,
-        #select-team-6 button,
-        #select-reward-6 {
+        #select-team-6 button {
             color: #563b21;
         }
 
         #username-select-7,
         #team-select-7,
         #select-user-7,
-        #select-team-7 button,
-        #select-reward-7 {
+        #select-team-7 button {
             color: #541941;
         }
 
         #username-select-8,
         #team-select-8,
         #select-user-8,
-        #select-team-8 button,
-        #select-reward-8 {
+        #select-team-8 button {
             color: #2b3344;
         }
 
@@ -1004,11 +969,13 @@
         .form-control.full-input,
         .form-control.animation-input,
         .form-control.writing-input,
-        .form-control.submission-input {
+        .form-control.submission-input
+        .form-control.dice-input {
             cursor: text;
         }
 
-        .form-control.submission-input {
+        .form-control.submission-input
+        .form-control.dice-input {
             font-weight: normal;
         }
 
@@ -1142,15 +1109,16 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
     <script type="module">
+        import PublicGoogleSheetsParser from "https://esm.sh/public-google-sheets-parser";
+
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-        let DEBUGGING = true;
-        const HOLIDAY_HILLS = true;
+        let DEBUGGING;
+        const HOLIDAY_HILLS = false;
         let GraderSettings = {};
         let TeamsByUser = {};
         let TasksById = {};
-        let MissionsById = {};
 
         let TasksByCategory = {};
         let TaskRewards = "";
@@ -1169,22 +1137,35 @@
                 if ($("#invalid-file-alert").children().length < 1) CreateInvalidLinkAlert();
                 return false;
             }
+            return true;
 
-            try {
+            /*try {
                 // close the alert if it is currently active
                 //if ($("#invalid-file-alert").children().length > 0) bootstrap.Alert.getOrCreateInstance('#link-alert').close();
                 return true;
             } catch (err) {
                 // if link is not valid, return false
                 return false;
+            }*/
+        }
+
+        function IsValidDiceUrl(string) {
+            const isDiscordUrl = /discord\.com\/channels|(cdn|media)\.discordapp\./gm.test(string);
+            const isOfficialChannel = new RegExp(`${GraderSettings.ServerId.Official}`, 'gm').test(string);
+
+            // if the URL is a Discord URL and it isn't in one of the official channels, return false
+            if (!string || !isDiscordUrl || !isOfficialChannel) {
+                if ($("#invalid-dice-alert").children().length < 1) CreateInvalidDiceLinkAlert();
+                return false;
             }
+            return true;
         }
 
         function IsValidDate(start, end, ext) {
             let currentMonth = CurrentDate().getMonth();
             let currentDay = CurrentDate().getDate();
 
-            if ((currentMonth <= start.getMonth() && currentDay >= start.getDate()) || (currentMonth <= ext.getMonth() && currentDay <= ext.getDate()))
+            if ((currentMonth === start.getMonth() && currentDay >= start.getDate()) || (currentMonth === ext.getMonth() && currentDay <= ext.getDate()))
                 return true;
             else return false;
         }
@@ -1218,57 +1199,13 @@
             return new Date(dt.getTime() + offset * 60 * 1000);
         }
 
-        let ImportDataFromSheet = async (sheetPage, sheetId) => {
-
-            if (!sheetId) return console.error('Missing sheetID.');
-            if (!sheetPage) return console.error('Missing sheetPage.');
-
-            // Fetch the sheet
-            const importUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&headers=1&tq=WHERE A IS NOT NULL&sheet=${sheetPage}`;
-
-            // Attempt to get it
-            const sheetJSON = await fetch(importUrl).then(i => i.text()).catch(err => {
-                return console.error(`${err} sheet. Please make sure that the sheet is public and that you're only using the ID.`);
-            });
-
-            // Parse the text
-            const sliceJSON = JSON.parse(sheetJSON.substring(47).slice(0, -2));
-
-            // Grab column headers
-            const col = [];
-            if (sliceJSON.table.cols[0].label) {
-                for (let headers of sliceJSON.table.cols) {
-                    if (headers.label) col.push(headers.label);
-                };
-            }
-
-            // Scrubs columns and puts them in a readable object
-            const scrubbedData = [];
-            for (let info of sliceJSON.table.rows) {
-                const row = {};
-                const isBoolean = val => 'boolean' === typeof val;
-                col.forEach((ele, ind) => {
-                    row[ele] = info.c[ind] != null ?
-                        info.c[ind].f != null && !isBoolean(info.c[ind].v) ?
-                            info.c[ind].f : info.c[ind].v != null ?
-                                info.c[ind].v : "" : "";
-                });
-                scrubbedData.push(row);
-            };
-
-            // Filter out everything that says hide
-            let publicData = scrubbedData.filter(i => !i['hide']);
-            // Return Data
-            return publicData;
-
-        };
-
         // Gets the link to the correct form based on whether it's debugging or not
         let GetGraderSettings = async function () {
             $("#loading-text").html("Loading Settings . . .");
-
-            let formData = await ImportDataFromSheet("GRADER SETTINGS", '1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8');
+            const formParser = new PublicGoogleSheetsParser('1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8', { sheetId: '954031557' });
+            let formData = await formParser.parse();
             DEBUGGING = DEBUGGING ? DEBUGGING : formData[0]['Use Local'];
+            await GetEarningsValues();
 
             return GraderSettings = {
                 FormUrl: DEBUGGING ? formData[0].Private : formData[0].Public,
@@ -1280,9 +1217,8 @@
 
         let GetEarningsValues = async function () {
             $("#loading-text").html("Loading Earnings . . .");
-
-            let earningsData = await ImportDataFromSheet("Guild Life Earnings", '1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8');
-
+            const earningsParser = new PublicGoogleSheetsParser('1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8', { sheetId: '739738278' });
+            let earningsData = await earningsParser.parse();
             earningsData.forEach((earn) => {
                 if (!earn.Activity) return;
                 if (earn.Currency === 'Poke') {
@@ -1333,8 +1269,8 @@
 
         let GetUsersAndTeams = async function () {
             $("#loading-text").html("Loading Members & Teams . . .");
-
-            let userData = await ImportDataFromSheet("Teams and Users", '1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8');
+            const userParser = new PublicGoogleSheetsParser('1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8', { sheetId: '1076126972' });
+            let userData = await userParser.parse();
 
             userData.forEach((user) => {
                 let usernames = user.User.split(" / ");
@@ -1352,42 +1288,15 @@
             return TeamsByUser;
         }
 
-        let GetMissionsData = async function () {
-            $("#loading-text").html("Loading Missions . . .");
-
-            let missionsData = await ImportDataFromSheet("Missions", '1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8');
-            let missionsArr = missionsData.filter((mission) => mission['Gijinka Option'] === true);
-
-            // get the current date and dates for the missions
-            let start = new Date(missionsArr[0]['Start Date']);
-            let end = new Date(missionsArr[0]['End Date']);
-            let ext = new Date(missionsArr[0]['Extension Date']);
-
-            if (IsValidDate(start, end, ext)) {
-                missionsArr.forEach((mission) => {
-                    let branch;
-                    if (mission.Branch === "Bounty Hunters") branch = "BH";
-                    else branch = mission['Branch'].charAt(0);
-
-                    return MissionsById[`${branch}0${mission['Mission ID']}`] = {
-                        Label: `${branch}0${mission['Mission ID']} | ${mission.Title}`,
-                        Name: `${mission.Branch} 0${mission['Mission ID']} | ${mission.Title}`,
-                        Rewards: mission.Rewards,
-                    };
-                });
-            }
-
-            return { IsValid: IsValidDate(start, end, ext), Date: `${month[start.getMonth()]} ${end.getFullYear()}` };
-        }
-
-
         let GetTasksData = async function () {
             try {
                 $("#loading-text").html("Loading Tasks . . .");
+                const tasksParser = new PublicGoogleSheetsParser('1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8', { sheetId: HOLIDAY_HILLS ? '477310461' : '1563697222', useFormat: true });
+                let tasksData = await tasksParser.parse();
 
-                let tasksData = await ImportDataFromSheet(HOLIDAY_HILLS ? '[HH] Tasks' : 'Tasks', '1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8');
-                let tasksArr = tasksData.filter((task) => Number(task['Task ID']) > 0 && task.Hide === false);
-
+                let tasksArr = tasksData.filter((task) => Number(task['Task ID']) > 0 && task.Hide === 'FALSE');
+                if (!tasksArr || tasksArr.length < 1) return { IsValid: false };
+                
                 // get the current date and dates for the missions
                 let start = new Date(tasksArr[0]['Start Date']);
                 let end = new Date(tasksArr[0]['End Date']);
@@ -1395,21 +1304,17 @@
 
                 if (HOLIDAY_HILLS) {
                     if (IsValidDate(start, end, ext)) {
-                        if (!TasksByCategory['Holiday Hills']) TasksByCategory['Holiday Hills'] = [];
+                        TasksByCategory['Holiday Hills'] = [];
+
                         tasksArr.forEach((task) => {
                             let taskEntry = { Name: `Task 0${task['Task ID']} | ${task['Task Name']}`, Rewards: task.Rewards }
                             return TasksByCategory['Holiday Hills'].push(taskEntry);
                         });
                     }
-
-                    return { IsValid: DEBUGGING ? true : IsValidDate(start, end, ext), Date: `${month[start.getMonth()]} ${end.getFullYear()}` };
                 } else {
-
                     let monthlyTasksArr = tasksArr.filter((task) => task.Type === 'Monthly');
 
-                    if (!tasksArr || tasksArr.length < 1) return { IsValid: false };
-
-                    if (IsValidDate(start, end, ext) || DEBUGGING) {
+                    if (IsValidDate(start, end, ext)) {
                         if (!TasksByCategory.Monthly) TasksByCategory['Monthly'] = [];
                         monthlyTasksArr.forEach((task) => {
                             let taskEntry = { Name: `Task 0${task['Task ID']} | ${task['Task Name']}`, Rewards: task.Rewards }
@@ -1425,14 +1330,10 @@
 
                         TasksByCategory[task.Type].push(taskEntry);
                     });
-
-                    return { 
-                        IsValid: TasksByCategory['General'].length > 0,
-                        IsMonthlyValid: DEBUGGING ? true : IsValidDate(start, end, ext),
-                        Date: `${month[start.getMonth()]} ${end.getFullYear()}`
-                    };
-
                 }
+
+                //return { IsValid: !IsValidDate(start, end, ext), Date: `${month[start.getMonth()]} ${end.getFullYear()}` };
+                return { IsValid: true };
             } catch (error) {
                 return { IsValid: false};
             }
@@ -1444,20 +1345,7 @@
                 console.log(DEBUGGING ? `🐛 Grader is set to Debug Mode. Submissions made will go to the Debug Form.` :
                     `📢 Grader is set to Public Mode. Submissions made at this time will go to the Official Server Form.`
                 );
-
-                let loadEarningsValues = await GetEarningsValues();
-                console.log(`✅ LOADED: Earning values loaded.`);
-
-                if (DEBUGGING) {
-                    $(`#debug-header`).removeClass('d-none');
-                } else {
-                    $(`#debug-header`).remove();
-                }
-
                 console.log(`✅ LOADED: All grader settings for validation.`);
-                GetHolidayHillsElements();
-
-                let loadTasksData = await GetTasksData();
 
                 if (HOLIDAY_HILLS) {
                     if (!IsHolidayHills() || GraderSettings.LockHH) {
@@ -1468,34 +1356,6 @@
                     SetSeasonBackground();
                     $(`#grader-title`).html('Holiday Hills Tasks Grader');
                     console.log(`🎊 This grader is set to be used for Holiday Hills! All Holiday Hills sections will be shown and any submissions made will go to the Holiday Hills threads.`);
-
-                    if (loadTasksData.IsValid) {
-                        console.log(`✅ LOADED: Tasks data for all Holiday Hills Tasks in ${loadTasksData.Date}.`);
-                        $(`option[value="Holiday Hills"]`).prop('selected', true);
-                    } else console.log(`⚠ Found Tasks data for ${loadTasksData.Date}, but they should not be active at this time.`);
-
-                } else {
-                    $(`option[value="Holiday Hills"]`).remove();
-
-                    let loadMissionsData = await GetMissionsData();
-                    if (loadMissionsData.IsValid) console.log(`✅ LOADED: Missions data for ${loadMissionsData.Date}.`);
-                    else console.log(`⚠ Found Missions data for ${loadMissionsData.Date}, but they should not be active at this time.`);
-                    SetMissions(loadMissionsData.IsValid);
-
-                    if (loadTasksData.IsValid) {
-                        console.log(`✅ LOADED: Tasks data for all Permanent Tasks.`);
-                    } else {
-                        $(`option[value="Task"]`).prop('disabled', true);
-                        console.log(`⚠ No Tasks data found.`)
-                    }
-
-                    if (loadTasksData.IsMonthlyValid) {
-                        console.log(`✅ LOADED: Tasks data for all Monthly Tasks in ${loadTasksData.Date}.`);
-                    } else {
-                        $(`option[value="General"]`).prop('selected', true);
-                        $(`option[value="Monthly"]`).prop('disabled', true).removeProp('selected');
-                        console.log(`⚠ Found Tasks data for ${loadTasksData.Date}, but they should not be active at this time.`);
-                    }
                 }
 
                 if (GraderSettings.LockGraders) {
@@ -1503,9 +1363,27 @@
                     return console.log(`🔒 This grader is set to be locked for maintenance! Access to the grader has been limited.`);
                 }
 
+                GetHolidayHillsElements();
+
                 let loadUsersData = await GetUsersAndTeams();
                 console.log(`✅ LOADED: User data for ${Object.keys(loadUsersData).length} users.`);
 
+                let loadTasksData = await GetTasksData();
+                if (loadTasksData.IsValid) console.log(`✅ LOADED: Tasks data for all ${HOLIDAY_HILLS ? "Holiday Hills" : "Permanent"} Tasks.`);
+
+                else console.log(`⚠ No Tasks data found.`);
+                if (!loadTasksData.IsValid) return $(`option[value="Task"]`).prop('disabled', true);
+
+                if (HOLIDAY_HILLS) {
+                    if (TasksByCategory['Holiday Hills']) {
+                        $(`option[value="Holiday Hills"]`).prop('selected', true);
+                    }
+                } else {
+                    if (!TasksByCategory.Monthly) {
+                        $(`option[value="General"]`).prop('selected', true);
+                        $(`option[value="Monthly"]`).prop('disabled', true).removeProp('selected');
+                    }
+                }
                 SetTasks(loadTasksData.IsValid);
 
                 ValidateExtensions();
@@ -1555,6 +1433,26 @@
             $("#invalid-file-alert").append(alert);
         }
 
+        function CreateInvalidDiceLinkAlert() {
+            const alert = $('<div>');
+            alert.attr({
+                id: 'link-alert',
+                class: 'my-3 alert alert-danger fade show',
+                role: 'alert'
+            })
+            alert.html(`<i class='fa-brands fa-discord me-1'></i> The link to the proof of your dice roll must be to a message within the <b>PMD Beyond the Sea Official Server</b>!`);
+
+            const dismissBtn = $('<button>');
+            dismissBtn.attr({
+                type: 'button',
+                class: 'btn-close ms-3',
+                'data-bs-dismiss': 'alert'
+            })
+
+            alert.append(dismissBtn);
+            $("#invalid-dice-alert").append(alert);
+        }
+
         function SetBackground(bg) {
             return $("html").css('background-image', `url("${bg}")`);
         }
@@ -1591,19 +1489,6 @@
         });
 
         function RegisterInputFunctions() {
-
-            for (let i = 1; i < 9; i++) {
-                $(`#team-task-${i}`).on('change', () => {
-                    if ($(`#submission-type`).find(':selected').val() !== 'Mission') return;
-
-                    if ($(`#team-task-${i}`).prop('checked')) {
-                        $(`#reward-select-${i}`).removeClass('d-none');
-                    } else {
-                        $(`#reward-select-${i}`).addClass('d-none');
-                    }
-                });
-            }
-
             $("#help-btn").on('click', () => {
                 ToggleTipBoxes();
             });
@@ -1704,9 +1589,6 @@
 
             $("#submission-type").on('change', function () {
                 const submissionType = $(this).find(":selected").val();
-                ToggleRewardsCheck(submissionType === "Mission" || submissionType === "Task")
-
-                ToggleMissions(submissionType === "Mission");
                 ToggleTasks(submissionType === "Task");
                 ToggleLuminousSpring(submissionType === "Luminous Spring");
                 ToggleSubmitButton();
@@ -1722,6 +1604,11 @@
                 }
             });
 
+            $("#dice-proof-link").on("change", function () {
+                IsValidSubmission(IsValidDiceUrl($(this).val()));
+                ToggleSubmitButton();
+            });
+
             $("#rewards-check").on("click", function () {
                 IsValidSubmission();
             });
@@ -1730,16 +1617,8 @@
                 ToggleSubmitButton();
             });
 
-            /*$("#missions").on("change", function () {
-                ToggleSubmitButton();
-            });*/
-
             $("#tasks").on("change", function () {
                 ToggleSubmitButton();
-            });
-
-            $("#task-type").on("change", function() {
-                SetTasks(true);
             });
 
             $("#submit-to-group").on('click', () => {
@@ -1748,7 +1627,8 @@
             });
 
             if (HOLIDAY_HILLS) {
-                $(`#recipient-add-btn`).on('click', function() {
+
+                /*$(`#recipient-add-btn`).on('click', function() {
                     if ($(`#recipients-container`).children().length <= 10)
                         CreateRecipientSelect();
                     
@@ -1756,13 +1636,25 @@
                         $(this).prop('disabled', true);
 
                     ToggleSubmitButton();
-                });
+                });*/
 
-                $(`#tasks`).on('change', function() {
+                /*$(`#tasks`).on('change', function() {
                     if ($(this).val().includes("The Gift of Giving"))
                         $(`#gift-art-section`).prop('disabled', false);
                     else
                         $(`#gift-art-section`).prop('disabled', true);
+                });*/
+
+                $(`#tasks`).on('change', function() {
+                    if (/Cassie \& Orion.s Secret Mission|The Guardian Deities.s Concerns/gi.test($(this).find(':selected').val())) {
+                        $(`#dice-roll-display`).removeClass('d-none');
+                    } else {
+                        $(`#dice-roll-display`).addClass('d-none');
+                    }
+                });
+            } else {
+                $("#task-type").on("change", function() {
+                    SetTasks(true);
                 });
             }
         }
@@ -1785,23 +1677,12 @@
             }
         }
 
-        function SetMissions(valid) {
-            const missionsSelect = $('#missions');
-            missionsSelect.children().remove();
-
-            let missionNames = Object.keys(MissionsById);
-
-            missionNames.forEach(mission => {
-                return missionsSelect.append(`<option value="${MissionsById[mission].Name}">${MissionsById[mission].Label}</option>`);
-            });
-        }
-
         function SetTasks(valid) {
             const tasksSelect = $('#tasks');
             tasksSelect.children().remove();
 
             let taskCategory = $('#task-type').find(":selected").val();
-            if (taskCategory === 'Personal Story') $('#task-character-display').removeClass("d-none");
+            if (taskCategory === 'Personal Story')$('#task-character-display').removeClass("d-none");
             else $('#task-character-display').addClass("d-none");
 
             let taskNames = TasksByCategory[taskCategory].map((t) => t.Name);
@@ -1811,48 +1692,22 @@
             });
         }
 
-        function ToggleRewardsCheck(on) {
-            if (on) {
-                if (!HOLIDAY_HILLS) {
-                    $(`.task-check`).each(function () {
-                        if ($(this).hasClass('d-none'))
-                            $(this).removeClass('d-none');
-                    });
-                }
-            } else {
-                if (!HOLIDAY_HILLS) {
-                    $(`.task-check`).each(function () {
-                        if (!$(this).hasClass('d-none'))
-                            $(this).addClass('d-none');
-                    });
-                }
-            }
-        }
-
-        function ToggleMissions(on) {
-            if (on) {
-                $('#missions-display').removeClass('d-none');
-
-                for (let i = 1; i < 9; i++) {
-                    if ($(`#team-task-${i}`).prop('checked') && $(`#reward-select-${i}`).hasClass('d-none'))
-                        $(`#reward-select-${i}`).removeClass('d-none');
-                }
-
-            } else {
-                $('#missions-display').addClass('d-none');
-            }
-        }
-
         function ToggleTasks(on) {
             if (on) {
                 $('#tasks-display').removeClass('d-none');
-
-                for (let i = 1; i < 9; i++) {
-                    if (!$(`#reward-select-${i}`).hasClass('d-none'))
-                        $(`#reward-select-${i}`).addClass('d-none');
+                // change for Spring 2025 HH, should be !HOLIDAY_HILLS
+                if (HOLIDAY_HILLS) {
+                    $(`.task-check`).each(function () {
+                        $(this).removeClass('d-none');
+                    });
                 }
             } else {
                 $('#tasks-display').addClass('d-none');
+                if (HOLIDAY_HILLS) {
+                    $(`.task-check`).each(function () {
+                        $(this).addClass('d-none');
+                    });
+                }
             }
         }
 
@@ -1895,10 +1750,6 @@
                 CreateTeamsForUser(teamindex);
                 ToggleUserAvailable();
                 ToggleSubmitButton();
-
-                if ($(this).val() === 'none' && !$(`#reward-select-${teamindex}`).hasClass('d-none')) {
-                    $(`#reward-select-${teamindex}`).addClass('d-none');
-                }
             });
 
             $(`#select-team-${teamindex}`).children().each(function () {
@@ -1944,7 +1795,6 @@
         }
 
         function CreateTeamsForUser(teamindex) {
-            $(`#select-reward-${teamindex}`).children().remove();
             let user = $(`#select-user-${teamindex}`).val();
             let teamContainer = $(`#select-team-${teamindex}`);
             if (user === 'none') {
@@ -1961,11 +1811,6 @@
                 } else {
                     $(`#select-team-${teamindex} button:nth-child(${i + 1})`).val('none').attr('data-active', false).html('(none)').prop('disabled', true);
                 }
-            }
-
-            for (let i = 0; i < TeamsByUser[user].length; i++) {
-                let team = TeamsByUser[user][i];
-                $(`#select-reward-${teamindex}`).append(`<option value="${team}"${i === 0 ? " selected" : ""}>${team}</option>`);
             }
         }
 
@@ -1999,29 +1844,10 @@
                 else SubmissionInfo[user]["entry.1122302548"] = warnings;
             }
 
-            if (submissionType === 'Mission') {
-
-                let missionId = /(\w+\d+)/gi.exec($(`#missions`).find(":selected").html())[1];
-                SubmissionInfo[user]["entry.1844814292"] = MissionsById[missionId].Name;
-
-                if ($(`#team-task-${teamindex}`).prop('checked')) {
-                    SubmissionInfo[user]["entry.1217004916"] = MissionsById[missionId].Rewards;
-                }
-
-                if ($(`#team-task-${teamindex}`).prop('checked')) {
-                    // Team to gain rewards
-                    if (DEBUGGING) {
-                        SubmissionInfo[user]["entry.1768317677"] = $(`#select-reward-${teamindex}`).val();
-                    } else {
-                        SubmissionInfo[user]["entry.1525832124"] = $(`#select-reward-${teamindex}`).val();
-                    }
-                }
-            }
-
             if (submissionType === 'Task') {
                 let taskCategory = $('#task-type').find(":selected").val();
                 let taskName = $(`#tasks`).find(":selected").val();
-                SubmissionInfo[user]["entry.1315050981"] = taskName;
+                if (submissionType === "Task") SubmissionInfo[user]["entry.1315050981"] = taskName;
 
                 SubmissionInfo[user]["entry.544999014"] = `${taskCategory} ${submissionType}`;
 
@@ -2038,7 +1864,24 @@
             }
 
             if (submissionType === "Luminous Spring") SubmissionInfo[user] = { ...SubmissionInfo[user], ...GetLuminousSpringInfo() }
-            if (HOLIDAY_HILLS) SubmissionInfo[user]["entry.1213243555"] = Number($(`.candy-calculation[data-category="Total"]`).html());
+            if (HOLIDAY_HILLS) {
+                SubmissionInfo[user]["entry.1213243555"] = Number($(`.candy-calculation[data-category="Total"]`).html());
+
+                let currentMonth = CurrentDate().getMonth();
+                let currentYear = CurrentDate().getFullYear();
+                let otherFieldId = DEBUGGING ? "entry.1768317677" : "entry.1525832124";
+                if (/December|January|February/gi.test(month[currentMonth])) SubmissionInfo[user][otherFieldId] = `Winter ${currentYear}`;
+                else if (/March|April|May/gi.test(month[currentMonth])) SubmissionInfo[user][otherFieldId] = `Spring ${currentYear}`;
+                else if (/June|July|August/gi.test(month[currentMonth])) SubmissionInfo[user][otherFieldId] = `Summer ${currentYear}`;
+                else if (/September|October|November/gi.test(month[currentMonth])) SubmissionInfo[user][otherFieldId] = `Fall ${currentYear}`;
+
+                if (/Cassie \& Orion.s Secret Mission|The Guardian Deities.s Concerns/gi.test(SubmissionInfo[user]["entry.1315050981"])) {
+                    let diceResult = $(`#dice-result`).val();
+                    let diceLink = $(`#dice-proof-link`).val();
+                    SubmissionInfo[user]["entry.366705611"] = diceResult;
+                    SubmissionInfo[user]["entry.343180496"] = diceLink;
+                }
+            }
 
             return SubmissionInfo[user];
         }
@@ -2053,8 +1896,8 @@
                 console.log(GetAllUserInfo(user, i));
             }
 
-            if (HOLIDAY_HILLS && $(`#submission-type`).find(':selected').val() === 'Task' && $(`#tasks`).find(':selected').val().includes("The Gift of Giving"))
-                ConfirmGiftSubmission();
+            /*if (HOLIDAY_HILLS && $(`#submission-type`).find(':selected').val() === 'Task' && $(`#tasks`).find(':selected').val().includes("The Gift of Giving"))
+                ConfirmGiftSubmission();*/
         }
 
         async function ConfirmGiftSubmission() {
@@ -2283,7 +2126,7 @@
             return evolutionObj;
         }
 
-        function IsValidSubmission() {
+        function IsValidSubmission(check = false) {
             let userList = [];
             for (let i = 1; i < 9; i++) {
                 if ($(`#select-user-${i}`).find(":selected").val() === 'none') continue;
@@ -2308,8 +2151,12 @@
             }
 
             if (HOLIDAY_HILLS) {
-                if ($(`#tasks`).find(':selected').val().includes("The Gift of Giving")) {
+                /*if ($(`#tasks`).find(':selected').val().includes("The Gift of Giving")) {
                     if ($(`#recipients-container`).children().length < 1) return false;
+                }*/
+
+                if (/Cassie \& Orion.s Secret Mission|The Guardian Deities.s Concerns/gi.test($(`#tasks`).find(':selected').val())) {
+                    if (!IsValidDiceUrl($(`#dice-proof-link`).val())) return false;
                 }
             }
             
@@ -2443,8 +2290,7 @@
         <div class="pelipper-mail row row-cols-1 col-xxl-8 col-xl-9 col-lg-10 col-12 justify-content-center">
             <div class="inner-border"></div>
             <div class="section-header mb-4">PMD Beyond the Sea:
-                <br><span style="font-size:1.5em; color:#c6d3ff;" id="grader-title">Guild Life Grader</span>
-                <br><span style="font-size: .9em;" id="debug-header" class="d-none">(DEBUG VERSION)</span>
+                <br><span style="font-size:1.5em; color:#c6d3ff;" id="grader-title">Daily Life & Tasks Grader</span>
             </div>
             <div class="card bg-transparent border-0 justify-content-center align-items-center mx-auto">
                 <div class="col-10 fw-bold">Click on the <span class="question-inline"><i
@@ -2495,6 +2341,11 @@
                         </button>
                         <div id="base-artwork" class="accordion-collapse collapse" data-bs-parent="#section-accordion">
                             <div class="accordion-body">
+                                
+                                <div class="fw-bold fst-italic">
+                                    <p>See <a href="https://sites.google.com/view/pmd-beyond-the-sea/earnings-inventories/earning-poke" class="text-primary">Earning Poké</a> on the group's Google Site for examples of how much of a character must be visible to count towards earnings.</p>
+                                </div>
+
                                 <div class="help-text d-none">
                                     <p><b>Only fill in the boxes for the <u>highest level of finish</u> for each
                                             character!</b> You don't
@@ -2756,6 +2607,11 @@
                         </button>
                         <div id="extras" class="accordion-collapse collapse" data-bs-parent="#section-accordion">
                             <div class="accordion-body">
+                                
+                                <div class="fw-bold fst-italic">
+                                    <p>See <a href="https://sites.google.com/view/pmd-beyond-the-sea/earnings-inventories/earning-poke">Earning Poké</a> on the group's Google Site for examples of how to grade backgrounds.</p>
+                                </div>
+
                                 <div class="help-text d-none">
                                     <p>Backgrounds with <b>no discernable features</b> (i.e. if it is only solid color,
                                         gradients, simple
@@ -2991,6 +2847,10 @@
                         <div id="animation" class="accordion-collapse collapse" data-bs-parent="#section-accordion">
 
                             <div class="accordion-body">
+                                <div class="fw-bold fst-italic">
+                                    <p>See <a href="https://sites.google.com/view/pmd-beyond-the-sea/earnings-inventories/earning-poke">Earning Poké</a> on the group's Google Site for examples of how to grade animation complexity.</p>
+                                </div>
+
                                 <div class="help-text d-none">
                                     <p>Only include <b>unique frames</b> (i.e. frames that are not reused and unchanged
                                         when they are) in
@@ -3316,7 +3176,6 @@
                     </div>
 
                     <!-- WINTER 2025 HOLIDAY HILLS -->
-                    <!-- When in use, remove [d-none] and add [data-holidayhills=true]; change when it becomes available again -->
                     <div class="accordion-item d-none">
                         <button class="accordion-button gift d-block submission-section collapsed" id="gift-art-section" type="button"
                             data-bs-toggle="collapse" data-bs-target="#artfight">
@@ -3367,17 +3226,10 @@
                                         <select id="submission-type" class="col-sm-8 col-11 mx-auto mb-4">
                                             <option value="Daily Life" selected data-holidayhills=false>Daily Life
                                             </option>
-                                            <option value="Mission" data-holidayhills=false>Mission</option>
                                             <option value="Task">Task</option>
                                             <option value="Luminous Spring" data-holidayhills=false>Luminous Spring
                                             </option>
                                         </select>
-
-                                        <div id="missions-display" class="col-12 d-none">
-                                            <p class="card-title">Mission Name</p>
-                                            <select id="missions" class="col-sm-8 col-11 mx-auto mb-4">
-                                            </select>
-                                        </div>
 
                                         <div id="tasks-display" class="col-12 d-none">
                                             <p class="card-title">Task Category</p>
@@ -3401,6 +3253,31 @@
                                                     <label for="task-character">Character Name (required)</label>
                                                 </div>
                                             </div>
+                                            
+                                        </div>
+
+                                        <div id="dice-roll-display" class="col-12 d-none">
+                                            <!-- Invalid dice link alert container -->
+                                            <div id="invalid-dice-alert" class="col-11 mx-auto"></div>
+
+                                            <div class="col-11 text-center fw-bold mt-3 mx-auto">
+                                                <p>For <span class="fw-normal fst-italic">Task 03</span> and <span class="fw-normal fst-italic">Task 04</span>, you must attach the result of your dice roll <i>and</i> link to the Discord message for proof!</p>
+                                            </div>
+
+                                            <div id="dice-display">
+                                                <div class="col-md-3 col-sm-5 col-12 p-2 mx-auto mb-3">
+                                                    <p class="card-title">Roll Result</p>
+                                                    <div class="input-group">
+                                                        <input type="number" class="form-control dice-input" id="dice-result" value=1 min=1 max=20>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-floating col-sm-8 col-11 mb-3 mt-2 mx-auto">
+                                                    <input type="text" class="form-control dice-input"
+                                                        id="dice-proof-link" placeholder="">
+                                                    <label for="dice-proof-link">Link to Roll (required)</label>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <hr class="border border-primary border-1 opacity-50 col-10 mx-auto">
@@ -3420,7 +3297,8 @@
 
                                         <div class="col-9 text-center fw-bold mt-2">
                                             <p>Was this piece <span class="fw-normal text-decoration-underline">previously
-                                                    submitted</span> and given Poké?</p>
+                                                    submitted</span> and given Poké<span data-holidayhills=true> and/or
+                                                        Candy</span>?</p>
                                             <div class="form-check mb-4 col-12 d-flex justify-content-center">
                                                 <input class="form-check-input extension-check" type="checkbox" value=""
                                                     id="rewards-check">
@@ -3479,7 +3357,7 @@
                                             <div class="col-12 mt-2 justify-content-center task-check d-none">
                                                 <hr>
                                                 <div class="col-12 px-2 mb-2">
-                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this mission/task?
+                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this task?
                                                 </div>
 
                                                 <!-- USER TASK CHECK -->
@@ -3488,21 +3366,6 @@
                                                         value="" id="team-task-1">
                                                 </div>
                                             </div>
-
-                                            <!-- MISSION REWARD TEAM -->
-                                            <div class="col-12 mt-2 justify-content-center d-none" id="reward-select-1">
-                                                <hr>
-                                                <div class="col-12 px-2 mb-2">
-                                                    Select which <span class="fw-normal text-decoration-underline">team to grant rewards</span> to.
-                                                </div>
-
-                                                <div class="party-dropdown col-12 p-0">
-                                                    <select id="select-reward-1" class="user-select col-12">
-                                                        <option value="none">(none)</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
                                         </div>
 
                                         <!--- Team Container 2 --->
@@ -3532,7 +3395,7 @@
                                             <div class="col-12 mt-2 justify-content-center task-check d-none">
                                                 <hr>
                                                 <div class="col-12 px-2 mb-2">
-                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this mission/task?
+                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this task?
                                                 </div>
 
                                                 <!-- USER TASK CHECK -->
@@ -3541,21 +3404,6 @@
                                                         value="" id="team-task-2">
                                                 </div>
                                             </div>
-
-                                            <!-- MISSION REWARD TEAM -->
-                                            <div class="col-12 mt-2 justify-content-center d-none" id="reward-select-2">
-                                                <hr>
-                                                <div class="col-12 px-2 mb-2">
-                                                    Select which <span class="fw-normal text-decoration-underline">team to grant rewards</span> to.
-                                                </div>
-
-                                                <div class="party-dropdown col-12 p-0">
-                                                    <select id="select-reward-2" class="user-select col-12">
-                                                        <option value="none">(none)</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
                                         </div>
 
                                         <!--- Team Container 3 --->
@@ -3585,7 +3433,7 @@
                                             <div class="col-12 mt-2 justify-content-center task-check d-none">
                                                 <hr>
                                                 <div class="col-12 px-2 mb-2">
-                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this mission/task?
+                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this task?
                                                 </div>
 
                                                 <!-- USER TASK CHECK -->
@@ -3594,21 +3442,6 @@
                                                         value="" id="team-task-3">
                                                 </div>
                                             </div>
-
-                                            <!-- MISSION REWARD TEAM -->
-                                            <div class="col-12 mt-2 justify-content-center d-none" id="reward-select-3">
-                                                <hr>
-                                                <div class="col-12 px-2 mb-2">
-                                                    Select which <span class="fw-normal text-decoration-underline">team to grant rewards</span> to.
-                                                </div>
-
-                                                <div class="party-dropdown col-12 p-0">
-                                                    <select id="select-reward-3" class="user-select col-12">
-                                                        <option value="none">(none)</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
                                         </div>
 
                                         <!--- Team Container 4 --->
@@ -3638,7 +3471,7 @@
                                             <div class="col-12 mt-2 justify-content-center task-check d-none">
                                                 <hr>
                                                 <div class="col-12 px-2 mb-2">
-                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this mission/task?
+                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this task?
                                                 </div>
 
                                                 <!-- USER TASK CHECK -->
@@ -3647,21 +3480,6 @@
                                                         value="" id="team-task-4">
                                                 </div>
                                             </div>
-
-                                            <!-- MISSION REWARD TEAM -->
-                                            <div class="col-12 mt-2 justify-content-center d-none" id="reward-select-4">
-                                                <hr>
-                                                <div class="col-12 px-2 mb-2">
-                                                    Select which <span class="fw-normal text-decoration-underline">team to grant rewards</span> to.
-                                                </div>
-
-                                                <div class="party-dropdown col-12 p-0">
-                                                    <select id="select-reward-4" class="user-select col-12">
-                                                        <option value="none">(none)</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
                                         </div>
 
                                         <!--- Team Container 5 --->
@@ -3691,7 +3509,7 @@
                                             <div class="col-12 mt-2 justify-content-center task-check d-none">
                                                 <hr>
                                                 <div class="col-12 px-2 mb-2">
-                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this mission/task?
+                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this task?
                                                 </div>
 
                                                 <!-- USER TASK CHECK -->
@@ -3700,21 +3518,6 @@
                                                         value="" id="team-task-5">
                                                 </div>
                                             </div>
-
-                                            <!-- MISSION REWARD TEAM -->
-                                            <div class="col-12 mt-2 justify-content-center d-none" id="reward-select-6">
-                                                <hr>
-                                                <div class="col-12 px-2 mb-2">
-                                                    Select which <span class="fw-normal text-decoration-underline">team to grant rewards</span> to.
-                                                </div>
-
-                                                <div class="party-dropdown col-12 p-0">
-                                                    <select id="select-reward-6" class="user-select col-12">
-                                                        <option value="none">(none)</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
                                         </div>
 
                                         <!--- Team Container 6 --->
@@ -3744,7 +3547,7 @@
                                             <div class="col-12 mt-2 justify-content-center task-check d-none">
                                                 <hr>
                                                 <div class="col-12 px-2 mb-2">
-                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this mission/task?
+                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this task?
                                                 </div>
 
                                                 <!-- USER TASK CHECK -->
@@ -3753,21 +3556,6 @@
                                                         value="" id="team-task-6">
                                                 </div>
                                             </div>
-
-                                            <!-- MISSION REWARD TEAM -->
-                                            <div class="col-12 mt-2 justify-content-center d-none" id="reward-select-6">
-                                                <hr>
-                                                <div class="col-12 px-2 mb-2">
-                                                    Select which <span class="fw-normal text-decoration-underline">team to grant rewards</span> to.
-                                                </div>
-
-                                                <div class="party-dropdown col-12 p-0">
-                                                    <select id="select-reward-6" class="user-select col-12">
-                                                        <option value="none">(none)</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
                                         </div>
 
                                         <!--- Team Container 7 --->
@@ -3797,7 +3585,7 @@
                                             <div class="col-12 mt-2 justify-content-center task-check d-none">
                                                 <hr>
                                                 <div class="col-12 px-2 mb-2">
-                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this mission/task?
+                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this task?
                                                 </div>
 
                                                 <!-- USER TASK CHECK -->
@@ -3806,21 +3594,6 @@
                                                         value="" id="team-task-7">
                                                 </div>
                                             </div>
-
-                                            <!-- MISSION REWARD TEAM -->
-                                            <div class="col-12 mt-2 justify-content-center d-none" id="reward-select-7">
-                                                <hr>
-                                                <div class="col-12 px-2 mb-2">
-                                                    Select which <span class="fw-normal text-decoration-underline">team to grant rewards</span> to.
-                                                </div>
-
-                                                <div class="party-dropdown col-12 p-0">
-                                                    <select id="select-reward-7" class="user-select col-12">
-                                                        <option value="none">(none)</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
                                         </div>
 
                                         <!--- Team Container 8 --->
@@ -3850,7 +3623,7 @@
                                             <div class="col-12 mt-2 justify-content-center task-check d-none">
                                                 <hr>
                                                 <div class="col-12 px-2 mb-2">
-                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this mission/task?
+                                                    Is this user <span class="fw-normal text-decoration-underline">able to claim rewards</span> from this task?
                                                 </div>
 
                                                 <!-- USER TASK CHECK -->
@@ -3859,21 +3632,6 @@
                                                         value="" id="team-task-8">
                                                 </div>
                                             </div>
-
-                                            <!-- MISSION REWARD TEAM -->
-                                            <div class="col-12 mt-2 justify-content-center d-none" id="reward-select-8">
-                                                <hr>
-                                                <div class="col-12 px-2 mb-2">
-                                                    Select which <span class="fw-normal text-decoration-underline">team to grant rewards</span> to.
-                                                </div>
-
-                                                <div class="party-dropdown col-12 p-0">
-                                                    <select id="select-reward-8" class="user-select col-12">
-                                                        <option value="none">(none)</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
                                         </div>
 
                                     </div>

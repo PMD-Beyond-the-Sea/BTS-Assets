@@ -35,8 +35,6 @@
             padding: 0;
             --dropshadow-color: rgb(45, 43, 96);
             --textshadow-color: rgb(45, 43, 96, 0.5);
-            --debug-dropshadow-color: rgb(253, 70, 70);
-            --debug-textshadow-color: rgba(253, 70, 70, 0.5);
             --slot1-border-shadow: #4999d1;
             --slot1-bg-color: #b2e2f8;
         }
@@ -369,27 +367,13 @@
             color: white;
             font-family: "Mochiy Pop One";
             filter: drop-shadow(1px 1px 0 var(--dropshadow-color)) drop-shadow(-1px -1px 0 var(--dropshadow-color)) drop-shadow(-1px 1px 0 var(--dropshadow-color)) drop-shadow(1px -1px 0 var(--dropshadow-color)) drop-shadow(2px 2px 0 white) drop-shadow(-2px -2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white);
-            text-shadow: 0.07em 0.07em 0 var(--textshadow-color),
-                -0.07em -0.07em 0 var(--textshadow-color),
-                0.07em -0.07em 0 var(--textshadow-color), -0.07em 0.07em 0 var(--textshadow-color),
-                0.05em 0.05em 0 var(--textshadow-color), -0.05em -0.05em 0 var(--textshadow-color),
-                0.05em -0.05em 0 var(--textshadow-color), -0.05em 0.05em 0 var(--textshadow-color),
-                0.06em 0.06em 0 var(--textshadow-color), -0.06em -0.06em 0 var(--textshadow-color),
-                0.06em -0.06em 0 var(--textshadow-color), -0.06em 0.06em 0 var(--textshadow-color);
-        }
-
-        #debug-header {
-            letter-spacing: 0.15em;
-            color: white;
-            font-family: "Mochiy Pop One";
-            filter: drop-shadow(1px 1px 0 var(--debug-dropshadow-color)) drop-shadow(-1px -1px 0 var(--debug-dropshadow-color)) drop-shadow(-1px 1px 0 var(--debug-dropshadow-color)) drop-shadow(1px -1px 0 var(--debug-dropshadow-color)) drop-shadow(2px 2px 0 white) drop-shadow(-2px -2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white);
-            text-shadow: 0.07em 0.07em 0 var(--debug-textshadow-color),
-                -0.07em -0.07em 0 var(--debug-textshadow-color),
-                0.07em -0.07em 0 var(--debug-textshadow-color), -0.07em 0.07em 0 var(--debug-textshadow-color),
-                0.05em 0.05em 0 var(--debug-textshadow-color), -0.05em -0.05em 0 var(--debug-textshadow-color),
-                0.05em -0.05em 0 var(--debug-textshadow-color), -0.05em 0.05em 0 var(--debug-textshadow-color),
-                0.06em 0.06em 0 var(--debug-textshadow-color), -0.06em -0.06em 0 var(--debug-textshadow-color),
-                0.06em -0.06em 0 var(--debug-textshadow-color), -0.06em 0.06em 0 var(--debug-textshadow-color);
+            text-shadow: 0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                -0.07em -0.07em 0 rgb(45, 43, 96, 0.5),
+                0.07em -0.07em 0 rgb(45, 43, 96, 0.5), -0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                0.05em 0.05em 0 rgb(45, 43, 96, 0.5), -0.05em -0.05em 0 rgb(45, 43, 96, 0.5),
+                0.05em -0.05em 0 rgb(45, 43, 96, 0.5), -0.05em 0.05em 0 rgb(45, 43, 96, 0.5),
+                0.06em 0.06em 0 rgb(45, 43, 96, 0.5), -0.06em -0.06em 0 rgb(45, 43, 96, 0.5),
+                0.06em -0.06em 0 rgb(45, 43, 96, 0.5), -0.06em 0.06em 0 rgb(45, 43, 96, 0.5);
         }
 
         .loading-screen {
@@ -1110,13 +1094,13 @@
             right: 10px;
             font-family: "Mochiy Pop One";
             filter: drop-shadow(1px 1px 0 var(--dropshadow-color)) drop-shadow(-1px -1px 0 var(--dropshadow-color)) drop-shadow(-1px 1px 0 var(--dropshadow-color)) drop-shadow(1px -1px 0 var(--dropshadow-color));
-            text-shadow: 0.07em 0.07em 0 var(--textshadow-color),
-                -0.07em -0.07em 0 var(--textshadow-color),
-                0.07em -0.07em 0 var(--textshadow-color), -0.07em 0.07em 0 var(--textshadow-color),
-                0.05em 0.05em 0 var(--textshadow-color), -0.05em -0.05em 0 var(--textshadow-color),
-                0.05em -0.05em 0 var(--textshadow-color), -0.05em 0.05em 0 var(--textshadow-color),
-                0.06em 0.06em 0 var(--textshadow-color), -0.06em -0.06em 0 var(--textshadow-color),
-                0.06em -0.06em 0 var(--textshadow-color), -0.06em 0.06em 0 var(--textshadow-color);
+            text-shadow: 0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                -0.07em -0.07em 0 rgb(45, 43, 96, 0.5),
+                0.07em -0.07em 0 rgb(45, 43, 96, 0.5), -0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                0.05em 0.05em 0 rgb(45, 43, 96, 0.5), -0.05em -0.05em 0 rgb(45, 43, 96, 0.5),
+                0.05em -0.05em 0 rgb(45, 43, 96, 0.5), -0.05em 0.05em 0 rgb(45, 43, 96, 0.5),
+                0.06em 0.06em 0 rgb(45, 43, 96, 0.5), -0.06em -0.06em 0 rgb(45, 43, 96, 0.5),
+                0.06em -0.06em 0 rgb(45, 43, 96, 0.5), -0.06em 0.06em 0 rgb(45, 43, 96, 0.5);
         }
 
         .to-flying-btn .label:hover,
@@ -1152,13 +1136,13 @@
             color: white;
             font-family: "Mochiy Pop One";
             filter: drop-shadow(1px 1px 0 var(--dropshadow-color)) drop-shadow(-1px -1px 0 var(--dropshadow-color)) drop-shadow(-1px 1px 0 var(--dropshadow-color)) drop-shadow(1px -1px 0 var(--dropshadow-color));
-            text-shadow: 0.07em 0.07em 0 var(--textshadow-color),
-                -0.07em -0.07em 0 var(--textshadow-color),
-                0.07em -0.07em 0 var(--textshadow-color), -0.07em 0.07em 0 var(--textshadow-color),
-                0.05em 0.05em 0 var(--textshadow-color), -0.05em -0.05em 0 var(--textshadow-color),
-                0.05em -0.05em 0 var(--textshadow-color), -0.05em 0.05em 0 var(--textshadow-color),
-                0.06em 0.06em 0 var(--textshadow-color), -0.06em -0.06em 0 var(--textshadow-color),
-                0.06em -0.06em 0 var(--textshadow-color), -0.06em 0.06em 0 var(--textshadow-color);
+            text-shadow: 0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                -0.07em -0.07em 0 rgb(45, 43, 96, 0.5),
+                0.07em -0.07em 0 rgb(45, 43, 96, 0.5), -0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                0.05em 0.05em 0 rgb(45, 43, 96, 0.5), -0.05em -0.05em 0 rgb(45, 43, 96, 0.5),
+                0.05em -0.05em 0 rgb(45, 43, 96, 0.5), -0.05em 0.05em 0 rgb(45, 43, 96, 0.5),
+                0.06em 0.06em 0 rgb(45, 43, 96, 0.5), -0.06em -0.06em 0 rgb(45, 43, 96, 0.5),
+                0.06em -0.06em 0 rgb(45, 43, 96, 0.5), -0.06em 0.06em 0 rgb(45, 43, 96, 0.5);
         }
 
         .go-to-island:hover {
@@ -1796,20 +1780,20 @@
             color: white;
             font-size: 1.15em;
             filter: drop-shadow(1px 1px 0 var(--dropshadow-color)) drop-shadow(-1px -1px 0 var(--dropshadow-color)) drop-shadow(-1px 1px 0 var(--dropshadow-color)) drop-shadow(1px -1px 0 var(--dropshadow-color));
-            text-shadow: 0.07em 0.07em 0 var(--textshadow-color),
-                -0.07em -0.07em 0 var(--textshadow-color),
-                0.07em -0.07em 0 var(--textshadow-color), -0.07em 0.07em 0 var(--textshadow-color),
-                0.05em 0.05em 0 var(--textshadow-color), -0.05em -0.05em 0 var(--textshadow-color),
-                0.05em -0.05em 0 var(--textshadow-color), -0.05em 0.05em 0 var(--textshadow-color),
-                0.06em 0.06em 0 var(--textshadow-color), -0.06em -0.06em 0 var(--textshadow-color),
-                0.06em -0.06em 0 var(--textshadow-color), -0.06em 0.06em 0 var(--textshadow-color);
+            text-shadow: 0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                -0.07em -0.07em 0 rgb(45, 43, 96, 0.5),
+                0.07em -0.07em 0 rgb(45, 43, 96, 0.5), -0.07em 0.07em 0 rgb(45, 43, 96, 0.5),
+                0.05em 0.05em 0 rgb(45, 43, 96, 0.5), -0.05em -0.05em 0 rgb(45, 43, 96, 0.5),
+                0.05em -0.05em 0 rgb(45, 43, 96, 0.5), -0.05em 0.05em 0 rgb(45, 43, 96, 0.5),
+                0.06em 0.06em 0 rgb(45, 43, 96, 0.5), -0.06em -0.06em 0 rgb(45, 43, 96, 0.5),
+                0.06em -0.06em 0 rgb(45, 43, 96, 0.5), -0.06em 0.06em 0 rgb(45, 43, 96, 0.5);
         }
 
 
-        /*#dungeon-description-box,
+        #dungeon-description-box,
         #island-description-box {
             padding: 2rem 3.5rem;
-        }*/
+        }
 
         .read-more.collapse:not(.show) {
             height: 137px !important;
@@ -2454,6 +2438,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
     <script type="module">
         import PokeDex from 'https://cdn.jsdelivr.net/npm/pokemon@3.0.0/+esm';
+        import PublicGoogleSheetsParser from "https://esm.sh/public-google-sheets-parser";
 
         // Initializes Bootstrap 5.3 tooltips
         const tooltipTriggerList = $('[data-bs-toggle="tooltip"]');
@@ -2469,7 +2454,7 @@
         /* -------------------------------------------------- */
         let DEBUGGING; // can be manually changed
         const HOLIDAY_HILLS = true;
-
+        let SheetIDs = {};
         let GraderSettings;
         const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -2537,7 +2522,7 @@
             const month = CurrentDate().getMonth();
             const day = CurrentDate().getDate();
 
-            if ((month <= start.getMonth() && day >= start.getDate()) || (month <= ext.getMonth() && day <= ext.getDate()))
+            if ((month === start.getMonth() && day >= start.getDate()) || (month === ext.getMonth() && day <= ext.getDate()))
                 return true;
             else return false;
         }
@@ -2646,56 +2631,24 @@
         /* DATA LOADING ------------------------------------- */
         /* -------------------------------------------------- */
         
-        let ImportDataFromSheet = async (sheetPage, sheetId) => {
+        let GetSheetIdData = async function () {
+            const sheetIdParser = new PublicGoogleSheetsParser('1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8', { sheetId: '1078739197' });
+            let sheetIds = await sheetIdParser.parse();
+            sheetIds.forEach((id) => {
+                let idList = Object.keys(SheetIDs);
+                if (!idList.includes(id.Use)) return SheetIDs[id.Use] = [{sheetId: id.SheetID, pageId: id.PageID}];
+                return SheetIDs[id.Use].push({sheetId: id.SheetID, pageId: id.PageID});
+            })
 
-            if (!sheetId) return console.error('Missing sheetID.');
-            if (!sheetPage) return console.error('Missing sheetPage.');
-
-            // Fetch the sheet
-            const importUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&headers=1&tq=WHERE A IS NOT NULL&sheet=${sheetPage}`;
-
-            // Attempt to get it
-            const sheetJSON = await fetch(importUrl).then(i => i.text()).catch(err => {
-                return console.error(`${err} sheet. Please make sure that the sheet is public and that you're only using the ID.`);
-            });
-
-            // Parse the text
-            const sliceJSON = JSON.parse(sheetJSON.substring(47).slice(0, -2));
-
-            // Grab column headers
-            const col = [];
-            if (sliceJSON.table.cols[0].label) {
-                for (let headers of sliceJSON.table.cols) {
-                    if (headers.label) col.push(headers.label);
-                };
-            }
-
-            // Scrubs columns and puts them in a readable object
-            const scrubbedData = [];
-            for (let info of sliceJSON.table.rows) {
-                const row = {};
-                const isBoolean = val => 'boolean' === typeof val;
-                col.forEach((ele, ind) => {
-                    row[ele] = info.c[ind] != null ?
-                        info.c[ind].f != null && !isBoolean(info.c[ind].v) ?
-                            info.c[ind].f : info.c[ind].v != null ?
-                                info.c[ind].v : "" : "";
-                });
-                scrubbedData.push(row);
-            };
-
-            // Filter out everything that says hide
-            let publicData = scrubbedData.filter(i => !i['hide']);
-            // Return Data
-            return publicData;
-
-        };
+            return SheetIDs;
+        }
 
         // Gets the link to the correct form based on whether it's debugging or not
         let GetGraderSettings = async function () {
             $("#loading-text").html("Loading Settings . . .");
-
-            let formData = await ImportDataFromSheet("GRADER SETTINGS", '1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8');
+            await GetSheetIdData();
+            const formParser = new PublicGoogleSheetsParser('1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8', { sheetId: '954031557' });
+            let formData = await formParser.parse();
             DEBUGGING = DEBUGGING ? DEBUGGING : formData[0]['Use Local'];
 
             return GraderSettings = {
@@ -2709,8 +2662,8 @@
         // Gets all the possible results for token recruits
         let GetTokenData = async function () {
             $("#loading-text").html("Loading Tokens . . .");
-
-            let tokenData = await ImportDataFromSheet('Random', '1zX7glFRiZLAkalklYNEx3dYAIDIbdIT68VKrYQKRrE8')
+            const tokenParser = new PublicGoogleSheetsParser('1zX7glFRiZLAkalklYNEx3dYAIDIbdIT68VKrYQKRrE8', { sheetId: '0' });
+            let tokenData = await tokenParser.parse();
             let AddToCategory = function (key, pokemon) {
                 if (!TokensByCategory[key].includes(pokemon))
                     TokensByCategory[key].push(pokemon);
@@ -2736,41 +2689,11 @@
 
         // Loads the characters and adds them to a team's array
         let GetCharacterData = async function () {
-            try {
-                $("#loading-text").html("Loading Members & Teams . . .");
+            $("#loading-text").html("Loading Members & Teams . . .");
 
-                /*let a_to_d = await ImportDataFromSheet('EXPORT', '17bsqvqhCcU2qYYfq7xrNJdFOZ9_72DUXzh-nXTCeXPk');
-                console.log(`   ✔ Loaded ${a_to_d.length} characters for users A-D.`);
-
-                let e = await ImportDataFromSheet('EXPORT', '10fE80r0AVgYlA06UcQgQGUb5WI6USoErmNjd9LK1l7E');
-                console.log(`   ✔ Loaded ${e.length} characters for users E.`);
-
-                let f_to_j = await ImportDataFromSheet('EXPORT', '1vhuY7gKjsw69v2Nuk9K-KkfECID7w6wkGq58pGUeJy0');
-                console.log(`   ✔ Loaded ${f_to_j.length} characters for users F-I.`);
-
-                let k = await ImportDataFromSheet('EXPORT', '1SmrKiVFzBExcjR983kdyim4LIkYZSF7sBHBjItnJGSY');
-                console.log(`   ✔ Loaded ${k.length} characters for users K.`);
-
-                let l_to_m = await ImportDataFromSheet('EXPORT', '1Xwny0dOXwSJlJ2eXQhWaWJYgwoF5D2gAX6nB5ZQdPX8');
-                console.log(`   ✔ Loaded ${l_to_m.length} characters for users L-M.`);
-
-                let n_to_q = await ImportDataFromSheet('EXPORT', '1wB0rzvgG7BXqqoLjTODXmC2X2O0hWEiL8800tC_U2ac');
-                console.log(`   ✔ Loaded ${n_to_q.length} characters for users N-Q.`);
-
-                let r_to_s = await ImportDataFromSheet('EXPORT', '1OSQdTSvcfEmRT1ymlfeR8qJxQ8J1JzZpXDiJ9-y4How');
-                console.log(`   ✔ Loaded ${r_to_s.length} characters for users R-S.`);
-
-                let t_to_w = await ImportDataFromSheet('EXPORT', '1sa6Hz8Ev71nDnlwKNNC5hq_o-DtWdoFvXcqJ2Sidy6s');
-                console.log(`   ✔ Loaded ${t_to_w.length} characters for users T-W.`);
-
-                let x_to_z = await ImportDataFromSheet('EXPORT', '1MX2I12kgfQsN-PTztsHyS6cxJHfFIC-j9oqVwDzWlQ0');
-                console.log(`   ✔ Loaded ${x_to_z.length} characters for users X-Z.`);
-
-                let data = [...a_to_d, ...e, ...f_to_j, ...k, ...l_to_m, ...n_to_q, ...r_to_s, ...t_to_w, ...x_to_z];*/
-
-                let data = await ImportDataFromSheet('EXPORT', '1RFnds0Afl55MNOe8yvSm8wVVA7L2MVKwD8a-lIthZws');
-                console.log(`   ✔ Loaded ${data.length} characters.`);
-
+            let parseSheetsFromIds = async function(sheet) {
+                let parser = new PublicGoogleSheetsParser(sheet.sheetId, {sheetId: sheet.pageId});
+                let data = await parser.parse();
                 data.forEach(processed => {
                     let users = Object.keys(TeamsByUser);
                     let characterObj = { Name: processed.Name, Species: processed.Species, Level: processed.Level };
@@ -2807,13 +2730,16 @@
                         }
                     }
                 });
-
-                UsersList = Object.keys(TeamsByUser);
-                UsersList.sort((a, b) => a.toLowerCase() < b.toLowerCase() ? -1 : 1);
-                return TeamsByUser;
-            } catch (error) {
-                console.log(error);
             }
+
+            let sheetIds = SheetIDs.Characters;
+            for (const sheet of sheetIds) {
+                await parseSheetsFromIds(sheet);
+            }
+
+            UsersList = Object.keys(TeamsByUser);
+            UsersList.sort((a, b) => a.toLowerCase() < b.toLowerCase() ? -1 : 1);
+            return TeamsByUser;
         }
 
         // Gets all the monthly item charges for users
@@ -2822,21 +2748,27 @@
 
             const itemList = ['Golden Mask', 'Lost Loot', 'Wonder Chest', 'Tera Orb', 'Wishing Star'];
 
-            let data = await ImportDataFromSheet('EXPORT', '1E-nP9siZFLuqHT2et6gQqSwSioUr1x_rcicbOpQYGkI');
+            let parseSheetsFromIds = async function(sheet) {
+                let parser = new PublicGoogleSheetsParser(sheet.sheetId, { sheetId: sheet.pageId });
+                let data = await parser.parse();
+                data.forEach(item => {
+                    let teamItems = Object.values(item).filter((i) => i === false);
 
-            data.forEach(item => {
-                let teamItems = Object.values(item).filter((i) => i === false);
+                    if (!item || !teamItems || teamItems.length < 1) return;
+                    let team = item["Team"].replace("Team ", "");
+                    ItemsByTeam[team] = [];
 
-                if (!item || !teamItems || teamItems.length < 1) return;
-                let team = item["Team"].replace("Team ", "");
-                ItemsByTeam[team] = [];
-
-                itemList.forEach((itemName) => {
-                    if (item[itemName] === false) return ItemsByTeam[team].push(itemName);
-                    else return;
+                    itemList.forEach((itemName) => {
+                        if (item[itemName] === false) return ItemsByTeam[team].push(itemName);
+                        else return;
+                    });
                 });
-            });
+            }
 
+            let sheetIds = SheetIDs.Items;
+            for (const sheet of sheetIds) {
+                await parseSheetsFromIds(sheet)
+            }
             return ItemsByTeam;
         }
 
@@ -2845,12 +2777,14 @@
             $("#loading-text").html("Loading Dungeons . . .");
 
             let importIslands = async function () {
-                let settings = await ImportDataFromSheet('Islands', '1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8');
+                let sheetsParser = new PublicGoogleSheetsParser('1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8', { sheetName: 'Islands' });
+                let settings = await sheetsParser.parse();
                 return settings;
             }
 
             let importDungeons = async function () {
-                let settings = await ImportDataFromSheet('Dungeons', '1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8');
+                let sheetsParser = new PublicGoogleSheetsParser('1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8', { sheetName: 'Dungeons' });
+                let settings = await sheetsParser.parse();
 
                 let islandsImport = await importIslands();
                 islandsImport.forEach(island => {
@@ -2888,7 +2822,8 @@
         }
 
         let GetHolidayHillDungeonData = async function() {
-            let dungeonData = await ImportDataFromSheet('[HH] Dungeon', '1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8');
+            let dungeonParser = new PublicGoogleSheetsParser('1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8', { sheetId: '441392306', useFormat: true });
+            let dungeonData = await dungeonParser.parse();
 
             // get the current date and dates for HH
             let start = new Date(dungeonData[0]['Start Date']);
@@ -2911,8 +2846,9 @@
 
         let GetMissionsData = async function () {
             $("#loading-text").html("Loading Missions . . .");
-            let missionsData = await ImportDataFromSheet('Missions', '1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8');
-            let missionsArr = missionsData.filter((mission) => mission['Dungeons'] !== undefined);
+            const missionsParser = new PublicGoogleSheetsParser('1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8', { sheetId: '0', useFormat: true });
+            let missionsData = await missionsParser.parse();
+            let missionsArr = missionsData.filter((mission) => Number(mission['Mission ID']) > 0);
 
             // get the current date and dates for the missions
             let start = new Date(missionsArr[0]['Start Date']);
@@ -2921,24 +2857,14 @@
 
             if (IsValidDate(start, end, ext)) {
                 missionsArr.forEach((mission) => {
-                    let branch;
-                    if (mission.Branch === "Bounty Hunters") branch = "BH";
-                    else branch = mission['Branch'].charAt(0);
-
-                    let missionDungeons = mission.Dungeons.split(", ");
-                    missionDungeons.forEach((dungeon) => {
-                        if (!MissionsByDungeon[dungeon]) MissionsByDungeon[dungeon] = [];
-
-                        return MissionsByDungeon[dungeon].push({
-                            Name: `${mission.Branch} 0${mission['Mission ID']} | ${mission.Title}`,
-                            Label: `${branch}0${mission['Mission ID']} | ${mission.Title}`,
-                            Rewards: mission.Rewards,
-                            NeedsKey: mission['Requires Key'],
-                            Dungeon: dungeon
-                        });
-                    });
+                    return MissionsByDungeon[mission.Dungeon] = {
+                        ID: `${mission.Branch} 0${mission['Mission ID']}`,
+                        Rewards: mission.Rewards.split(', '),
+                        NeedsKey: mission['Requires Key']
+                    }
                 });
             }
+
             return { IsValid: IsValidDate(start, end, ext), Date: `${month[start.getMonth()]} ${end.getFullYear()}` };
         }
 
@@ -2949,17 +2875,10 @@
                 console.log(DEBUGGING ? `🐛 Grader is set to Debug Mode. Submissions made will go to the Debug Form.` :
                     `📢 Grader is set to Public Mode. Submissions made at this time will go to the Official Server Form.`
                 );
-
-                if (DEBUGGING) {
-                    $(`#debug-header`).removeClass('d-none');
-                } else {
-                    $(`#debug-header`).remove();
-                }
-
                 console.log(`✅ LOADED: All grader settings for validation.`);
 
                 if (HOLIDAY_HILLS) {
-                    if (!IsHolidayHills() || GraderSettings.LockHH) {
+                    if (GraderSettings.LockHH || !IsHolidayHills()) {
                         LockGrader();
                         return console.log(`🔒 This grader is set to be used for Holiday Hills but Holiday Hills are not active right now! Access to the grader has been limited.`);
                     }
@@ -3108,9 +3027,8 @@
                 if ($(this).prop('checked')) {
                     $("#mission-check-text").removeClass("d-none");
                     $("#mission-check-confirm").removeClass("d-none");
-                    $("#mission-select-container").removeClass("d-none");
                 } else {
-                    SetDisplayNone([`#mission-check-text`, `#mission-check-confirm`, `#mission-select-container`]);
+                    SetDisplayNone([`#mission-check-text`, `#mission-check-confirm`]);
                 }
             });
 
@@ -4125,20 +4043,13 @@
         function ToggleMissionDisplay(dungeonName) {
             if (Object.keys(MissionsByDungeon).includes(dungeonName)) {
                 $("#mission-confirm").removeClass("d-none");
-                //$("#mission-title").html(MissionsByDungeon[dungeonName].ID);
+                $("#mission-title").html(MissionsByDungeon[dungeonName].ID);
 
-                $("#mission-select").children().remove();
                 $("#mission-check-confirm").children().remove();
-
-                let availableMissions = MissionsByDungeon[dungeonName];
-                availableMissions.forEach(mission => {
-                    $("#mission-select").append(`<option value="${mission.Name}"${availableMissions.indexOf(mission) === 0 ? " selected" : ""}>${mission.Label}</option>`);
-                });
 
                 let teams = GetTeamsArray();
                 teams.forEach((team) => {
-                    //CreateMissionConfirmation(MissionsByDungeon[dungeonName].NeedsKey, team);
-                    CreateMissionConfirmation('FALSE', team);
+                    CreateMissionConfirmation(MissionsByDungeon[dungeonName].NeedsKey, team);
                 });
 
             } else {
@@ -4345,8 +4256,6 @@
                 $("#mission-check-text").addClass("d-none");
             if (!$("#mission-check-confirm").hasClass("d-none"))
                 $("#mission-check-confirm").addClass("d-none");
-            if (!$("#mission-select-container").hasClass("d-none"))
-                $("#mission-select-container").addClass("d-none");
 
             $("#confirm-dungeon-name").html(CurrentDungeon);
             $("#confirm-dungeon-difficulty").html(difficulty);
@@ -4394,7 +4303,9 @@
 
                 if (HOLIDAY_HILLS) {
                     let recruits = HolidayHillsInfo.Recruits;
+                    
                     let recruit = recruits[RandomNumber(recruits.length)];
+                    
                     obj.Recruit = recruit;
                     return CreateResultsCard(obj);
                 }
@@ -4412,13 +4323,8 @@
                 if (FullIslandsList[CurrentIsland].Dungeons[CurrentDungeon].Difficulty.includes('Heroic'))
                     obj.Rewards = ['Treasure Box'];
 
-                if (Object.keys(MissionsByDungeon).includes(CurrentDungeon) && $(`.mission-team[data-team="${obj.Team}"]`).attr('data-rewards') === 'true') {
-
-                    let missionRewards = MissionsByDungeon[CurrentDungeon].filter((mission) => mission.Name === $(`#mission-select`).find(":selected").val());
-
-                    obj.Rewards = [];
-                    obj.Rewards.push(missionRewards[0].Rewards);
-                }
+                if (Object.keys(MissionsByDungeon).includes(CurrentDungeon) && $(`.mission-team[data-team="${obj.Team}"]`).attr('data-rewards') === 'true')
+                    obj.Rewards = MissionsByDungeon[CurrentDungeon].Rewards;
 
                 CreateResultsCard(obj);
             });
@@ -4451,7 +4357,6 @@
         /* FINALIZE SUBMISSION ------------------------------ */
         /* -------------------------------------------------- */
         function FormatDataForSubmit(teamObj) {
-            let isMission = $('#mission-check').prop('checked');
             let title = $('#submission-title').val() === undefined ? '' : $('#submission-title').val();
 
             let data = {
@@ -4479,12 +4384,8 @@
                 data["entry.380451517"] = teamObj["Items"].length > 0 ? teamObj["Items"].toString().replaceAll(',', ', ') : '';
                 data["entry.366705611"] = teamObj["Levels"];
                 data["entry.1217004916"] = teamObj["Rewards"] ? teamObj["Rewards"].toString().replaceAll(',', ', ') : '';
-                //if (Object.keys(MissionsByDungeon).includes(CurrentDungeon) && $('#mission-check').prop('checked'))
-                //    data["entry.1844814292"] = MissionsByDungeon[CurrentDungeon].ID;
-
-                if (isMission)
-                    data["entry.1844814292"] = $(`#mission-select`).find(":selected").val();
-
+                if (Object.keys(MissionsByDungeon).includes(CurrentDungeon) && $('#mission-check').prop('checked'))
+                    data["entry.1844814292"] = MissionsByDungeon[CurrentDungeon].ID;
             }
             if (DEBUGGING) console.log(data);
 
@@ -4565,7 +4466,6 @@
         <div class="" id="start-screen">
             <div class="start-screen section-header"><span style="font-size: 0.6em;">PMD Beyond the Sea:</span>
                 <br><span id="grader-title">Dungeon Grader</span>
-                <br><span style="font-size: 0.6em;" id="debug-header" class="d-none">(DEBUG VERSION)</span>
             </div>
             <div class="button-bar justify-content-center">
                 <button class="big-button dungeon-link" id="go-to-map-btn" data-holidayhills=false disabled>Go to Map</button>
@@ -4976,7 +4876,7 @@
 
             <div class="dungeon-overview d-none" id="dungeon-overview">
                 <div class="section-header mt-4 mb-2 fs-5" id="dungeon-name-box" data-dungeon="">Dungeon Name</div>
-                <div class="text-pre collapse pt-md-3 pb-md-4 px-md-4 px-3 pb-3 pt-2" id="dungeon-description-box">
+                <div class="text-pre collapse" id="dungeon-description-box">
                     <p>Dungeon description goes here.</p>
                 </div>
                 <a class="mt-3 mb-4 collapsed" id="dungeon-description-btn" data-bs-toggle="collapse"
@@ -5136,7 +5036,7 @@
                     <div class="col-5 mx-auto text-center text-md-start medium-label" data-medium="writing">Writing</div>
                 </div>
 
-                <div class="card medium col-md-7 col-12 mx-auto mb-5">
+                <div class="card medium col-lg-7 col-md-8 col-12 mx-auto mb-5">
                     <div class="d-flex justify-content-center align-items-center mx-auto col-8 mt-4">
                         <div class="poke-calculation col-sm-7 col-11" id="calc-poke">
                             500
@@ -5227,27 +5127,19 @@
                 <div class="d-none" id="mission-confirm">
                     <h2 class="modal-title fs-5 mb-3">Mission</h2>
                     <div
-                        class="card extension col-md-9 col-12 mx-auto mt-4 mb-5 justify-content-center align-items-center">
-                        <p class="px-3 mt-3 mb-4"><b>This is the location of one or more available missions!</b><br>Check
-                            the box below if this is a mission submission.</p>
+                        class="card extension col-md-7 col-12 mx-auto mt-4 mb-5 justify-content-center align-items-center">
+                        <p class="px-3 mt-3 mb-4">This is the location of <b id="mission-title">Mission 01</b>!<br>Check
+                            the box below if this is a mission piece.</p>
                         <div class="form-check mb-3 mx-auto p-0 text-center justify-content-center">
                             <input class="form-check-input extension-check m-0" type="checkbox" value=""
                                 id="mission-check">
                         </div>
 
-                        <div class="d-none party-dropdown col-md-9 col-11 my-4" id="mission-select-container">
+                        <p class="d-none px-3" id="mission-check-text">Which teams <b>have not yet claimed
+                                rewards</b>?<span class="d-none" id="mission-key-text"><br>Select the <b>Key</b> next to
+                                the team that will be using one.</span></p>
 
-                            <hr class="col-12 mt-0 mb-4">
-
-                            <div class="dropdown-label">Select a <b>mission</b>.</div>
-                            <select class="select-user guide-select" id="mission-select"></select>
-
-                            <hr class="col-12 my-4">
-                        </div>
-                        
-                        <p class="d-none px-3" id="mission-check-text">Which teams <b>are able to claim rewards</b>?<span class="d-none" id="mission-key-text"><br>Select the <b>Key</b> next to the team that will be using one.</span></p>
-
-                        <div class="w-75 p-0 mb-3 d-none" id="mission-check-confirm">
+                        <div class="w-75 p-0 d-none" id="mission-check-confirm">
                         </div>
 
                     </div>
