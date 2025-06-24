@@ -1145,8 +1145,8 @@
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-        let DEBUGGING = true;
-        const HOLIDAY_HILLS = true;
+        let DEBUGGING;
+        const HOLIDAY_HILLS = false;
         let GraderSettings = {};
         let TeamsByUser = {};
         let TasksById = {};
@@ -1369,11 +1369,14 @@
                     if (mission.Branch === "Bounty Hunters") branch = "BH";
                     else branch = mission['Branch'].charAt(0);
 
-                    return MissionsById[`${branch}0${mission['Mission ID']}`] = {
+                    MissionsById[`${branch}0${mission['Mission ID']}`] = {
                         Label: `${branch}0${mission['Mission ID']} | ${mission.Title}`,
                         Name: `${mission.Branch} 0${mission['Mission ID']} | ${mission.Title}`,
-                        Rewards: mission.Rewards,
                     };
+
+                    if (mission.Rewards !== '') {
+                        MissionsById[`${branch}0${mission['Mission ID']}`].Rewards = mission.Rewards;
+                    }
                 });
             }
 
@@ -2004,7 +2007,7 @@
                 let missionId = /(\w+\d+)/gi.exec($(`#missions`).find(":selected").html())[1];
                 SubmissionInfo[user]["entry.1844814292"] = MissionsById[missionId].Name;
 
-                if ($(`#team-task-${teamindex}`).prop('checked')) {
+                if ($(`#team-task-${teamindex}`).prop('checked') && Object.keys(MissionsById[missionId]).includes('Rewards')) {
                     SubmissionInfo[user]["entry.1217004916"] = MissionsById[missionId].Rewards;
                 }
 
