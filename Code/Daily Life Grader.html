@@ -1145,8 +1145,8 @@
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-        let DEBUGGING;
-        const HOLIDAY_HILLS = false;
+        let DEBUGGING = true;
+        const HOLIDAY_HILLS = true;
         let GraderSettings = {};
         let TeamsByUser = {};
         let TasksById = {};
@@ -1390,6 +1390,7 @@
 
                 let tasksData = await ImportDataFromSheet(HOLIDAY_HILLS ? '[HH] Tasks' : 'Tasks', '1BRDoe88xibJw72NnoXQ0xzVWroRCNNu8Eolxb-dQTv8');
                 let tasksArr = tasksData.filter((task) => Number(task['Task ID']) > 0 && task.Hide === false);
+                console.log(tasksArr);
 
                 // get the current date and dates for the missions
                 let start = new Date(tasksArr[0]['Start Date']);
@@ -2021,7 +2022,7 @@
                 }
             }
 
-            if (submissionType === 'Task') {
+            if (submissionType.includes('Task')) {
                 let taskCategory = $('#task-type').find(":selected").val();
                 let taskName = $(`#tasks`).find(":selected").val();
                 SubmissionInfo[user]["entry.1315050981"] = taskName;
