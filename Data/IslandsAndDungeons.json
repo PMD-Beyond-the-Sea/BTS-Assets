@@ -2234,6 +2234,25 @@
                 "Sandygast",
                 "Squirtle"
             ]
+        },
+        "Fall 2025": {
+            "Dungeon Name": "Fall Orchard",
+            "Description": "",
+            "Recruits": [
+                "Pumpkin Patch Smoliv",
+                "Harvest Farfetch'd (Kanto)",
+                "Bountiful Fairytale Surskit",
+                "Cornucopia Dwebble",
+                "Scarecrow Murkrow",
+                "Gourd Trapinch",
+                "Skull Battery Grubbin",
+                "Cornfield Skrelp",
+                "Spearow",
+                "Bramblin",
+                "Munchlax",
+                "Foongus",
+                "Lechonk"
+            ]
         }
     },
     "Ultra Space Wilds": {
