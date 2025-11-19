@@ -4,6 +4,7 @@
         "Dungeons": {
             "Babbling Creek": {
                 "Description": "<p>Just outside of Ethovalon lays a dungeon so small, you'll probably miss it. The creek is home to plenty of feral Pokemon that may become hostile if you enter their territory. The lush grass that borders the small stream is boggy, and the current of the water is as gentle as ever. However, there's said to be a hidden hole towards the delta where the creek ends. Is there something hidden there?</p><p>Only one way to find out!</p>",
+                "Link" : "sea-of-beginning?authuser=0#h.hitvtrpqdhlw",
                 "Difficulty": "",
                 "Recruits": [
                     "Poliwag",
@@ -20,6 +21,7 @@
             "Tiny Meadow": {
                 "Description": "<p>A meadow that extends until it meets a forest. The lush, tall grass harbors many feral Pokemon that make their homes there. Flowers sway in the gentle breeze and pollen dances in the air.</p>",
                 "Difficulty": "",
+                "Link" : "sea-of-beginning?authuser=0#h.ys63ybf4suor",
                 "Recruits": [
                     "Sunkern",
                     "Budew",
@@ -35,6 +37,7 @@
             },
             "Buggy Woods": {
                 "Description": "<p>At the edge of the meadow lies a wood full of creepy-crawly creatures awaiting you inside. The trees have a thick canopy which the sun sneaks through occasionally. The grass is also quite dense which allows these bugs to hide safely away from predators. Despite their efforts, some bird Pokemon lurk in the branches, waiting to swoop down.</p>",
+                "Link" : "sea-of-beginning?authuser=0#h.ql0iauat4f7q",
                 "Difficulty": "",
                 "Recruits": [
                     "Caterpie",
@@ -56,6 +59,7 @@
         "Dungeons": {
             "Meteor Crater": {
                 "Description": "<p>Long ago, it is said that a meteor crashed into this spot on Pele Island. While you may be expecting some cool Pokemon from space, the only extraterrestrials you'll find here are Cleffa and Elgyem. The rest of the crater is inhabited with plenty of rock and fire type Pokemon! The crater is lined with space rock, obsidian, and shining gems. Lava flows freely through some parts of the crater.</p>",
+                "Link" : "sea-of-beginning?authuser=0#h.v4oipe4ckaem",
                 "Difficulty": "",
                 "Recruits": [
                     "Geodude (Kanto)",
@@ -71,6 +75,7 @@
             },
             "Volcano Shrine": {
                 "Description": "<p>It is said that a volcanic deity rests here to this very day. The actual shrine is a long way down, but you need to get through a dungeon to get there. The people of the island offer up prized possessions to the deity that watches over them. A winding path leads down, splitting off into different sections. A crater full of lava is in the center of the volcano, so be careful where you step! Lavafalls are everywhere here, so be careful of those too! Rumor has it that the travelling shop keepers Agni and Edan are descendants of the deity resting in here.</p>",
+                "Link" : "sea-of-beginning?authuser=0#h.eu79a4q95ocr",
                 "Difficulty": "",
                 "Recruits": [
                     "Slugma",
@@ -85,6 +90,7 @@
             },
             "Rocky Bluff": {
                 "Description": "<p>The steep slopes of the volcano give way to this dungeon and its difficult to navigate terrain. If you can fly, or easily maneuver around rocks, you'll have a better time with this dungeon. With the sun beating down on you and all of the climbing you'll be doing, you may need to find one of the many hot springs scattered around the area and relax. Rock types and Fire types make this bluff their home.</p>",
+                "Link" : "sea-of-beginning?authuser=0#h.r15rhzs00rac",
                 "Difficulty": "",
                 "Recruits": [
                     "Dunsparce",
@@ -104,6 +110,7 @@
         "Dungeons": {
             "Overgrown Tomb": {
                 "Description": "<p>A tomb that has since been covered in thick vines and buried beneath the ground. Whoever the tomb was built for, they must have been important, because the inside is massive! The only way into the dungeon is by taking the vines down to the base and from there you can explore. Small streaks of light shine down from the top of the tomb where cracks are beginning to form. Glowing mushrooms have begun forming in the crevices on the wall too. The longer you linger here, the more dread you begin to feel … but rumor has it there's good loot to be found here! Don't worry, it's not grave robbing it if the tomb is abandoned … right?</p>",
+                "Link" : "sea-of-beginning?authuser=0#h.dv41n7py5y3s",
                 "Difficulty": "",
                 "Recruits": [
                     "Sableye",
@@ -118,6 +125,7 @@
             },
             "Canopy Treetops": {
                 "Description": "<p>Barely any light shines through the thick canopies in this dungeon. The jungle floor is but a barren wasteland compared to the branches high up. Bird Pokemon fly about and several Grass types make their homes high up in the jungle trees. If you're not good at climbing, good luck.</p>",
+                "Link" : "sea-of-beginning?authuser=0#h.v43v0h3ztbst",
                 "Difficulty": "",
                 "Recruits": [
                     "Mankey",
@@ -134,6 +142,7 @@
             },
             "Boggy Wastes": {
                 "Description": "<p>Deep in the jungle lies the biggest swamp you've ever seen! The water is foul, bubbling, and you're pretty sure if you fall in, there's no coming back. Everywhere you step, the land feels static to the touch-- is the murky water paralyzing …? You're not sure what's at the end of this disgusting swamp, but it better be worth it for your sake!</p>",
+                "Link" : "sea-of-beginning?authuser=0#h.au7noada39bp",
                 "Difficulty": "",
                 "Recruits": [
                     "Venonat",
@@ -148,6 +157,7 @@
             },
             "Sunless Arboretum": {
                 "Description": "<p>Covered for a millennium, this ancient pyramid can only be accessed via the disorienting jungle surrounding it. An ancient city surrounds the long forgotten pyramid, both equally lost to time. Vines, flora, and all kinds of tropical flowers have begun growing through the cracks of the stone lining the streets of this city. Careful where you step! There seems to be active tripwire that may trigger booby traps! Who put them there? Or are they from an era long gone?</p><p>The inside of the pyramid is dark, decrepit and hazardous. One wrong move and you could be tumbling down a trapdoor or hurdling yourself into a pit of spikes! Despite the dangers and the active traps, there may be treasure in it's depths! However, it seems like someone isn't very keen on visitors here.</p>",
+                "Link" : "sea-of-beginning?authuser=0#h.gd2e22hro58l",
                 "Difficulty": "Legendary (90+)",
                 "Recruits": [
                     "Overgrowth Juice",
@@ -176,7 +186,7 @@
                     "Minun"
                 ]
             },
-            "Purity Field": {
+            "Flurry Field": {
                 "Description": "<p>To the north of the Slumbering Mountains, you'll find a chilly, frosted field. A beautiful, frigid grassland with plenty of rivers and lakes spread about. Frost perpetually covers the land. It is said that a Mirage Pokemon lives here and dances across the waterways with grace. It's so fast that all you see left behind are ripples on the water's surface.</p>",
                 "Difficulty": "",
                 "Recruits": [
@@ -2034,7 +2044,7 @@
                     "Indeedee"
                 ]
             },
-            "Canyon of Spirits": {
+            "Canyon of Souls": {
                 "Description": "<p>Is it possible to have such a large, expansive canyon on an island that's floating in the sky?? Well! It exists! Despite everything, this ravine leads down into the depths of the island and goes on and on for miles! There's only a couple of ways down into the canyon, and it's treacherous to say the least! Coming prepared with Rock Climb can at least alleviate some stress as you make your way down.</p><p>There's beautiful rock formations everywhere, a tiny river running through the bottom of the ravine, and overall the canyon is immense. Caves, tunnels, and branching paths make it feel like you could seriously get lost. Not only that, but the Pokemon here aren't accustomed to visitors and will most likely attack on sight. Despite the beautiful landscapes, the name certainly offers a sense of foreboding.</p><p>There is a legend that in the deepest part of the ravine, you may find yourself wandering into the world of the undead. Best not to go looking for trouble!</p><p>It's said that long ago the ground caved in on itself and thus created the dungeon. The Pokemon here worship one of the Gods of Ruin in particular-- Ting-Lu.</p>",
                 "Difficulty": "",
                 "Recruits": [
